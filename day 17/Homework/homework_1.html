@@ -1,0 +1,95 @@
+<!-- day 17:
+     1) ააწყვეთ ამ ფორმების მზგავსი ფორმები -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>homework 1</title>
+    <style>
+        body{
+            margin-left: 5%;
+            margin-top: 7%;
+        }
+        form{
+            font-size: x-large;
+        }
+        #first_name, #last_name, #Email {
+            border-radius: 3px;
+            height: 30px;
+            width: 30%;
+        }
+        #Date{
+            width: 200px;
+            font-size:x-large;  
+        }
+        select{
+            border-radius: 3px;
+            height: 30px;
+            width: 12%;
+            font-size: large;
+        }
+        #Address{
+            height: 100px;
+            width: 350px;
+        }
+        #Submit{
+            height:30px;
+            width:90px;
+            border-radius: 4px;
+            font-size:large
+        }
+    </style>
+</head>
+<body>
+    <h2>Personal Details</h2>
+    <form> 
+        <!-- select -->
+        <label for="bike">Salutation</label><br>
+        <select name="Bike" id="bike" required>
+            <option value="None">--None--</option>
+            <option value="BMW">BMW</option>
+            <option value="Kawasaki">kawasaki</option>
+            <option value="THUMP">THUMP</option>
+            <option value="YAMAHA">YAMAHA</option>
+            <option value="DUCATI">DUCATI</option>
+            <option value="SYM">SYM</option>
+            <option value="aprilia">aprilia</option>
+            <option value="HONDA">HONDA</option>
+        </select><br><br>
+
+        <!-- first name -->
+        <label for="first_name">First name: </label>
+        <input id="first_name" required name="firstname"><br><br>
+
+        <!-- Last name -->
+        <label for="last_name">Last name: </label>
+        <input id="last_name" required name="lastname"><br><br>
+
+        <!-- Gender -->
+        <label>Gender: </label>
+
+        <!-- Male -->
+        <input type="radio" id="Male" required name="gender">
+        <label for="Male">Male</label>
+
+        <!-- Female -->
+        <input type="radio" id="Female" required name="gender">
+        <label for="Female" >Female</label><br><br>
+
+        <!-- Email -->
+        <label for="Email">Email: </label>
+        <input type="email" id="Email" required name="Email"><br><br>
+
+        <!-- Date of Birth -->
+        <label for="Date">Date of Birth: </label>
+        <input type="date" id="Date" required name="date"><br><br>
+
+        <!-- Address: -->
+        <label for="Address:">Address :</label><br>
+        <input type="text" id="Address" required name="Address"><br><br>
+
+        <!-- Submit -->
+        <input type="submit" id="Submit">
+    </form>
+</body>
+</html>

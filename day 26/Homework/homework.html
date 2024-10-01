@@ -1,0 +1,158 @@
+<!--        1) გააკეთეთ თქვენი მთლიანი ჯგუფის მოსწავლეების ცხრილი html ში
+       2) ცხრილში მოთავსებულ სახელებს შეუცვალეთ ტექსტის ფერები
+      3) ცხრილში მოთავსებულ ელემენტებს შეუცვალეთ ბექგარუნდის ფერები
+      4) დაამატეთ საიტზე ერთი პატარა გოას ვიდეო
+     5) დაამატეთ საიტზე დამატებული ვიდეოს აუდიო მხოლოდ
+     6) დაამატეთ პარაგრაფი რომელიც აღწერს თქვენს ჯგუფს -->
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HW</title>
+    <style>
+        th{
+            height:100px;
+            background-color: rgb(0, 0, 48);
+            font-size:20px;
+            color:lightblue
+        }
+        td{
+            width:200px;
+            height:70px;
+            font-weight: bolder;
+        }
+        table{
+            background-color: lightblue;
+            text-align: center;
+            border-radius:5px;
+            margin-left:10%;
+            margin-top:5%;
+            border-color: rgb(23, 0, 22);
+            box-shadow: 10px 10px 100px;
+        }
+        *{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body{
+            background-color: rgb(0, 67, 67);
+        }
+        h1{
+            animation: text infinite alternate 1s;
+            cursor:pointer
+        }
+        p{
+            font-size:20px;
+            color:white        
+        }
+        @keyframes text{
+            0%{
+                color:rgb(255, 208, 208);
+                margin-left:1%
+            }
+            50%{
+                color:rgb(0, 67, 67)
+            }
+            100%{
+                color:rgb(0, 255, 0);
+                margin-left:87%
+            }
+        }
+        video{
+            border-radius:10px;
+            width:300px;
+            margin-left:20px;
+            margin-top:50px;
+            cursor:pointer;
+            transition: box-shadow 0.2s;
+        }
+        video:hover, audio:hover{
+            color:rgb(27, 172, 27);
+            box-shadow: 10px 10px 100px;
+        }
+        audio{
+            width:400px;
+        }
+        #text{
+            margin-left:30%;
+            margin-top:-20%;
+            font-size:20px;
+            color:aliceblue
+        }
+        button{
+            margin-left:50%;
+            font-size:20px;
+            width:150px;
+            height:50px;
+            border-radius:30px;
+            font-weight: bold;
+            cursor:pointer;
+            border-style: none;
+            color:white;
+            background-color: black;
+        }
+        button:hover{
+            opacity: 0.8;
+        }
+        button:active{
+            background-color:  white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Group work </h1>
+    <table border="1">
+        <tr>
+            <th>Group 1 <br> რომიკო აბესაძე</th>
+            <th>Group 2 <br>საბა ქურიძე</th>
+            <th>Group 3 <br>დავით ალოევი</th>
+            <th>Group 4 <br>გაბრიელ ქარქაშაძე</th>
+            <th>Group 5 <br>ლუკა სვანაძე</th>
+            <th>Group 6 <br>ნიკა ასანაშვილი</th>
+        </tr>
+        <tr>
+            <td>თეონა ოქროპილაშვილი</td>
+            <td>გიორგი ნაყოფია</td>
+            <td>ნიკო ჩოჩია</td>
+            <td>ელენე ღარიბოვი</td>
+            <td>ალექსანდრე ძუკაევი</td>
+            <td>სანდრო შენგელია</td>
+        </tr>
+        <tr>
+            <td>ალექსანდრე აბრამია</td>
+            <td>გიორგი გიორგობიანი</td>
+            <td>ანდრია რაზმაძე</td>
+            <td>ანა ფუთურიძე</td>
+            <td>ნიკა თავართქილაძე</td>
+            <td>ლადო ჯინჭარაძე</td>
+        </tr>
+        <tr>
+            <td>აკაკი ქართლელიშვილი</td>
+            <td>ნიკა მიქელაძე</td>
+            <td>ლევან მელქაძე</td>
+            <td>ლუკა უსუფაშვილი</td>
+            <td>ნიკოლოზ წერეთელი</td>
+            <td>--------</td>
+        </tr>
+    </table>
+    <video controls title="video">
+        <source src="videoplayback.mp4" type="video/mp4">
+        <source src="videoplayback.mp4" type="video/wav">
+        <source src="videoplayback.mp4" type="video/ogg"> 
+        გოას ვიდეო
+    </video><br><br>
+    <audio controls title="audio">
+        <source src="აარიდე შვილს მოსაწყენი ზაფხული.mp3" type="audio/mp3" >
+        <source src="აარიდე შვილს მოსაწყენი ზაფხული.mp3" type="audio/webm">
+        <source src="აარიდე შვილს მოსაწყენი ზაფხული.mp3" type="audio/ogg">
+    </audio>
+    <div id="text">
+    <button onclick="text()" >click on</button></div>
+    <script>
+        function text(){
+            let name = 'გოა არის საუკეთესო აკადემია. ჩემი ჯგუფელებიც საუკეთესოები, მაგრები და მონდომებულები არიან'
+        document.getElementById("text").innerHTML = name }
+    </script>
+</body>
+</html>

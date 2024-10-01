@@ -1,0 +1,18 @@
+body{
+    background-color:black;
+}
+nav ul{
+    list-style-type:georgian;
+    margin-left: 20%;
+    align-content: center;   
+}
+nav ul li{
+    width: 100px;
+    border-radius: 5px;
+    min-height: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    }
+nav ul li:hover{
+    background-color: rgb(115, 151, 151);
+}

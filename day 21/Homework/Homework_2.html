@@ -1,0 +1,120 @@
+<!--     2) თქვენით მოიფიქრეთ კიდევ რაიმე საიტის იდეა და ივარჯიშეთ ბევრი რაც შეიძლება ბევრი რამ გააკეთეთ და დაამატეთ საიტზე -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style_2.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6No2_k7LngO4POXhYvsUstfS4WUtguqyrBQ&s">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Registration</title>
+</head>
+<body>
+    <h1>GOA ACADEMY</h1>
+    <!-- title -->
+    <div class="Registration"> 
+        <h1>Registration</h1>
+        <form action="homework_1.html"> 
+            <!-- inputs -->
+
+            <!-- Name -->
+            <label for="name"></label>
+            <input id="name" type="text" name="Name" placeholder="Name" required>
+
+            <!-- lastname -->
+            <label for="lastname"></label>
+            <input type="text" id="lastname" name="lastname" placeholder="Lastname" required><br><br>
+
+            <!-- Username -->
+            <label for="username"></label>
+            <input type="text" id="username" name="username" placeholder="Username" required><br><br>
+
+            <!-- e-mail -->
+            <label for="email"></label>
+            <input type="email" id="email" name="Mail" placeholder="e-mail" required><br><br>
+
+            <!-- password -->
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="password" required maxlength="10" minlength="4"><br><br>
+
+            <!-- date -->
+            <label for="date"></label>
+            <input type="date" required id="date">
+
+            <!-- gender -->
+            <div class="Gender">
+                <label>Gender: </label>
+                <label for="Male"><i class='bx bx-male' ></i></label>
+                <input type="radio" required name="Gender" id="Male">
+                <label for="Female"><i class='bx bx-female'></i> </label>
+                <input type="radio" name="Gender" id="Female" required></p><br><br>
+            </div>
+
+            <!-- information -->
+            <div class="information">
+                <label for="information">your group is: </label>
+                <select name="person" id="information" required >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="23">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                </select>
+            </div>
+
+            <!-- agree -->
+            <div class="agree">
+                <label for="agree">Do you agree to the terms of the site?</label>
+                <input type="radio" id="agree" required><br><br><br>
+            </div>
+
+            <!-- Login -->
+            <a href="#">LogIn</a>
+
+            <!-- submit -->
+            <input type="submit" id="submit">
+        </form>
+    </div>
+
+    <!-- More information -->
+    <p>More information: <br><br>
+        <a href="#">facebook</a> <br>
+        <a href="#">YouTube</a> <br>
+    </p>
+</body>
+</html>

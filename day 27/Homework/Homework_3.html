@@ -1,0 +1,100 @@
+<!-- შექმენით საიტი თქვენს შესახებ, გამოიყენეთ htmlში ნასწავლი ყველა მასალა და cssის გამოყენებით გახადეთ საიტი უფრო ლამაზი(შეგიძლიათ გამოიყენოთ borwserი) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            color:rgb(255, 184, 184);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            background:linear-gradient(to right, rgb(1, 83, 121), green);
+        }
+        h1{
+            text-align: center;
+            font-size:40px;
+            color:lightgrey
+        }
+        p{
+            text-align:center ;
+            color:rgb(183, 182, 182);
+            font-size:20px
+        }
+        #button{
+            display:flex;
+            justify-content: space-evenly;
+            width:460px;
+            margin-left:37%;
+            margin-top:5%;
+        }
+        button{
+            width:100px;
+            height:40px;
+            font-size: 20px;
+            border-radius:30px;
+            border-style: hidden;
+            cursor:pointer;
+            background-color: aquamarine;
+            color:rgb(154, 151, 151);
+        }
+        footer{
+            background-color: cadetblue;
+            color:black;
+            margin-top:30%;
+            padding-top: 1%;
+            padding-left: 5%;
+        }
+        section{
+            color:black;
+            border-radius: 15px;
+            width:150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wellcome: </h1>
+        <select name="Bike" id="bike">
+            <option value="None">--None--</option>
+            <option value="BMW">BMW</option>
+            <option value="Kawasaki">kawasaki</option>
+            <option value="THUMP">THUMP</option>
+            <option value="YAMAHA">YAMAHA</option>
+            <option value="DUCATI">DUCATI</option>
+            <option value="SYM">SYM</option>
+            <option value="aprilia">aprilia</option>
+            <option value="HONDA">HONDA</option>
+        </select><br><br>
+    </header>
+    <main>
+    <p>hello, just click. </p>
+        <div id="button">
+            <div id="n1">
+                <button onclick="text()" >click on</button>
+            </div>
+            <div id="n2">
+                <button onclick="hobby()">click on</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h5>About</h5>
+    </footer>
+    <script>
+        function text(){
+            let name = `
+            Name: Ana <br>
+            Surname: Puturidze <br>
+            B-day: 10.02.2009`
+        document.getElementById("n1").innerHTML = name }
+
+        function hobby(){
+            let hobby = `
+            sport: shooting <br>
+            school: Gimnazia <br>
+            old scool: N126 pub. school`
+        document.getElementById("n2").innerHTML = hobby}
+    </script>
+</body>
+</html>

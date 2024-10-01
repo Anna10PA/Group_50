@@ -1,0 +1,94 @@
+*{
+    font-family:serif;
+}
+body{
+    background-color: rgb(234, 234, 234);
+}
+h1{
+    font-size:60px;
+    color:rgb(0, 106, 255);
+    padding-top: -60px;
+    font-weight: bolder;
+}
+h3{
+    font-size:30px;
+    font-weight: 100;
+}
+.text{
+    margin-top:14%;
+    margin-left:18%;
+}
+.sing_in{
+    width:450px;
+    height:400px;
+    box-shadow: 10px 10px 50px grey;
+    border-radius:10px;
+    margin-left:58%;
+    margin-top:-19%;
+    background-color: white;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+input{
+    width:400px;
+    height:45px;
+    padding-left: 20px;
+    font-size:19px;
+    border-radius:5px;
+    margin-top:10px;
+    border-color: lightgrey;
+    border-style: groove;
+    transition: border-color 0.2s;
+}
+input:focus{
+    border-color:blue
+}
+#Log_in{
+    width:422px;
+    height:45px;
+    font-size:larger;
+    border-radius:5px;
+    background-color:rgb(0, 106, 255);
+    color:white;
+    border:none;
+    cursor:pointer
+}
+#Log_in:hover{
+    opacity: 0.7;
+}
+a{
+    margin-left:35%;
+}
+hr{
+    width:400px
+}
+#create{
+    width:200px;
+    height:45px;
+    border-radius:3px;
+    background-color: rgb(0, 207, 0);
+    color:white;
+    font-weight: bold;
+    font-size:16px;
+    border:none;
+    cursor:pointer;
+    margin-left:24%;
+    transition:background-color 0.2s
+}
+#create:hover{
+    background-color: green;
+    transition: opacity 0.2s
+}
+#create:active{
+    opacity: 0.7;
+}
+p{
+    margin-left:63%
+}
+p b{
+    cursor:pointer;
+}
+p b:hover{
+    text-decoration:underline;
+
+}

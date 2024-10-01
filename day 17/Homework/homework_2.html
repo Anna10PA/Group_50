@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homework 2</title>
+    <style>
+        *{
+            color:aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdidWl1NHBud29nYXlscWFkYzc3enFkeTc0ZnAwcjk0MXpraHFyeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WoD6JZnwap6s8/giphy.webp);
+        }
+        h1 {
+            margin-left: 40%;
+        }
+        form{
+            margin-left: 35%;
+            font-size: larger;
+        }
+        #submit, #reset{
+            margin-left:40px;
+            border-radius: 5px;
+            color: rgb(34, 255, 0);
+            border-color: aqua;
+            background-color: rgb(0, 102, 5);
+        }
+        #firstname, #lastname, #NickName, #e-mail, #password, #date, #Phone{
+            border-radius: 4px;
+            width:150px;
+            height:20px;
+            border-width: 3px;
+            border-color: aliceblue;
+        }
+        #Address{
+            width:200px;
+            height:100px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body> 
+    <!-- Registration Form -->
+    <h1><u>Registration Form</u></h1>
+   <form>
+        <!-- First Name -->
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="name" required placeholder="Ana"><br><br>
+    
+        <!-- last name -->
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" required placeholder="Puturidze"><br><br>
+    
+        <!-- NickName -->
+        <label for="NickName">Nick Name</label>
+        <input type="text" id="NickName" name="nickname" required placeholder="Ani"><br><br>
+    
+        <!-- e-mail -->
+        <label for="e-mail">e-mail</label>
+        <input type="email" id="e-mail" name="e-mail" required placeholder="puturidzeana0210@gmail.com"><br><br>
+    
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="12345678" minlength="5" maxlength="8"><br><br>
+
+        <!-- Date of birth -->
+        <label for="date">Date Of Birth</label>
+        <input type="date" id="date" name="Date" required><br><br>
+
+        <!-- Gender -->
+        <label>Gender </label>
+        <!-- Male -->
+        <input type="radio" id="Male" name="Gender" required>
+        <label for="Male">Male</label>
+        <!-- Female -->
+        <input type="radio" id="Female" name="Gender" required>
+        <label for="Female">Female</label>
+        <!-- other -->
+        <input type="radio" id="Other" name="Gender">
+        <label for="Other">Other</label><br><br>
+
+        <!-- number -->
+        <label for="Phone">Phone</label>
+        <input type="number" id="Phone" name="Phone" placeholder="595123112" required><br><br>
+
+        <!-- Address -->
+        <label for="Address">Address</label><br>
+        <input type="text" id="Address" name="Address" placeholder="Tbilisi" required><br><br>
+
+        <!-- Buttons -->
+         <!-- submit -->
+        <input type="submit" id="submit">
+        <!-- reset -->
+        <input type="reset" id="reset">
+   </form>
+</body>
+</html>

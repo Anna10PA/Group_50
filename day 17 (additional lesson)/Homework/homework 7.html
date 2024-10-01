@@ -1,0 +1,50 @@
+<!--  Add a checkbox that allows users to agree to terms and conditions before submitting the form.     -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(6, 6, 50);
+        }
+        form{
+            text-align: center;
+            margin-top:10%;
+        }
+        form label{
+            font-size: x-large;
+            color:aqua
+        }
+        form input{
+            border-radius: 50px;
+            border-color: aquamarine;
+            border-width: 3px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <!-- name -->
+        <label for="name">Name</label><br>
+        <input type="text" placeholder="name" id="name" required><br><br>
+        <!-- lastname -->
+        <label for="lastname">Lastname</label><br>
+        <input type="text" placeholder="Lastname" id="lastname" required><br><br>
+        <!-- usarname -->
+        <label for="usarname">Usarname</label><br>
+        <input type="text" placeholder="Usarname" id="usarname" required><br><br>
+        <!-- gender -->
+        <label for="Female">Female</label>
+        <input type="radio" id="Female" name="question" required><br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="question" required><br>
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="question" required><br><br>
+        <!-- agree -->
+        <label for="agree">I agree to the terms and conditions</label>
+        <input type="checkbox" required id="agree"><br><br>
+        <!-- submit -->
+        <input type="submit">
+    </form>
+</body>
+</html>

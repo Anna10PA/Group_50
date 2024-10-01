@@ -1,0 +1,45 @@
+<!--    1) შექმნათ ფორმა სადაც მომხმარებელი გააკეთებს მანქანის/მოტოციკლეტის შეკვეთას, შეიყვანს სახელს,  გვარს, ტელეფონის ნომერს აირჩევს რომელი მანქანა ან მოტოციკლეტი სურს მას, ბოლოში გააგზავნის submit ის მეშვეობით ამ ინფორმაციას -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>classwork</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        form{
+            text-align: center;
+            margin-top:10%;
+            font-size:x-large
+        }
+        form input{
+            border-radius: 15px;
+            border-width:4px;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <lebel for="Name">Name</lebel>
+        <input type="text" placeholder="Name" id="Name" required name="Name"><br><br>
+
+        <lebel for="Lastname">Lastname</lebel>
+        <input type="text" placeholder="Lastname" id="Lastname" required name="Lastname"><br><br>
+        
+        <lebel for="Phone">Phone</lebel>
+        <input type="text" placeholder="595 ** ** 12" id="Phone" required name="Phone"><br><br>
+        
+        <label for="Bikes"></label>
+        <select id="bikes" name="bikes">
+            <option value="Aprila">Aprila</option>
+            <option value="BMW">BMW</option>
+            <option value="Kawasaki">Kawasaki</option>
+            <option value="Honda">Honda</option>
+            <option value="Ducati">Ducati</option>
+        </select><br><br>
+        
+        <input type="submit">
+    </form>
+</body>
+</html>

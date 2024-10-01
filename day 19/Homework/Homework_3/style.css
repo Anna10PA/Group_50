@@ -1,0 +1,70 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    animation: backgraund 3s infinite alternate;
+}
+@keyframes backgraund{
+    0%{
+        background-color: crimson;
+    }
+    20%{
+        background-color: rgb(17, 115, 0);
+    }
+    40%{
+        background-color: chocolate;
+    }
+    60%{
+        background-color: cadetblue;
+    }
+    80%{
+        background-color: darkcyan;
+    }
+    100%{
+        background-color: rgb(0, 0, 58);
+    }
+}
+form{
+    margin-left: 30%;
+    margin-top:10%;
+    width:400px;
+    height:300px;
+    border-radius: 16px;
+    box-shadow: 10px 10px 100px;
+    backdrop-filter: blur(20px);
+}
+h2{
+    margin-left: 100px;
+    margin-top: 30px
+}
+label, a{
+    margin-left: 35px
+}
+#username, #password{
+    width:200px;
+    height:30px;
+    border-radius: 50px;
+    padding: 0px 20px 0px;
+    cursor:pointer
+}
+#submit{
+    margin-left:150px;
+    width:100px;
+    height:30px;
+    font-size:medium;
+    border-radius: 5px;
+    border-color: black;
+    background-color:rgb(46, 46, 177);
+    cursor:pointer
+}
+#submit:hover{
+    box-shadow: 10px 10px 100px;
+    background-color: rgb(0, 0, 45);
+}
+select{
+    border-color: blueviolet;
+    width:100px;
+    height:50px;
+    border-radius:40px;
+    cursor:pointer
+}
