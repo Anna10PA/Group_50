@@ -1,5 +1,5 @@
 from turtle import *
-bgcolor("black")
+bgcolor("blue")
 speed(1000)
 penup()
 goto(-1000, -100)
@@ -19,7 +19,7 @@ home()
 # drawing square
 shape("turtle")
 width(4)
-color ("blue")
+color ("white")
 begin_fill()
 
 forward(350)
