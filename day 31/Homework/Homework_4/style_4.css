@@ -1,0 +1,9 @@
+div{
+    font-size:500px
+}
+div div{
+    font-size:25%
+}
+div div p{
+    font-size:50%
+}

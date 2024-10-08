@@ -1,0 +1,10 @@
+div{
+    height:700px;
+    width:1000px;
+    background-color: #000;
+}
+div div{
+    height:25%;
+    width:25%;
+    background-color: rgb(150, 0, 0);
+}
