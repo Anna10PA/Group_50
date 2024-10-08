@@ -1,0 +1,110 @@
+aside{
+    margin-left:5px;
+    width: 420px;
+    height:550px;
+    background-color: rgb(70, 0, 0);
+    border-radius:7px;
+}
+.scroll{
+    overflow-y: scroll;
+    width: 420px;
+    height:200px;
+
+    border-radius:5px;
+}
+.aside_title h3{
+    padding-top:10px;
+    text-align: center;
+    font-size:20px;
+    color:white
+}
+.scroll ol li{
+    font-size:20px;
+    color:white;
+    padding-top:15px
+}
+
+
+article{
+    width:500px;
+    height:300px;
+    border-radius:20px;
+    background-color: rgb(36, 8, 61);
+    color:white;
+    padding-left:20px;
+    cursor:pointer;
+    transition: box-shadow 0.2s;
+    padding-top:10px
+}
+article:hover{
+    box-shadow:10px 10px 100px rgb(198, 2, 192)
+}
+article ol li{
+    list-style-type:lower-greek;
+}
+h2{
+    text-shadow: 10px 10px 40px rgb(1, 71, 97);
+    text-align: center;
+}
+main{
+    display:flex;
+}
+section{
+    width:300px;
+    height:300px;
+    border-radius:20px;
+    background-color: rgb(9, 67, 67);
+    margin-left:20px;
+    padding-left: 20px;
+    cursor:pointer;
+    transition: box-shadow 0.2s;
+    animation: color 10s infinite alternate
+}
+@keyframes color{
+    0%{
+        color:red;
+    }
+    100%{
+        color:pink
+    }
+}
+section:hover{
+    box-shadow:rgb(0, 255, 0)
+}
+img{
+    width:200px;
+    border-radius:20px;
+}
+aside:hover{
+    box-shadow:10px 10px 100px blue
+}
+footer{
+    margin-top:100px;
+    background-color: rgb(18, 30, 35);
+    height:150px
+}
+button{
+    margin-top:-10px;
+    margin-left:89%;
+    border-radius:10px;
+    border-style:hidden;
+    width:100px;
+    height:40px;
+    color:white;
+    background-color: black;
+    cursor:pointer;
+    transition: background-color 0.2s;
+}
+button:hover{
+    background-color: rgb(18, 18, 18);
+    transition: background-color 0.2;
+}
+button:active{
+    background-color: white;
+    color:black;
+    font-weight: bold;
+}
+footer ul li{
+    list-style-type: square;
+    padding-top:10px;
+}
