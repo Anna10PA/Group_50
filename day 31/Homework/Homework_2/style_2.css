@@ -3,6 +3,7 @@
 }
 body{
     background-color: #000;
+    color: rgb(255, 255, 255)
 }
 .inputs{
     padding-top:10px;
@@ -23,6 +24,7 @@ h1{
     height:30px;
     padding-left: 20px;
     font-size:18px;
+    color: rgb(255, 255, 255)
 }
 #username{
     background-color: rgba(0, 255, 0, 0.3);

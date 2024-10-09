@@ -1,9 +1,12 @@
 aside{
     margin-left:5px;
     width: 420px;
-    height:550px;
+    height:320px;
     background-color: rgb(70, 0, 0);
     border-radius:7px;
+}
+body{
+    background-color: rgb(14, 3, 24);
 }
 .scroll{
     overflow-y: scroll;
@@ -20,31 +23,33 @@ aside{
 }
 .scroll ol li{
     font-size:20px;
-    color:white;
+    color:#fff;
     padding-top:15px
 }
 
 
 article{
-    width:500px;
+    width:700px;
     height:300px;
     border-radius:20px;
     background-color: rgb(36, 8, 61);
-    color:white;
+    color:#fff;
     padding-left:20px;
     cursor:pointer;
     transition: box-shadow 0.2s;
-    padding-top:10px
+    padding-top:10px;
+    display:inline-flex
 }
 article:hover{
     box-shadow:10px 10px 100px rgb(198, 2, 192)
 }
-article ol li{
-    list-style-type:lower-greek;
-}
 h2{
     text-shadow: 10px 10px 40px rgb(1, 71, 97);
     text-align: center;
+}
+img{
+    height:200px;
+    padding-right: 30px;
 }
 main{
     display:flex;
@@ -58,28 +63,30 @@ section{
     padding-left: 20px;
     cursor:pointer;
     transition: box-shadow 0.2s;
-    animation: color 10s infinite alternate
+}
+h1{
+    animation: color 1s infinite alternate
 }
 @keyframes color{
     0%{
-        color:red;
+        color:rgb(255, 0, 0 )
     }
     100%{
-        color:pink
+        color:rgb(20, 0, 3)
     }
 }
 section:hover{
     box-shadow:rgb(0, 255, 0)
 }
 img{
-    width:200px;
+    width:300px;
     border-radius:20px;
 }
 aside:hover{
-    box-shadow:10px 10px 100px blue
+    box-shadow:10px 10px 100px rgb(0, 0, 255)
 }
 footer{
-    margin-top:100px;
+    margin-top:180px;
     background-color: rgb(18, 30, 35);
     height:150px
 }
@@ -90,7 +97,7 @@ button{
     border-style:hidden;
     width:100px;
     height:40px;
-    color:white;
+    color:#fff;
     background-color: black;
     cursor:pointer;
     transition: background-color 0.2s;
@@ -100,8 +107,8 @@ button:hover{
     transition: background-color 0.2;
 }
 button:active{
-    background-color: white;
-    color:black;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     font-weight: bold;
 }
 footer ul li{

@@ -1,4 +1,4 @@
-const input = document.querySelector("#color")
-input.oninput = () => {
-    document.body.style.backgroundColor = input.value
+const background = document.querySelector("#color")
+background.oninput = () => {
+    document.body.style.backgroundColor = background.value
 }
