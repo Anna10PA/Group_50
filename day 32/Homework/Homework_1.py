@@ -7,11 +7,11 @@ max = list[0]
 for i in range(len(list)):
     if max < list[i]:
         max = list[i]
-print("max:",max)
+print("max:"+str(max))
 
 # min
 min = list[0]
 for i in range(len(list)):
     if min > list[i]:
         min = list[i]
-print("min:",min)
+print("min:"+str(min))
