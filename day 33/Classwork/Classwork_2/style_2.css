@@ -1,0 +1,21 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px -10px 20px grey;
+}
+h1{
+    text-align: center;
+    text-decoration: underline darkcyan double;
+}
+img{
+    width:25%;
+    border-radius: 10px;
+    cursor:pointer;
+    box-shadow: 10px 10px 2px;
+}
+p{
+    font-size: 30px;
+}
+p b{
+    text-decoration: underline black darkcyan solid;
+    font-weight: bolder;
+}
