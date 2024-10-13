@@ -1,0 +1,37 @@
+body{
+    background: linear-gradient(blue, green);
+    height:700px;
+    color:#fff
+}
+h1{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: bold;
+    text-shadow: 10px 10px 2px grey;
+    text-transform: uppercase;
+}
+#N1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    text-transform: lowercase;
+}
+#N2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+    text-transform: uppercase;
+}
+#N3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:23px;
+    text-transform:lowercase;
+}
+#N4{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30px;
+    text-transform: capitalize;
+}
+#N5{
+    font-family: serif;
+    font-size:23px;
+    text-transform: none;
+}

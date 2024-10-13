@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(blue, green);
+    height:700px;
+    color:#fff
+}
+#N1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+#N2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px
+}
+#N3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:23px
+}
+#N4{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30px
+}
+#N5{
+    font-family: serif;
+    font-size:23px
+}
