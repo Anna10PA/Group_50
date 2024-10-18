@@ -3,7 +3,7 @@
 def number():
     num = int(input("Enter number: "))
     if 10 > num > 0:
-        print("GOOD")
+        print("სწორია")
     else:
-        print("Error") 
+        print("არასწორი რიცხვი") 
 number()
