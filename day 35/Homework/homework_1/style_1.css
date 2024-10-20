@@ -1,0 +1,23 @@
+table{
+    border-collapse:initial;
+    background-color: rgb(13, 13, 255);
+    border-radius:10px;
+    margin:10% 0 0 20% ;
+    border-style: groove;
+    border-width:3px;
+}
+tr:nth-child(1){
+    background-color: rgb(255, 157, 127);
+}
+tr:nth-child(2){
+    background-color: rgb(182, 182, 0);
+}
+tr:nth-child(3){
+    background-color: rgb(0, 76, 44);
+}
+tr:nth-child(4){
+    background-color: rgb(0, 105, 140);
+}
+td{
+    width:200px;
+}

@@ -1,0 +1,29 @@
+table{
+    width:600px;
+    border: solid green 3px;
+    border-collapse: separate;
+}
+tr:nth-child(even){
+    background-color:rgb(0, 202, 178)
+}
+tr:nth-child(odd){
+    background-color: cadetblue;
+}
+th{
+    border:3px solid blue
+}
+td:nth-child(1){
+    border:3px groove  rgb(164, 11, 116);
+}
+td:nth-child(2){
+    border:9px double rgb(11, 11, 164)
+}
+td:nth-child(3){
+    border:3px ridge rgb(47, 164, 11);
+}
+td:nth-child(4){
+    border:12px dotted rgb(11, 141, 164);
+}
+td:nth-child(5){
+    border:10px dashed rgb(164, 11, 116);
+}

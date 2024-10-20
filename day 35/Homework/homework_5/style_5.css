@@ -1,0 +1,19 @@
+*{
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+td, th{
+    height:50px;
+}
+table{
+    width:600px;
+    border:blue solid 2px;
+    border-collapse: collapse;
+}
+tr:nth-child(even){
+    background-color: cornflowerblue;
+}
+tr:nth-child(odd){
+    background-color: darkcyan;
+}
