@@ -2,6 +2,6 @@
 '''
 def fahrenheit():
     C = int(input("Enter: "))
-    F = C * 1.4 + 32
+    F = C * 1.8 + 32
     print(F)
 fahrenheit()
