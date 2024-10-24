@@ -2,5 +2,5 @@
 
 user_number = int(input("Enter number: "))
 def check_number(answer):   
-    return answer
-print(check_number(user_number > 0))
+    return answer > 0
+print(check_number(user_number))
