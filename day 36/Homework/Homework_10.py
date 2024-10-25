@@ -9,7 +9,6 @@ def check(number):
             if number % i == 0 and number != i:
                 return False
         return True
-    return None
 
 for num in user_number_list:
     if check(num) == True:
