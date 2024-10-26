@@ -5,4 +5,5 @@ second_string = input("Enter second word: ")
 
 def concatenation(word_1, word_2):
     return word_1 + word_2
+
 print(concatenation(first_string, second_string))

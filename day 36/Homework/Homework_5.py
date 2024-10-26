@@ -9,7 +9,7 @@ def min(number_1, number_2):
     elif number_2 > number_1:
         return number_1
     elif number_2 == number_1:
-        return "the numbers are the same"
+        return "numbers are the same"
     
 print(min(user_number_1, user_number_2))
     
