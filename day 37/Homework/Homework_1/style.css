@@ -1,0 +1,22 @@
+.first{
+    text-decoration: none;
+    font-size: x-large;
+    color:blue;
+    transition: 0.5s;
+}
+.first:hover{
+    text-decoration: underline dotted red;
+}
+
+.second{
+    text-decoration: overline;
+    color:green;
+    transition:0.8s
+}
+.second:hover{
+    text-decoration: underline wavy blue;
+}
+
+.third:hover{
+    text-decoration:line-through dashed blue;
+}
