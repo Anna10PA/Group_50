@@ -1,0 +1,1 @@
+'''3) გადაიმეორეთ if else ები და True and False ამ საიტის დახმარებით https://www.w3schools.com/python/python_conditions.asp https://www.w3schools.com/python/python_booleans.asp'''
