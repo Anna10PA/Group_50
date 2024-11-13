@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./registration.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="registration">
+    <h1>
+        registration
+    </h1>
+        <form>
+            <ul>
+                <li>
+                    <label for="name">სახელი:</label>
+                    <input id="name"type="text" placeholder="name" name="name" required>
+                </li>
+                    <br>
+                    <br>
+                <li>
+                    <label>გვარი:</label>
+                    <input id="lastname" type="text" placeholder="lastname" name="lastname" required>
+                </li>
+                    <br>
+                    <br>
+                <li>
+                    <label for="telephone">
+                        ტელეფონის ნომერი:
+                    </label>
+                    <input id="telephone" type="number" placeholder="telephone number" min="0" required>
+                </li>
+                    <br>
+                    <br>
+                <li>
+                    <label>
+                        ადგილზე მიტანა გსურთ თუ მაგიდის დაჯავშნა?:
+                    </label>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>
+                            <label>ადგილზე:</label>
+                            <input type="radio" name="shekveta" required>
+                        </li>
+                    <br>
+                    <li>
+                        <label>მაგიდის დაჯავშნა:</label>
+                        <input type="radio" name="shekveta" required>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <label for="adress">
+                        თუ ადგილზე მიტანა გსურთ, შეიყვანეთ მისამართი:
+                    </label>
+                    <input id="adress" type="text" placeholder="adress">
+                </li>
+                <br>
+                <li>
+                    <label for="paying">შეიყვანეთ გადახდის მეთოდი:</label>
+                    <br>
+                    <ul>
+                        <li>
+                            <label for="card">კარტა</label>
+                            <input id="card" type="radio" name="paying" required>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label for="card">ნაღდი ფულით</label>
+                            <input id="cash" type="radio" name="paying" required>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <label for="num">შეიყვანეთ კარტის ნომერი</label>
+                    <input id="num" type="number" placeholder="card number" required>
+                </li>
+            </ul>
+            <input type="submit">
+            <input type="reset">
+            <h5>თქვენი შეკვეთა/ჯავშანი, სრულყოფილად შესრულდება. მადლობა ყურადღებისთვის</h5>  
+        </form>
+    </div>
+</body>
+</html>
