@@ -33,8 +33,8 @@ print(sum(age)//len(age))
 
 # task 2
 
-first = age[0]
+first_rank = age[0]
 for i in age:
-    if age.count(first) < age.count():
-        first = 
-print(first)
+    if age.count(i) > age.count(first_rank):
+        first_rank = i
+print(f'ყველაზე ხშირად მეორდება ასაკი {first_rank} რომელიც {age.count(first_rank)}-ჯერ გვხვდება ჯგუფ 50-ში')
