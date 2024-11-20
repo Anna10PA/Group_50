@@ -1,0 +1,79 @@
+<!-- 4) საიტზე შემოიტანეთ 3 ნებისმიერი ვიდეო -->
+<!-- 5) საიტზე შემოიტანეთ მაღვიძარას აუდიო -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Youtube</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class='bx bxl-youtube' id="youtube"></i>
+            <h2>YouTube</h2>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="search">
+            <i class='bx bx-microphone' id="microphone"></i>
+        </div>
+        <div class="a">
+            <i class='bx bx-video-plus' ></i>
+            <i class='bx bx-bell' ></i>
+            <i class='bx bxs-user' ></i>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <aside>
+            <button><i class='bx bxs-home' ></i>  Home</button>
+            <br>
+            <button><i class='bx bxs-video' ></i> Shorts</button>
+            <br><hr>
+            <button><i class='bx bx-time-five' ></i> History</button><br>
+            <button><i class='bx bxs-playlist' ></i> Playlist</button><br>
+            <button>You ></button><br>
+            <button><i class='bx bxs-like' ></i>liked video</button>
+        </aside>
+        <article>
+            <div class="row">
+                <div class="video">
+                    <video controls width="350px">
+                        <source src='./video/Emily Mei - Monster Under The Bed (Official Music Video).mp4' type="video/mp4">
+                        <source src='./video/Emily Mei - Monster Under The Bed (Official Music Video).mp4' type="video/ogg">
+                        <source src='./video/Emily Mei - Monster Under The Bed (Official Music Video).mp4' type="video/webm">
+                    </video>
+                    <p>Emily Mei - Monster Under The Bed (Official Music<br> Video)</p>
+                </div>
+                <div class="video">
+                    <video controls width="350px">
+                        <source src='./video/Taylor Swift - Blank Space.mp4' type="video/mp4">
+                        <source src='./video/Taylor Swift - Blank Space.mp4' type="video/ogg">
+                        <source src='./video/Taylor Swift - Blank Space.mp4' type="video/webm">
+                    </video>
+                    <p>Taylor Swift - Blank Space</p>
+                </div>
+                <div class="video">
+                    <video controls width="350px">
+                        <source src='./video/Pitbull - Hey Baby (Drop It To The Floor) (Lyrics) ft. T-Pain.mp4' type="video/mp4">
+                        <source src='./video/Pitbull - Hey Baby (Drop It To The Floor) (Lyrics) ft. T-Pain.mp4'  type="video/ogg">
+                        <source src='./video/Pitbull - Hey Baby (Drop It To The Floor) (Lyrics) ft. T-Pain.mp4'  type="video/webm">
+                    </video>
+                    <p>Pitbull - Hey Baby (Drop It To The Floor) (Lyrics) ft. <br> T-Pain</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <audio controls autoplay loop autoplay>
+            <source src="./video/mixkit-retro-game-emergency-alarm-1000.wav" type="audio/mp3">
+            <source src="./video/mixkit-retro-game-emergency-alarm-1000.wav" type="audio/wav">
+            <source  src="./video/mixkit-retro-game-emergency-alarm-1000.wav" type="audio/ogg">
+        </audio>
+    </footer>
+</body>
+</html>
