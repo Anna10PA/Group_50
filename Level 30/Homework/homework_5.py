@@ -3,5 +3,5 @@
 user_number = int(input("Enter number: "))
 
 def opposite(number):
-    return -number
+    return number * -1
 print(opposite(user_number))
