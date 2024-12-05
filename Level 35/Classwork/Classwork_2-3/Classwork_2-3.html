@@ -1,0 +1,25 @@
+<!-- 2) საიტზე დაამატეთ სამი სახის ტექსტი თითოეულ მათგანში თქვენი სიტყვებით ახსენით სამივე css ის წერის სტილი (internal, inline, external) და იმ ტექსტის გასასტილად გამოიყენეთ შესაბიმის css რომელზეც იმ ტექსტში გექნებათ საუბარი 
+                        
+ 3) შექმენით საიტი საიტს ქონდეს უკანა ფონი შავი, საიტზე დაამატეთ ერთი h1 რომელსაც ფერი ექნეაბ greenyellow გაზრდით ზომაში და გადაიტანთ ცენტრში გამოიყენეთ external css -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+    <style>
+        #p1{
+            color:green;
+            font-size:25px
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <p style="color:blue; font-size:20px">inline css    - HTML-ში style ატრიბუტის გამოყენებით სტილის შეცვლა (ხაზზში)  </p>
+    <p id="p1">internal css  - HTML ფაილში იწერება ოღონდ style თეგში </p>
+    <p id="p2">exsternal css - ცალკე ფაილი სადაც ვაკავშირებთ html ფაილთან</p>
+</body>
+</html>
