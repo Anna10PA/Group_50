@@ -1,0 +1,31 @@
+<!-- 1) ჩამოწერეთ დღეს ნასწავლი სამივე CSS-ის კოდის წერის ხერხი და დაწერეთ თითოეულის განმარტება -->
+
+<!-- CSS კოდის ჩაწერის სამი გზა არსებობს:  inline, internal, exsternal.
+
+თვისებები:
+
+inline css    - html ფაილში რომელი თეგის შეცვლაც გვინდა იმ თეგის გამსნელ თეგში          გამოვიყენებთ style ატრიბუტს.
+
+internal css  - html ფაილში head-ის გამხსნელ და დამხურავ თეგებს შორის style თეგს ვიყენებთ. სადაც selector -ად ვუწერთ რომელი თეგის შეცვლაც გვინდა (id/class/type შეიძლება იყოს) და {}-ში ვწერთ ამ თაგში რისი შეცვლაც გვინდა (ანუ property) და მას მნიშვნელობად რასაც გადავცემთ ის იქნება property value
+
+exsternal css - თუ გვინდა რომ ამ სახით დავწეროთ კოდი, მაშინ ვქმნით ცალკე ფაილს. რომელის ფაილის სახელიც აუცილებლად უნდა მთავრდებოდეს .css - ით. მაგრამ აუცილებელია html ფაილთან დაკავშირება. ამისთვის ვიყენებთ link თეგს head-ის გამხსნელ და დამხურავ თეგებს შორის. და href ატრიბუტში გავუწერთ ფაილის სახელს. კოდი კი ზუსტად ისე იწერება როგორც internal css-ში -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CSS</title>
+    <style>
+        h2{
+            color:rgb(0, 34, 68)  /* ეს არის internal css მაგალითი  */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:rgb(10, 100, 100)">Hello World</h1> <!-- ეს არის inline css მაგალითი-->
+    <h2>Hello World !</h2>
+    <h3>Hello Goa !</h3>
+</body>
+</html>
