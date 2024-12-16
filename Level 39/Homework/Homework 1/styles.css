@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+}
+div{
+    width:500px;
+    margin-left:30%;
+    background-color: white;
+    padding:20px
+}
+.Hello{
+    text-decoration: underline dotted rgb(0, 255, 0);
+    text-align:right
+}
+.World{
+    text-decoration:line-through;
+    text-align: center;
+}
+.n{
+    text-decoration: overline double rgb(255, 0, 0);
+}
+.Goal{
+    text-decoration: underline;
+    text-align: center;
+}
+.Oriented{
+    text-align: right;
+    text-decoration: line-through dotted rgb(0, 255, 0);
+}
+.Academy{
+    text-decoration: line-through;
+}
+.is{
+    text-decoration: overline solid;
+    text-align:left
+}
+.The{
+   color:rgb(0, 145, 0) ;
+   text-decoration: overline;
+   text-align: right;
+}
+.Best{
+    color:grey;
+    text-align: center;
+    text-decoration: overline;
+}
+.one{
+    text-decoration: underline dotted green;
+    text-align: right;
+}
+p{
+    font-size:30px
+}
