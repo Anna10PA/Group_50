@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Charm:wght@400;700&display=swap');
+
+body{
+    background-color: black;
+}
+h2{
+    font-family: "Charm", serif;
+    font-weight: 700;
+    font-style:italic;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-align: center;
+    transition: 0.2s;
+    font-size:80px;
+    animation:color 0.5s infinite alternate
+}
+@keyframes color{
+    0%{
+        color:white;
+        text-shadow: 2px 2px 20px rgb(0, 0, 200);
+    }
+    100%{
+        color:blue;
+        text-shadow:-2px 2px 20px white ;
+    }
+}
+  

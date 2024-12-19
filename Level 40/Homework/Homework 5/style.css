@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+    font-size:50px;
+    text-align: center;
+}
+.A1{
+    color:rgb(255, 0, 0);
+    font-family:serif;
+    transition: 0.2s;
+    font-size:12px;
+}
+.A1:hover{
+    font-size:60px;
+    text-shadow: 2px 2px 50px rgb(210, 25, 25);
+}
+.A2{
+    color:rgb(0, 255, 0);
+    font-family: sans-serif;
+    transition:0.2s;
+    font-size:24px;
+}
+.A2:hover{
+    font-size:60px;
+    text-shadow: 2px 2px 50px rgb(0, 255, 0);
+}
+.A3{
+    color:rgb(0, 0, 255);
+    font-family: monospace;
+    transition:0.2s;
+    font-size:36px;
+}
+.A3:hover{
+    font-size:60px;
+    text-shadow: 2px 2px 50px rgb(19, 19, 163);
+}
+.A4{
+    color:aqua;
+    font-family: cursive;
+    transition:0.2s;
+    font-size:48px;
+}
+.A4:hover{
+    font-size:60px;
+    text-shadow: 2px 2px 50px aqua;;
+}
+.A5{
+    color:#fff;
+    font-family:fantasy;
+    transition: 0.2s;
+    font-size:60px;
+}
+.A5:hover{
+    text-shadow: 2px 2px 50px #bebebe;
+}
+p{
+    cursor:pointer
+}
+p:hover{
+    text-decoration: underline dotted;
+}

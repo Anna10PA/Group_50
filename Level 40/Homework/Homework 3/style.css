@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Monsieur+La+Doulaise&display=swap');
+
+body{
+    background-color: black;
+}
+h2 {
+    font-family: "Monsieur La Doulaise", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    text-shadow: 0px 0px 3px grey;
+    font-size:80px;
+    text-align: center;
+}
+h3{
+    font-family: "Bonheur Royale", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:70px;
+    color:rgb(32, 112, 10);
+    text-shadow: 0px 0px 5px white;
+    transition: 0.5s;
+    text-align:center;
+}  
+h3:hover{
+    color:white;
+    text-shadow:3px 3px 10px rgb(32, 112, 10) ;
+}

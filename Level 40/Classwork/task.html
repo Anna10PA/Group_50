@@ -1,0 +1,42 @@
+<!-- /* text-transform - ტექსტის ტრანსფორმაცია */ 
+        capitalize - ადიდებს დიდ ასოებს. (თუ სხვა ასოები არის დიდი მაშინ არ შეიცვლება)
+        uppercase - ტექსტს დიდ ასოებად გადააკეთებს
+        lowercase - ტექსტს აპატარავებს-->
+
+<!-- font-family - ტექსტის ვიზუალი, სტილი, დამწერლობა
+        selif - ჩვეულებრივი
+        -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* text-transform - ტექსტის ტრანსფორმაცია */
+        #n1{
+            text-transform:capitalize ;
+            /* ადიდებს დიდ ასოებს. (თუ სხვა ასოები არის დიდი მაშინ არ შეიცვლება) */
+
+            text-shadow: 3px 5px 100px red;
+            /* 3px ჰორიზონტალურად მარჯვნივ გადასწევს (x ღერძზე), მინუსიც შეიძლება */
+            /* 5px ვერტიკალურად ქვევით ჩაწევს (y ღერძზე), მინუსიც შეიძლება */
+        }
+        #n2{
+            text-transform: uppercase;
+            /* ტექსტს დიდ ასოებად გადააკეთებს */
+        }
+        #n3{
+            text-transform: lowercase;
+            /* ტექსტს აპატარავებს */
+        }
+    </style>
+
+</head>
+    <p id="n1">capiTalize</p> 
+    <p id="n2">uppercase</p>
+    <p id="n3">LOWERCASE</p>
+<body>
+</body>
+</html>
