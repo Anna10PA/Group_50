@@ -21,7 +21,7 @@ student_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j','z']
 #     student_list.remove(ask_remove)
 #     ask_remove = input("კიდევ გინდა ამოშალო ვინმე? : ")
 # print('')
-# print('')
+# print(f'მოსწავლეთა რაოდენობა არის: {len(student_list)}')
 # print(student_list)
 # print('')
 # print('')
