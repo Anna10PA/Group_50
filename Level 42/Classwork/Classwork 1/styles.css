@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+}
+button{
+    background-color: rgb(0, 0, 0);
+    color:black;
+    text-shadow: 0px 0px 2px rgb(60, 255, 0);
+    width:20px;
+    border-radius:10px;
+    border-style:none;
+    font-size:20px;
+    transition:0.5s;
+    cursor:pointer;
+    overflow: hidden;
+    box-shadow:0px 0px 10px rgb(55, 255, 0)
+}
+button:hover{
+    color:red;
+    width:500px;
+    background-color: black;
+    border-radius:50px;
+    font-weight:500;
+    font-size:25px;
+}
+button:active{
+    font-size:30px;
+    color:green;
+    background-color: aliceblue;
+    border-style:dotted;
+    height:50px
+}
