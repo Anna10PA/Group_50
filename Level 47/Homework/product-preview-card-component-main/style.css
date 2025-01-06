@@ -18,7 +18,7 @@ body{
 #info{
     margin-right:40px
 }
-p{
+#p{
     margin-top:-10px;
     font-size:14px;
     opacity: 0.6;
@@ -65,11 +65,8 @@ h2{
     font-family: "Fraunces", serif;
     font-optical-sizing: auto;
     font-weight: bolder;
-    font-style: normal;
-    font-variation-settings:
-      "SOFT" 0,
-      "WONK" 0;
-    color:hsl(158, 36%, 37%)
+    opacity: 100%;
+    color:hsl(158, 36%, 37%);
 }
 button{
     background-color: hsl(158, 36%, 37%);
@@ -101,6 +98,7 @@ button img{
 }
 #old{
     text-decoration: line-through;
+    opacity: 0.6;
 }
 div{
     margin-top:10px;
