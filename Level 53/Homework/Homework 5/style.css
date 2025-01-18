@@ -1,0 +1,19 @@
+
+body{
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    height:100vh;
+    overflow: hidden;
+    align-items:center;
+}
+h1{
+    animation-name:Color;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+@keyframes Color{
+    from{
+        color:
+    }
+}

@@ -10,7 +10,7 @@ div{
     height:300px;
     width:300px;
     background-color: rgb(195, 255, 0);
-    border-radius:5% 50% 0% 50%;
+    border-radius:5% 70% ;
     transition:0.5s;
     cursor:pointer;
 }
