@@ -42,7 +42,7 @@ div{
     }
     100%{
         background-color: gold;
-        transform: rotate(360deg) scale(2);
+        transform: rotateX(360deg) scale(2);
         box-shadow:0px 0px 20px gold
     }
 }
