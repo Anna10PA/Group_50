@@ -1,4 +1,3 @@
-
 body{
     background-color: black;
     display:flex;
@@ -8,12 +7,25 @@ body{
     align-items:center;
 }
 h1{
+    font-size:100px;
     animation-name:Color;
     animation-iteration-count: infinite;
     animation-duration: 5s;
+    animation-direction: alternate;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 @keyframes Color{
     from{
-        color:
+        color:red;
+        text-shadow: 0px 0px 10px rgb(172, 0, 0);
+    }
+    to{
+        color:rgb(0, 255, 0);
+        text-shadow: 0px 0px 15px rgb(0, 255, 0);
     }
 }
