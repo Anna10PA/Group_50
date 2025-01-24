@@ -1,0 +1,17 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column
+}
+.conteiner{
+    background-color: hsl(216, 50%, 16%);
+    width:300px;
+    height:600px;
+    padding-left:70px
+}
+#main{
+    width:250px;
+}
