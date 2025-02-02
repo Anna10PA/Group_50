@@ -17,11 +17,13 @@
 
 from turtle import *
 # drawing square
+# shape('circle')
+
 shape("turtle")
-speed(1)
-width(4)
-color ("green")
-begin_fill()
+speed(100)
+width(1) 
+color ("pink")
+begin_fill() # გაფერადების დაწყება
 
 forward(350)
 left (90)
@@ -37,7 +39,7 @@ left (90)
 speed (3)
 forward(200)
 left (90)
-end_fill()
+end_fill() # გაფერადების დამთავრება
 #drawing door
 
 speed(3)
