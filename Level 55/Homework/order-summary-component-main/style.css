@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherish&family=DynaPuff:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Handlee&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Jersey+15&family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Red Hat Display", serif;
+    display: grid;
+    justify-self: center;
+    align-content: center;
+    height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: 100% 100%;
+}
+
+.parent{
+    width: 380px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 180px 400px;
+    border-radius: 15px;
+
+
+}
+
+.parent_2{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    padding: 30px;
+    text-align: center;
+}
+.img_00{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.h1{
+    font-size: 1.7rem;
+    font-weight: 850;
+}
+
+.p{
+    width: 95%;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 600;
+    opacity: 40%;
+
+}
+
+.music{
+    width: 100%;
+    height: 85%;
+    background-color:  hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 23px 15px 23px;
+}
+
+.musci_annual{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+.div_2{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.p1{
+    color: black;
+    font-weight: 870;
+    font-size: 1rem;
+}
+.p2{
+    font-weight: 600;
+    opacity: 50%;
+}
+
+.p3{
+    font-weight: 650;
+    color: #7165f2;}
