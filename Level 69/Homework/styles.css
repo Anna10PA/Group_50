@@ -151,9 +151,15 @@ header img{
 .second{
     display:flex;
 }
-.second h2{
+.second h2, .forth h2{
     font-size:30px;
     color:rgba(77, 77, 77, 1)
+}
+.forth p{
+    color:rgba(77, 77, 77, 1)
+}
+.forth{
+    text-align: center;
 }
 .second img{
     min-width:400px;
@@ -205,7 +211,7 @@ header img{
 }
 .main{
     display:flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     gap:20px;
     color:rgba(77, 77, 77, 1);
@@ -218,13 +224,18 @@ header img{
     min-width:350px
 }
 .part3{
-    width:70%
+    width:70%;
+    /* background-color: #f5f7fa; */
 }
 .part3 h2{
-    color: rgba(76, 175, 79, 1)
+    color: rgba(76, 175, 79, 1);
+    margin-top:20px
+}
+#f1{
+    min-width:200px
 }
 /* phone */
-@media(max-width:600px){
+@media(max-width:800px){
     /* header */
     header button{
         display:none
@@ -233,13 +244,17 @@ header img{
     /* hero */
     .hero{
         flex-direction: column;
+        padding:0px 20px
     }
     .main-hero{
-        padding: 40px 10%;
+        padding: 0px 1%;
     }
     .second img{
         min-width:400px;
 
+    }
+    .section-text{
+        padding:10px 0px
     }
     .second{
         padding:40px 0px
@@ -247,6 +262,12 @@ header img{
     .main{
         display:flex;
         flex-direction: column;
+    }
+    .part3{
+        flex-direction: column;
+    }
+    #pic3{
+        min-width:300px
     }
 
 }
@@ -287,5 +308,8 @@ header img{
     .second img{
         min-width:350px;
 
+    }
+    .part3{
+        flex-direction: column;
     }
 }
