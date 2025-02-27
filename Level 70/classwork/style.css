@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira+Stencil+One&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Inter
+}
+:root{
+    --grey: rgba(47, 58, 59, 1);
+    --blue: rgba(0, 52, 120, 1);
+    --gold: rgb(251, 170, 12);
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    height:120px;
+    backdrop-filter: blur(20px);
+    padding:10px 30px
+}
+header nav ul{
+    display:flex;
+    list-style-type: none;
+    text-transform: uppercase;
+    justify-content: space-between;
+    width:100%;
+    gap:10px;
+    color:var(--grey);
+    font-weight: 400;
+}
+#now{
+    font-weight: 600;
+}
+nav{
+    width:35%
+}
+header button, #hero button{
+    padding:10px 20px;
+
+}
+body{
+    overflow-x: hidden;
+}
+#sing_in{
+    background:none;
+    border-style: none;
+    color:var(--grey);
+    font-size: 16px;
+}
+#sing_up{
+    color:var(--blue);
+    border-style: groove;
+    font-weight: 600;
+    background: none;
+    font-size: 16px;
+    border-color: var(--blue);
+}
+.hero-text h1{
+    font-size: 72px;
+    text-transform: uppercase;
+    font-weight: 200;
+    color:var(--blue);
+    padding-left:12%;
+    
+}
+.hero-text h1 span{
+    /* font-weight: 700; */
+    color:var(--gold);
+    font-family: "Saira Stencil One", sans-serif;
+}
+.hero-text .grey h2{
+    /* font-size: 30px; */
+    font-size: 40px;
+    padding-left:12%
+}
+.hero-text{
+    width:70%
+}
+
+#car{
+    position:absolute;
+    z-index:-1;
+    right:-40%;
+    top:90px;
+    height:700px;
+
+}
+#hero{
+    /* display:flex; */
+    margin-top:30px;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* height:80vh; */
+    /* padding-left:8% */
+}
+/* .grey{
+    position:relative
+} */
+.grey{
+    margin-top:35px;
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    width:100%;
+    position:relative;
+    z-index:-1
+}
+.grey h2{
+    /* position:absolute; */
+    background-color: rgba(48, 50, 49, 1);
+    color:white;
+    /* font-family: "Saira Stencil One", sans-serif; */
+    font-weight:300;
+    width:100%;
+    padding-left:5%;
+    height:60px
+
+}
+.button{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px
+}
+#menu{
+    display:none;
+}
+.button2{
+    display:flex;
+}
+.button2 button{
+    width:200px;
+    height:70px;
+    font-size:18px;
+    margin-top:20px;
+    font-weight: 500;
+
+}
+#watch{
+    background: none;;
+    border-style: none;
+    font-size:16px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#play{
+    color:blue;
+    font-size:40px
+}
+#build{
+    background-color: var(--blue);
+    color:white;
+    font-weight:300;
+    border-style: none;
+
+    /* border-color: var(--blue); */
+}
+.grey h2 span{
+    font-size:25px
+}
+#h2{
+    color:var(--grey);
+}
+.hero-text .button2{
+    margin-left:12%
+}
+@media(max-width:1240px){
+    /* h1{
+        text-shadow: 0px 0px 10px black;
+    } */
+    header nav ul{
+        display:none
+    }
+    #menu{
+        display:flex;
+        font-size:40px;
+        color:blue
+    }
+}
+@media(max-width:600px){
+    #car{
+        display:none
+    }
+    .button{
+        width:1%
+    }
+    .grey h2{
+        width:200%
+    }
+    .hero-text h1{
+        font-size:50px;
+    }
+    .button button{
+        display:none
+    }
+    .button2{
+        flex-direction: column;
+    }
+}
