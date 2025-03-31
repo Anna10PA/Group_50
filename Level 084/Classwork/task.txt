@@ -1,0 +1,9 @@
+keyboard events  - keyup, keydown
+
+ვინაიდან დოკუმენტზე ხდება მოქმედება ამიტომ, ისე შეგვიძლია რომ კონკრეტულ ერთ ელემენტსაც გავუწეროთ. (მაგრამ დოკუმენტი ჯობია, რადგან როდესაც საიტზე ვართ ანუ დოკუმენტში ვართ)
+document.
+
+document.addEventListener('keydown', function(event.key))
+keydown - დაჭერა
+keyup - აშვება
+event.key - ევენთის გასაღებში მყოფი მონაცემები

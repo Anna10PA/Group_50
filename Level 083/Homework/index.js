@@ -19,7 +19,6 @@ clickButton.addEventListener('click', function(){
     Main.style.backgroundColor = resultColor
     resultColor = '#'
 
-    let myAudio = new Audio('ha ha  - SOUND CHECK BASS _ SoundAdiks Mix.mp3')
-
+    let myAudio = new Audio('mixkit-camera-shutter-click-1133.wav')
     myAudio.play()
 })
