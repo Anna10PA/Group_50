@@ -1,0 +1,111 @@
+header{
+    display:flex;
+    justify-content:space-between;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nav img{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    transition: 0.5s;
+    cursor:pointer
+}
+.nav img:hover{
+    transform: scale(1.2);
+    box-shadow: -10px -10px 100px gold;
+    border-radius:5%
+}
+body{
+    background-color:rgb(50, 50, 50);
+}
+li{
+    list-style-type: none;
+}
+input[type='search']{
+    height:50px;
+    width:800px;
+    border-radius:10px;
+    background: none;
+    border-style:groove;
+    border-width:2px;
+    padding-left:20px;
+    border-color:rgb(144, 144, 144)
+}
+
+/* logo */
+#logo{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    padding-left:50px;
+}
+h1{
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;;
+  color:white
+}
+.b{
+    display:flex;
+    width:400px;
+    justify-content:space-evenly;
+}
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:95%
+}
+.bx{
+    font-size:45px;
+    margin-top:-20px;
+    color:white;
+    cursor:pointer;
+    transition: 0.5s;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    padding-left:4px;
+    padding-top:3px
+}
+.bx:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(50, 50, 50);
+}
+main{
+    width:1450px
+}
+.nav{
+    transition: filter 0.3s ease;
+}
+.nav:hover{
+    filter:none
+}
+h2{
+    margin-left:50px;
+    color:white;
+    transition:0.5s;
+    color:gold;
+    font-size:30px;
+    width:600px;
+    cursor:pointer
+}
+h2:hover{
+    color:gold;
+    font-size:35px
+}
+footer{
+    margin-top:100px;
+    background-color: rgb(26, 26, 26);
+    height:75px;
+    padding-left:50px;
+    padding-top:30px
+}
+footer a{
+    margin-left:80px;
+    font-size:20px;
+    color:rgb(61, 61, 61);
+}

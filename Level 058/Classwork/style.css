@@ -1,0 +1,21 @@
+.child{
+    width:100px;
+    height:100px;
+    background-color: blue;
+    display:grid;
+    grid-template-columns: auto-fill;
+    gap:10px
+}
+
+@media(max-width:700px){
+    .conteiner{
+        display:grid;
+        grid-template-columns: 200px 200px 200px;
+    }
+}
+@media(max-width:450px){
+    .conteiner{
+        display:grid;
+        grid-template-columns: 200px ;
+    }
+}

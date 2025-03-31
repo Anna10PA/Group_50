@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0
+}
+body{
+    background-color: black;
+}
+header h1{
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size:2.5rem;
+    animation:color infinite alternate 3s
+}
+@keyframes color{
+    0%{
+        text-shadow:0px 0px 10px green
+    }
+    100%{
+        text-shadow:0px 0px 10px rgb(0, 60, 0)
+    }
+}
+header{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color: rgba(8, 145, 149, 0.736);
+}
+.nav-login{
+    display:flex;
+    justify-content: space-around;
+    width:40%;
+    gap:30px;
+    transition:0.4s;
+}
+span{
+    font-size:4rem
+}
+nav ul {
+    display:flex;
+    gap:30px;
+    list-style-type: none;
+    font-family: "Rowdies", serif;
+    font-weight: 400;
+    font-style: normal;
+    transition:0.4s
+}

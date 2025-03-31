@@ -1,0 +1,91 @@
+*{
+    color:rgb(30, 203, 7);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    animation: colortransition 6s infinite alternate;
+}
+@keyframes colortransition {
+    0% {
+        background-color: #020012;
+    }
+    45%{
+        background-color: rgb(100, 71, 0);
+    }
+    70%{
+        background-color: rgb(73, 5, 18);
+    }
+    100% {
+        background-color: #337479;
+    }
+    }
+                                       
+
+.Registration{
+    margin-left:35%;
+    margin-top: 5%;
+    font-size: larger;
+    height: 650px;
+    width: 600px;
+    box-shadow: 10px 10px 50px;
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+}
+form{
+    margin-left:40px
+}
+input, select{
+    border-radius: 15px;
+    font-size: large;
+    background-color: rgb(0, 0, 0);
+    border-width:0px;
+    cursor:pointer;
+    padding-left: 30px;
+}
+input:hover{
+    box-shadow: 1px 1px 20px;
+}
+
+#name, #lastname, #date{
+    width: 188px;
+    height: 40px; 
+}
+#email, #password, #username {
+    width: 450px; 
+    height: 40px;
+} 
+.Gender{
+    margin-top: -40px;
+    margin-left: 300px 
+}
+h1{
+    margin-left:180px;
+}
+.bx{
+    font-size: xx-large;
+    cursor:pointer
+}
+.information{
+    margin-left: 20%;
+}
+#information{
+    margin-left:5%;
+    border-radius: 30px;
+    width: 140px;
+    height: 30px;
+}
+.agree{
+    margin-top:30px;
+    margin-left:15%
+}
+#submit{
+    margin-left:30%;
+    width:150px;
+    padding-left: 10px;
+    height: 30px;
+}
+p{
+    margin-left:20px;
+    margin-top:10%;
+}

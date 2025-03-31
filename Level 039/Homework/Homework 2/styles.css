@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+p{
+    color:black;
+    text-shadow: 0px 0px 20px rgb(0, 255, 0);
+    text-decoration: underline wavy rgb(0, 255, 0);;
+    font-size:100px;
+    text-align: center;
+    font-family: "Playwrite DE VA Guides", cursive;
+    font-weight: 400;
+    font-style: normal;      
+}

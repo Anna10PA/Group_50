@@ -1,0 +1,12 @@
+.n1{
+    color:red;
+    text-decoration: line-through wavy blue ;
+}
+.n2{
+    color:rgb(17, 1, 1);
+    text-decoration: overline rgb(0, 0, 44)blue ;
+}
+.n3{
+    color:rgb(2, 34, 1);
+    text-decoration: underline wavy blue ;
+}
