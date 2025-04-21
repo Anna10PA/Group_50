@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition:0.5s
+}
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 40, 40);
+    overflow: hidden;
+    position: relative;
+
+}
+div{
+    width:100px;
+    height:100px;
+    background-color: aliceblue;
+    border-radius: 3px;
+    cursor:pointer
+}
