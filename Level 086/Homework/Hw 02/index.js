@@ -3,6 +3,18 @@
 let clock = Number(prompt("Enter Number: "))
 
 switch(true){
-    case 10 > clock  :
-        alert('10')
+    case 12 > clock  :
+        alert('dila')
+        break
+    case 17 > clock:
+        alert('shuadge') 
+        break
+    case 20 > clock:
+        alert('sagamo')
+        break
+    case 24>= clock:
+        alert('game')
+        break
+    default:
+        alert('maseti dro ar arsebobs')
 }
