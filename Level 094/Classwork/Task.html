@@ -13,7 +13,21 @@
         let add = (x, y) => x * y
         console.log(add)
 
+        // power(x, y) იგივეა რაც x ** y 
 
+        let name = name => 'hello ' + name
+        console.log(name('Ana'))
+
+        // map - არის სიის მეთოდი, რომელსაც შეუძლია სიაში გადაუაროს თითოეულ ელემენტს და მოახდინოს რამე ზეგავლენა. შეგვიძლია მასზე გადავლა. 
+
+        const userNames = ['Ana', 'Lui', 'Koko']
+
+        const sortName = (element) => {
+            return ` ${element}`
+        }
+
+        const new_arr = userNames.map(sortName)
+        console.log(new_arr)
     </script>
 </body>
 </html>
