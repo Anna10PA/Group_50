@@ -64,7 +64,7 @@ Model.addEventListener('click', function(){
         moonModel = true
 
     }else if(moonModel == true){
-        moonModel.className = 'bx bxs-moon'
+
 
         for(let card of cardDiv){
             card.style.backgroundColor = ' rgba(24, 24, 24, 0.706)'
@@ -74,7 +74,7 @@ Model.addEventListener('click', function(){
 
         seeMoreText.style.color = 'white'
         document.getElementById('image').src = 'https://i.pinimg.com/736x/7b/e2/75/7be2755b43db666301611bff8e8882cc.jpg'
-        
+        Model.className = 'bx bxs-moon'
 
         moonModel = false
 
