@@ -1,0 +1,36 @@
+# fillter metod
+
+სიის თითოეულს ელემენტს ფილტრავს, რა თქმა უნდა პირობის მიხედვით 
+
+უშუალოდ განმარტება: 
+ქმნის ახალ სიას, რომელიც აბრუნებს მხოლოდ იმ ელემენტებს რომლებიც დააკმაყოფილებენ ფუნქციას გადაცემულ პირობას
+
+
+// Task 1
+
+let myArr = [1, 2, 3, 4, 5]
+let filltered = element => console.log(element) 
+
+------------------------------------
+let filltered - ვქმნით ფუნცქვიას
+element - პარამეტრი ფუნქციის
+------------------------------------
+
+let newArr = myArr.filter(filltered)
+
+
+
+// Task 2
+
+let myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const greatThenFive = element => return element > 5
+let newNumbers = myArr.filter(greatThenFive)
+console.log(newNumbers)
+
+// მეორე  ვარიანტი
+
+let myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+let newNumbers = myArr.filter(element => return element > 5)
+console.log(newNumbers)

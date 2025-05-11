@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+header{
+    background-color: rgb(33, 33, 52);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:12vh;
+    width:100%
+}
+header img{
+    max-width:120px;
+    min-width:50px;
+    width:70%
+}
+main{
+    display:flex;
+    align-items: center;
+    height:88vh;
+    justify-content: space-between;
+}
+main img{
+    max-width:400px;
+}
+.text{
+    min-width:200px;
+    max-width:600px;
+    width:80%;
+    line-height: 3;
+}
+h1{
+    font-size:35px;
+}
+p{
+    opacity: 0.7;
+    font-weight:500;
+    line-height: 1.2;
+}
+h2{
+    color:rgb(23, 23, 23)
+}
+.color{
+    display:flex;
+    gap:15px;
+    width:100%;
+    max-width:300px;
+    justify-content: space-between;
+}
+.color div{
+    width:100px;
+    height:50px;
+    border-radius: 5px;
+    cursor:pointer
+}
+#black{
+    background-color: rgb(35, 33, 31);
+}
+#red{
+    background-color: rgb(202, 61, 34);
+}
+#blue{
+    background-color: rgb(86, 86, 129);
+}
+#violet{
+    background-color: rgb(138, 83, 98);
+}
+.buttons button{
+    border:none;
+    font-weight:600;
+    padding:10px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    background-color: rgb(237, 235, 235);
+}
+#buy{
+    background-color: rgb(255, 165, 0);
+    font-weight:700;
+    border-radius:5px;
+    text-transform: uppercase;
+    padding:10px 25px;
+    border:none;
+    font-size:18px;
+    margin-top:20px
+}
+.watch{
+    position:relative;
+}
+.watch p{
+    position:absolute;
+    right:36%;
+    top:44%;
+    z-index:1;
+    color:white;
+    font-size:30px;
+    opacity: 1;
+}
+.blur{
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:4;
+    background-color:rgba(0, 0, 0, 0.740);
+    backdrop-filter:blur(3px)
+}
+i{
+    font-size:30px;
+    color:white;
+    position:absolute;
+    right:5vh;
+    cursor:pointer;
+    top:3vh;
+    z-index:5;
+}

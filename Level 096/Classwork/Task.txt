@@ -1,0 +1,48 @@
+Ternary Operator
+
+
+// ჩვეულებრივად
+
+const num = 4
+
+if (num % 2 == 0){
+    console.log('even')
+}else{
+    console.log('odd')
+}
+
+// შემოკლებული ვერსია:
+
+# ჯერ ვწერთ პირობას და რაც უნდა მოხდეს მაგას ? ნიშნის მერე ვწერთ. შემდეგ : ვწერთ, ანუ სხვა პირობა განიხილება. else იქნება მარტო : -ის მერე
+
+num % 2 == 0 ? (console.log('Even')) : num === 4 ? (console.log('this num is 4')) : (console.log('this num is odd'))
+
+# თუ მრავალხაზიანი კოდი გვჭირდება მაშინ ,-ით გამოვყოფთ.
+
+// განსხვავებები:
+# ternary ოპერატორი ბევრად სწრაფია.
+# else სავალდებულოა ternary ოპერატორში.
+
+
+# ინკრემენტი გაზრდას ნიშნავს
+# preventDefault() - არ არესტარტებს საიტს
+
+
+// დესკტურიზაცია
+
+const arr = ['orange', 'banana', 'apple']
+
+let [a. b. c] = arr
+
+arr სიიდან მიენიჭება თანმიმდევრულად მნიშვნელობები
+
+
+// constuctor
+
+function.objConstructor(email, password){
+    this.email = email
+    this.password = password
+}
+const obj = new objConstructor('blabla@gmail.com, '123')
+
+objConstructor - ნებისმიერი რამ შეიძლება ერქვას
