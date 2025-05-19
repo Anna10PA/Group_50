@@ -1,0 +1,7 @@
+local storage
+
+// მეხსიერება რომელიც შვენს კომპიუტერში ინახება. მხოლოდ ჩვენს კომპიუტერში
+
+// localStorage - ობიექტის მსგავსია
+// .setItem() - მეთოდი რომლის საშუალებითაც 
+localStorage.setItem('name' , 'lastname')

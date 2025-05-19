@@ -58,3 +58,9 @@ button2.addEventListener('click', function(){
 heart.addEventListener('click', function(){
     document.getElementById('a').innerHTML = `<img src='./imgs/heart.png'> <br> <p> 60 </p>`
 })
+
+let registration = document.querySelector('#submit1')
+registration.addEventListener('click', function(event){
+    event.preventDefault()
+    console.log(document.getElementsByTagName('form')[0].target)    
+})
