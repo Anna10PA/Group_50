@@ -3,11 +3,11 @@ let addButton = document.querySelector('#Add')
 let userInput = document.querySelector('input')
 let list = document.querySelector('.user-list')
 let errorMessage = document.querySelector('span')
-let fullList = []
+let fullList = JSON.parse(localStorage.getItem('userList')) || []
 
 // Add Button Funct
 let user = () => {
-        if (userInput.value.trim() !== ''){
+    if (userInput.value.trim() !== ''){
 
         userInput.style.borderColor = 'grey'
         errorMessage.textContent = ''
@@ -56,3 +56,26 @@ document.addEventListener('keydown', function(event){
     }
 })
 addButton.addEventListener('click', user)
+
+for (let element of fullList){
+    let userList = document.createElement("div")
+    userList.className = 'element'
+
+    let paragraph = document.createElement('p')
+    paragraph.textContent = element.trim()
+    
+    let deleteButton = document.createElement('button')
+    deleteButton.textContent = 'Delete'
+
+    userList.appendChild(paragraph)
+    userList.appendChild(deleteButton)
+    list.appendChild(userList)
+
+    deleteButton.addEventListener('click', function(){
+        let findIndex = fullList.indexOf(paragraph.textContent)
+        fullList.splice(findIndex, 1)
+        console.log(fullList)
+        list.removeChild(userList)
+        localStorage.setItem('userList', JSON.stringify(fullList))
+    })
+}
