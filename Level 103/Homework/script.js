@@ -59,33 +59,11 @@ heart.addEventListener('click', function(){
     document.getElementById('a').innerHTML = `<img src='./imgs/heart.png'>`
 })
 
-let accs = []
 let registration = document.querySelector('#submit1')
 registration.addEventListener('click', function(event){
     event.preventDefault()
+    // console.log(document.getElementsByTagName('form')[0].target)
+    // let name = document.getElementById
 
-    if (document.getElementsByTagName('input')[3].value === document.getElementsByTagName('input')[4].value && document.getElementsByTagName('input')[3].value.length >= 8){
-        let user = {
-            name: document.getElementsByTagName('input')[0],
-            surname: document.getElementsByTagName('input')[1],
-            email: document.getElementsByTagName('input')[2],
-            password: document.getElementsByTagName('input')[3],
-            repeat: document.getElementsByTagName('input')[4],
-        }
-        document.getElementsByTagName('input')[0].value = '',
-        document.getElementsByTagName('input')[1].value = '',
-        document.getElementsByTagName('input')[2].value = '',
-        document.getElementsByTagName('input')[3].value = '',
-        document.getElementsByTagName('input')[4].value = ''
 
-        accs.push(user)
-        console.log(accs)
-        alert('registration sucsessful')
-    }else{
-        alert('password is not correct')
-        document.getElementsByTagName('input')[3].value = ''
-        document.getElementsByTagName('input')[4].value = ''
-    }
 })
-
-

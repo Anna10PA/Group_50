@@ -24,7 +24,7 @@ let registrationAccs = JSON.parse(localStorage.getItem('Registration')) || []
 // Task2
 regSubmit.addEventListener('click', function(event){
     event.preventDefault()
-
+    message.textContent = ''
     if ( regName.value.trim() == ' ' || regSurname.value.trim() == ' ' || regUsername.value.trim() == ' ' || regEmail.value.trim() == ' ' || regPhone.value.trim() == ' ' || (regPassword.value.trim().length >= 8 && regPassword.value.trim() !== regRepeat.value.trim()) ){
 
         message.style.color = 'red'
@@ -78,7 +78,7 @@ changeBtn.addEventListener('click', function(){
         msg.textContent = "Don't you have account? Then"
     }else{
         messageBox.style.transform = 'translateX(0%)'
-        changeBtn.textContent = 'logIn'
+        changeBtn.textContent = 'LogIn'
         form = 'registration'
         messageBox.style.background = 'linear-gradient(rgb(31, 0, 31), rgb(0, 0, 67))'
         msg.textContent = 'Do you have account? Then'
@@ -93,16 +93,28 @@ let loginUsername = document.getElementsByTagName('input')[9]
 let loginPassword = document.getElementsByTagName('input')[10]
 
 loginSubmit.addEventListener('click', function(event){
+
     event.preventDefault()
-    
+    message2.textContent = ''
+
     for (let userInfo of registrationAccs) {
-        if (userInfo['Username'] === loginEmail.value && userInfo['Email'] === loginEmail.value === userInfo['Email'] && loginPassword.value === userInfo['Password'] ){
+        if (userInfo['Username'] === loginUsername.value &&
+            userInfo['Email'] === loginEmail.value && 
+            userInfo['Password'] === loginPassword.value){
+
             message2.textContent = 'Sucssesful Login'
-            // break
+            message2.style.color = 'rgb(0, 255, 0)'
         } 
         console.log(userInfo.Username)
+        console.log(userInfo.Email)
+        console.log(userInfo.Password)
 
     }
-    message2.textContent ='Error'
+
+    if (message2.textContent !== 'Sucssesful Login'){
+        message2.textContent = 'Error'
+        message2.style.color = 'red'
+    }
+
     
 })
