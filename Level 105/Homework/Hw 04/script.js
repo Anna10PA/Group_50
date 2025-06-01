@@ -14,10 +14,8 @@ let user = {
     name : 'jumbera', 
     age:  25
 }
-let {name: age} = user
-
 const printUser2 = ({name, age}) => {
   console.log(`${name} is ${age} years old`);
 };
 
-console.log(printUser2({name:'Ana', age: 16}))
+console.log(printUser2(user))
