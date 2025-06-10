@@ -90,6 +90,7 @@ const addInList = () => {
                     edit.textContent = "Edit"
                     isEdit = false
                     newValue = parent.textContent
+                    parent.style.padding = '0px'
                     toDoList[index] = newValue
                     parent.setAttribute('contenteditable', false)
                     localStorage.setItem('user-list', JSON.stringify(toDoList))
@@ -98,14 +99,6 @@ const addInList = () => {
         }
 
         edit.addEventListener('click', Edit)
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                add()
-            }
-        })
-
-
-
 
     })
 }
@@ -136,6 +129,13 @@ addInList()
 
 // მოქმედების მსმენელები
 submit.addEventListener('click', add)
-document.addEventListener('keydown', (e) =>{
-    console.log(e.key)
+
+// document.addEventListener('keydown', (e) =>{
+//     console.log(e.key)
+// })
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        add()
+    }
 })
