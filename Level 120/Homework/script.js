@@ -17,34 +17,73 @@
  callBack(orderId) ფუნქცია შექმენით კლასის გარეთ და შემდეგი რამ დააბეჭდინეთ კონსოლზე: 'შეკვეთა #${orderId} დამთავრდა'
  ამის შემდეგ შექმენით OrderManager კლასის ობიექტი და გააკეთეთ რამოდენიმე შეკვეთა განსხავებული id და სახელებით  */
 
+// class OrderManager {
+//     constructor() {
+//         this.activeOrders = new Map()
+//         this.completedOrders = new Set()
+//     }
+//     processOrder(orderId, customerName, callBack) {
+//         this.activeOrders.set(orderId, customerName)
+//         console.log(`მომხმარებლის აიდია ${orderId} სახელი ${customerName} მზადების პროცესშია`)
+
+//         setTimeout(() => {
+//             this.activeOrders.delete(orderId)
+//             completedOrders.set(customerName)
+//             callBack(callback)
+//         }, 3000)
+
+//     }
+//     printStatus() {
+//         if (this.activeOrders.size === 0) {
+//             console.log('არ არის შეკვეთები')
+//         } else {
+//             console.log('დასრულებული შეკვეთები')
+//             for (let name of this.completedOrders) {
+//                 console.log(name)
+//             }
+//             console.log('პროცესში მყოფი შეკვეთები')
+//             for (let comp of this.activeOrders) {
+//                 console.log(comp)
+//             }
+//         }
+//     }
+// }
+// function callback(){
+//     console.log(`შეკვეთა ${this.orderId} დამთავრდა`)
+// }
+// let cosumer1 = new OrderManager(1, 'Ana')
+// console.log(cosumer1)
+
 class OrderManager {
-    constructor(){
-        this.activeOrders = new Map([[]])
-        this.completedOrders = new Set([])
+    constructor(activeOrders, completedOrders) {
+        this.activeOrders = activeOrders
+        this.completedOrders = completedOrders
     }
-    processOrder(orderId, customerName, callback) {
-        this.activeOrders.set(orderId, customerName) 
-        console.log(`მომხმარებლის აიდია ${orderId} სახელი ${customerName} მზადების პროცესშია`)
 
-        setTimeout( ()=> {
-            this.activeOrders.delete(orderId)
-            completedOrders.set(customerName)
-            callBack(`${orderId} შესრულებულია`)
-        }, 3000)
-
-    }
     printStatus() {
-        console.log('პროცესში მყოფი შეკვეთები')
-        if (this.activeOrders.size === 0){
-            console.log('არ არის შეკვეთები')
-        } else {
-            for (let name of this.completedOrders) {
-                console.log(name)
-            }
-        }
+        console.log('აქტიური <--- შეკვეთები --->')
+        let arr = [...this.activeOrders]
+        arr.map(item => {
+            console.log(item[0], item[1])
+        })
     }
+    processOrder(orderId, costumetName, callBack) {
+        this.activeOrders.set(orderId, costumetName)
+        this.printStatus()
 
+        console.log('შეკვეთა მიღებულია')
+        setTimeout(() => {
+            console.log(costumetName)
+            this.completedOrders.add(costumetName)
+            this.activeOrders.delete(orderId)
+            console.log('შეკვეთა დასრულდა')
+
+            callBack(orderId)
+            costumetName
+            this.printStatus()
+        }, 300)
+    }
 }
 
-let cosumer1 = new OrderManager(1, 'Ana' )
-console.log(cosumer1)
+let orderN1 = new OrderManager(new Map([[1, 'Ana'], [2, 'Gio'], [3, 'Nini']]))
+console.log(orderN1)
