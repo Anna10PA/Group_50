@@ -97,9 +97,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    max-height:80vh;
-    transform:translateX(500px);
-    top:70px
+    max-height: 90vh;
+    transform: translateX(500px);
+    top: 70px
 }
 
 .List {
@@ -107,44 +107,50 @@ body {
     flex-direction: column;
     gap: 30px;
     overflow: auto;
+    max-height: 40vh;
 }
 
 ::-webkit-scrollbar {
-    display:none
+    display: none
 }
 
 .List i {
-    position:absolute;
-    right:10px;
-    bottom:10px;
-    font-size:1.5rem;
-    cursor:pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
     transition: 0.5s;
     color: rgb(0, 217, 217)
 }
 
-.List i:hover{
-    color:red;
-    animation:shake 0.5s alternate
+.List i:hover {
+    color: red;
+    animation: shake 0.5s alternate
 }
 
 @keyframes shake {
-    0%, 60% {
-        transform:rotate(20deg)
+
+    0%,
+    60% {
+        transform: rotate(20deg)
     }
-    30%, 90% {
-        transform:rotate(-20deg);
-        font-size:1.6rem
+
+    30%,
+    90% {
+        transform: rotate(-20deg);
+        font-size: 1.6rem
     }
+
     100% {
-        transform:rotate(0deg)
+        transform: rotate(0deg)
     }
 }
 
 .List div {
     border-bottom: 1px solid grey;
     padding-bottom: 10px;
-    position:relative
+    position: relative
 }
 
 .userMenu h2 {

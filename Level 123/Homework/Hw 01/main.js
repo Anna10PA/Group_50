@@ -115,7 +115,6 @@ let userList = JSON.parse(localStorage.getItem('user list')) || []
 
 main.addEventListener('click', (e) => {
     if (e.target.tagName.toLowerCase() === 'button') {
-        alert('Ok')
         let productInfo = e.target.parentElement.parentElement
         console.log(productInfo)
 
