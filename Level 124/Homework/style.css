@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+    background: linear-gradient(rgb(0, 0, 30), rgb(0, 79, 108), rgb(0, 0, 30))
+}
+
+input {
+    background: none;
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: white;
+}
+
+.main {
+    display: flex;
+    align-items: start;
+    position: relative;
+    display:flex;
+    gap:10px
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative
+}
+
+label {
+    color: white;
+    transition: 0.5s;
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    color: grey;
+    pointer-events: none;
+    transition: 0.3s ease;
+    background-color: transparent;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: lightblue;
+    backdrop-filter: blur(1px);
+    /* background: rgb(0, 43, 59); */
+    padding: 0 4px;
+}
+
+span {
+    color: rgb(161, 217, 255)
+}
+
+button {
+    padding:5px 10px;
+    border-radius:3px;
+    border: 1px solid rgb(111, 111, 111);
+    color: rgb(161, 217, 255);
+    background-color: rgb(0, 0, 30);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-weight:900
+}
+
+button:hover {
+    background-color: rgb(0, 52, 71);
+    color:rgb(98, 169, 255)
+}
+
+.result {
+    height:300px;
+    overflow: auto;
+}
