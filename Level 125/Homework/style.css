@@ -143,6 +143,14 @@ button:hover {
     color: red
 }
 
+.fa-pen-to-square {
+    transition: 0.5s
+}
+
+.fa-pen-to-square:hover {
+    color:rgb(198, 137, 255)
+}   
+
 @keyframes trash {
 
     0%,

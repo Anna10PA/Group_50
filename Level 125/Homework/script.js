@@ -2,6 +2,9 @@ let idBtn = document.querySelector('#idit')
 let all = document.querySelectorAll('button')[2]
 let completed = document.querySelectorAll('button')[3]
 let notCompleted = document.querySelectorAll('button')[4]
+let random10 = document.querySelectorAll('button')[5]
+let sumBtn = document.querySelector('#sum')
+
 let question = document.querySelector('.question')
 let No = question.getElementsByTagName('button')[0]
 let Yes = question.getElementsByTagName('button')[1]
@@ -10,6 +13,8 @@ let container = document.querySelector('.container')
 let result = document.querySelector('.result')
 
 let ID = document.querySelectorAll('input')[0]
+let Sum = document.querySelectorAll('input')[1]
+
 let message = document.querySelectorAll('span')
 let blur = document.querySelector('.blur')
 
@@ -36,7 +41,10 @@ let getData = () => {
                 container.querySelector('span').textContent =
                     filterType === 'all' ? 'All items' :
                         filterType === 'completed' ? 'Completed items' :
-                            filterType === 'item' ? 'user id' : 'Not Completed items'
+                            filterType === 'item' ? 'user id' :
+                                filterType === 'rendom' ? 'Rendom task' :
+                                    filterType === 'send' ? 'User sorted' :
+                                        'Not Completed items'
 
                 myList.map((item, index) => {
                     if (filterType === 'completed' && !item.completed) return
@@ -126,7 +134,7 @@ let getData = () => {
                                     blur.style.zIndex = '-1'
                                     p.setAttribute('contenteditable', false)
                                     localStorage.setItem('list', JSON.stringify(allList))
-
+                                    showList(allList, lastFilter)
                                 })
                                 Yes.addEventListener('click', () => {
                                     item.title = p.textContent
@@ -136,11 +144,14 @@ let getData = () => {
                                     blur.style.zIndex = '-1'
 
                                     p.setAttribute('contenteditable', false)
+                                    showList(allList, lastFilter)
 
                                     localStorage.setItem('list', JSON.stringify(allList))
                                 })
                             } else {
                                 p.setAttribute('contenteditable', false)
+                                showList(allList, lastFilter)
+
                             }
                         }
                     })
@@ -150,18 +161,22 @@ let getData = () => {
                 localStorage.setItem('lastFilter', JSON.stringify(filterType))
             }
 
+            // all btn
             all.addEventListener('click', () => {
                 showList(allList, 'all')
             })
 
+            // completed btn
             completed.addEventListener('click', () => {
                 showList(allList, 'completed')
             })
 
+            // not completed btn
             notCompleted.addEventListener('click', () => {
                 showList(allList, 'notCompleted')
             })
 
+            // take task for id
             idBtn.addEventListener('click', () => {
                 if (ID.value > 0 && ID.value < 201) {
                     let find = false
@@ -183,7 +198,38 @@ let getData = () => {
                 }
             })
 
-            showList(allList, lastFilter)
+            // random 10 Task
+            random10.addEventListener('click', () => {
+                result.innerHTML = ''
+                let randomTasks = []
+
+                while (randomTasks.length < 10) {
+                    let randomIndex = Math.floor(Math.random() * allList.length)
+                    let task = allList[randomIndex]
+
+                    if (!randomTasks.includes(task)) {
+                        randomTasks.push(task)
+                    }
+                }
+                showList(randomTasks, 'random')
+            })
+
+
+            // sumBtn
+            sumBtn.addEventListener('click', () => {
+                let index = Number(Sum.value)
+
+                if (index < 201 && index > 0) {
+                    message[1].textContent = ''
+
+                    let newList = allList.slice(0, index)
+
+                    showList(newList, 'send')
+                } else {
+                    message[1].textContent = 'არასწორი შიგთავსია',
+                        message[1].style.color = 'red'
+                }
+            })
         }
     }
 
@@ -192,3 +238,5 @@ let getData = () => {
 }
 
 getData()
+
+// THE END (:
