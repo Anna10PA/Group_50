@@ -235,12 +235,13 @@ section {
     transition: 0.5s
 }
 
-section ul {
+main ul {
     list-style-type: none;
     font-size: 1.4rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    color:white
 }
 
 /* section ul li {
@@ -346,7 +347,7 @@ section ul li:hover::after, section ul li:focus::after {
         font-size: 1.5rem
     }
 
-    section ul li {
+    main ul li {
         font-size: 0.7rem
     }
 }

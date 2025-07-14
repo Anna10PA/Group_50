@@ -113,35 +113,61 @@ let List = document.querySelector('.List')
 
 let userList = JSON.parse(localStorage.getItem('user list')) || []
 
-main.addEventListener('click', (e) => {
-    if (e.target.tagName.toLowerCase() === 'button') {
-        let productInfo = e.target.parentElement.parentElement
-        console.log(productInfo)
+let count = userList.length
 
-        let item = document.createElement('div')
-        item.classList = 'product-in-list'
+let secondsSpan = document.querySelector('.Time')
+let countSpan = document.querySelector('.count')
 
-        let productName = productInfo.querySelectorAll('p')[0]
-        let productPrice = productInfo.querySelectorAll('p')[1]
-        let productTime = productInfo.querySelectorAll('p')[2]
-        let productRaodenoba = productInfo.querySelector('input')
-        let deleteBtn = '<i class="fa-solid fa-trash"></i>'
+let func1 = () => {
+    main.addEventListener('click', (e) => {
+        if (e.target.tagName.toLowerCase() === 'button') {
+            let productInfo = e.target.parentElement.parentElement
+            console.log(productInfo)
 
-        let user = {
-            name: productName.textContent,
-            price: productPrice.textContent,
-            time: productTime.textContent,
-            raodenoba: productRaodenoba.value
+            let item = document.createElement('div')
+            item.classList = 'product-in-list'
+
+            let productName = productInfo.querySelectorAll('p')[0]
+            let productPrice = productInfo.querySelectorAll('p')[1]
+            let productTime = productInfo.querySelectorAll('p')[2]
+            let productRaodenoba = productInfo.querySelector('input')
+            let deleteBtn = '<i class="fa-solid fa-trash"></i>'
+
+            let user = {
+                name: productName.textContent,
+                price: productPrice.textContent,
+                time: productTime.textContent,
+                raodenoba: productRaodenoba.value
+            }
+
+            item.innerHTML = `${user.name} <br>Price: ${productPrice.textContent.split(':')[1].split('$')[0]}   X   ${productRaodenoba.value}  === ${productPrice.textContent.split(':')[1].split('$')[0] * productRaodenoba.value}$ <br>Time: ${user.time.split(':')[1].split('sec')[0]}   X   ${productRaodenoba.value}  === ${productRaodenoba.value * user.time.split(':')[1].split('sec')[0]} sec ${deleteBtn}`
+
+            List.appendChild(item)
+
+            userList.push(user)
+            console.log(productPrice.textContent.split(':')[1].split('$')[0] * 3)
+            console.log(productTime.textContent.split(':')[1].split('sec')[0] * 3)
+            console.log(productRaodenoba.value)
+
+            localStorage.setItem('user list', JSON.stringify(userList))
+
+            count++
+            countSpan.innerHTML = `Item: ${count}`
+
+            let remove = item.querySelector('i')
+            remove.addEventListener('click', () => {
+                userList = userList.filter(obj =>
+                    !(obj.name === user.name &&
+                        obj.price === user.price &&
+                        obj.time === user.time &&
+                        obj.raodenoba === user.raodenoba)
+                )
+                // userList.splice(index, 1)
+                localStorage.setItem('user list', JSON.stringify(userList))
+                func1()
+            })
         }
+    })
+}
 
-        item.innerHTML = `${user.name} <br>Price: ${productPrice.textContent.split(':')[1].split('$')[0]}   X   ${productRaodenoba.value}  === ${productPrice.textContent.split(':')[1].split('$')[0] * productRaodenoba.value}$ <br>Time: ${user.time.split(':')[1].split('sec')[0]}   X   ${productRaodenoba.value}  === ${productRaodenoba.value * user.time.split(':')[1].split('sec')[0]} sec ${deleteBtn}`
-
-        List.appendChild(item)
-
-        console.log(productPrice.textContent.split(':')[1].split('$')[0] * 3)
-        console.log(productTime.textContent.split(':')[1].split('sec')[0] * 3)
-        console.log(productRaodenoba.value)
-
-
-    }
-})
+func1()
