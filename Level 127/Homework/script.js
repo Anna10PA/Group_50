@@ -51,7 +51,7 @@ let getInfoFromBackEnd = () => {
 
                     console.log('Width ' + mainInfo[idList[i]].width)
                     console.log('Height ' + mainInfo[idList[i]].height)
-                    console.log('Id: '+ idList[i])
+                    console.log('Id: ' + idList[i])
 
 
                     allPrice.push(price.toFixed(2))
@@ -143,6 +143,35 @@ let getInfoFromBackEnd = () => {
                 sort1()
             })
 
+            // Male
+
+            let male = document.querySelector('#male')
+            let isSort2 = false
+
+            male.addEventListener('click', () => {
+                isSort2 = !isSort2
+
+                idList = []
+                original = []
+                count = 0
+                
+                while (count < 8) {
+                    let randomIndex = Math.floor(Math.random() * 20)
+
+                    if (idList.includes(randomIndex) ) {
+                        continue
+                    } else if (randomIndex % 2 === 1) {
+                        count++
+                        console.log(mainInfo[randomIndex])
+                        idList.push(randomIndex)
+                        original.push(randomIndex)
+                    }
+                }
+                console.log(idList)
+                render()
+
+            })
+
             render()
 
 
@@ -154,7 +183,7 @@ let getInfoFromBackEnd = () => {
                     if (e.target.tagName === 'BUTTON') {
                         curentId = element.querySelectorAll('p')[1].textContent.split('#')[1]
                         console.log(curentId)
-                        localStorage.setItem('curentId',JSON.stringify(curentId))
+                        localStorage.setItem('curentId', JSON.stringify(curentId))
                         window.location.href = './main.html'
                     }
                 })
