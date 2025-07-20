@@ -22,20 +22,20 @@ let getInfoFromBackEnd = () => {
             let count = 0
             let allPrice = []
             let card = document.querySelectorAll('.card')
-            let render = () => {
 
-                while (count < 8) {
-                    let randomIndex = Math.floor(Math.random() * 20)
+            while (count < 8) {
+                let randomIndex = Math.floor(Math.random() * 20)
 
-                    if (idList.includes(randomIndex)) {
-                        continue
-                    } else {
-                        count++
-                        console.log(mainInfo[randomIndex])
-                        idList.push(randomIndex)
-                        original.push(randomIndex)
-                    }
+                if (idList.includes(randomIndex)) {
+                    continue
+                } else {
+                    count++
+                    console.log(mainInfo[randomIndex])
+                    idList.push(randomIndex)
+                    original.push(randomIndex)
                 }
+            }
+            let render = () => {
 
                 let images = document.querySelectorAll('.images')
                 // let Details = card.querySelectorAll('button')
@@ -147,7 +147,6 @@ let getInfoFromBackEnd = () => {
 
             let male = document.querySelector('#male')
             let isSort2 = false
-
             male.addEventListener('click', () => {
                 isSort2 = !isSort2
 
@@ -167,6 +166,8 @@ let getInfoFromBackEnd = () => {
                         original.push(randomIndex)
                     }
                 }
+
+                
                 console.log(idList)
                 render()
 
