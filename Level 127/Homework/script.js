@@ -21,6 +21,7 @@ let getInfoFromBackEnd = () => {
             let original = []
             let count = 0
             let allPrice = []
+            let card = document.querySelectorAll('.card')
             let render = () => {
 
                 while (count < 8) {
@@ -37,7 +38,7 @@ let getInfoFromBackEnd = () => {
                 }
 
                 let images = document.querySelectorAll('.images')
-                let card = document.querySelectorAll('.card')
+                // let Details = card.querySelectorAll('button')
 
                 let index = 0
                 for (let i = 0; i < idList.length; i++) {
@@ -47,6 +48,10 @@ let getInfoFromBackEnd = () => {
                     let imageSrc = mainInfo[idList[i]].file_name
                     let name = nameGenerator[idList[i] % 4].name
                     let price = ((mainInfo[idList[i]].width + mainInfo[idList[i]].height) / (idList[i] + 1)) < 0 ? ((mainInfo[idList[i]].width + mainInfo[idList[i]].height) / (idList[i] + 1)) * -1 : ((mainInfo[idList[i]].width + mainInfo[idList[i]].height) / (idList[i] + 1)) * 1
+
+                    console.log('Width ' + mainInfo[idList[i]].width)
+                    console.log('Height ' + mainInfo[idList[i]].height)
+                    console.log('Id: '+ idList[i])
 
 
                     allPrice.push(price.toFixed(2))
@@ -139,6 +144,22 @@ let getInfoFromBackEnd = () => {
             })
 
             render()
+
+
+            // detalebze gadasvla
+            let curentId = JSON.parse(localStorage.getItem('curentId')) || null
+            card.forEach(element => {
+                element.addEventListener('click', (e) => {
+                    console.log(e.target.tagName)
+                    if (e.target.tagName === 'BUTTON') {
+                        curentId = element.querySelectorAll('p')[1].textContent.split('#')[1]
+                        console.log(curentId)
+                        localStorage.setItem('curentId',JSON.stringify(curentId))
+                        window.location.href = './main.html'
+                    }
+                })
+
+            })
         }
     }
     http.open('GET', "./pig API/test/_annotations.coco.json")
