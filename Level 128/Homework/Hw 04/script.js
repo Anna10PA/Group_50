@@ -14,6 +14,6 @@ let errorFunction = (value) => {
     console.log(`Rejected number is ${value}`)
 }
 
-(randomNumberPromise().then((value) => {
+randomNumberPromise().then((value) => {
     console.log(`High number: ${value}`)
-}, errorFunction))
+}, errorFunction)

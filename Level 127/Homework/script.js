@@ -147,53 +147,96 @@ let getInfoFromBackEnd = () => {
 
             let male = document.querySelector('#male')
             let isSort2 = false
+
             male.addEventListener('click', () => {
                 isSort2 = !isSort2
 
                 idList = []
-                original = []
+                // original = []
                 count = 0
-                
-                while (count < 8) {
-                    let randomIndex = Math.floor(Math.random() * 20)
 
-                    if (idList.includes(randomIndex) ) {
-                        continue
-                    } else if (randomIndex % 2 === 1) {
-                        count++
-                        console.log(mainInfo[randomIndex])
-                        idList.push(randomIndex)
-                        original.push(randomIndex)
+                if (!isSort2) {
+                    idList = [...original]
+                    male.style.color = 'white'
+                    male.style.backgroundColor = ''
+                } else {
+                    while (count < 8) {
+                        let randomIndex = Math.floor(Math.random() * 20)
+
+                        if (idList.includes(randomIndex)) {
+                            continue
+                        } else if (randomIndex % 2 === 1) { 
+                            count++
+                            idList.push(randomIndex)
+                            original.push(randomIndex)
+                        }
                     }
+                    male.style.color = 'rgba(190, 223, 255, 1)'
+                    male.style.backgroundColor = 'rgba(0, 12, 24, 1)'
                 }
 
-                
-                console.log(idList)
                 render()
-
+                console.log(idList)
             })
 
-            render()
+                        // Male
 
+            let female = document.querySelector('#female')
+            let isSort3 = false
+            
+            female.addEventListener('click', () => {
+                isSort3 = !isSort3
 
-            // detalebze gadasvla
-            let curentId = JSON.parse(localStorage.getItem('curentId')) || null
-            card.forEach(element => {
-                element.addEventListener('click', (e) => {
-                    console.log(e.target.tagName)
-                    if (e.target.tagName === 'BUTTON') {
-                        curentId = element.querySelectorAll('p')[1].textContent.split('#')[1]
-                        console.log(curentId)
-                        localStorage.setItem('curentId', JSON.stringify(curentId))
-                        window.location.href = './main.html'
+                idList = []
+                // original = []
+                count = 0
+
+                if (!isSort3) {
+                    idList = [...original]
+                    female.style.color = 'white'
+                    female.style.backgroundColor = ''
+                } else {
+                    while (count < 8) {
+                        let randomIndex = Math.floor(Math.random() * 20)
+
+                        if (idList.includes(randomIndex)) {
+                            continue
+                        } else if (randomIndex % 2 === 0) { 
+                            count++
+                            idList.push(randomIndex)
+                            original.push(randomIndex)
+                        }
                     }
-                })
+                    female.style.color = 'rgba(190, 223, 255, 1)'
+                    female.style.backgroundColor = 'rgba(0, 12, 24, 1)'
+                }
 
+                render()
+                console.log(idList)
             })
-        }
+
+
+        render()
+
+
+        // detalebze gadasvla
+        let curentId = JSON.parse(localStorage.getItem('curentId')) || null
+        card.forEach(element => {
+            element.addEventListener('click', (e) => {
+                console.log(e.target.tagName)
+                if (e.target.tagName === 'BUTTON') {
+                    curentId = element.querySelectorAll('p')[1].textContent.split('#')[1]
+                    console.log(curentId)
+                    localStorage.setItem('curentId', JSON.stringify(curentId))
+                    window.location.href = './main.html'
+                }
+            })
+
+        })
     }
-    http.open('GET', "./pig API/test/_annotations.coco.json")
-    http.send()
+}
+http.open('GET', "./pig API/test/_annotations.coco.json")
+http.send()
 }
 
 getInfoFromBackEnd()
