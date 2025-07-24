@@ -204,8 +204,12 @@ let getWeather = () => {
     }
     if (city) {
         weather()
-    } else {
+    } else if (history.length - 1 > 0) {
         city = history[history.length - 1]
+        cityInput.value = city
+        weather()
+    } else {
+        city = 'tbilisi'
         cityInput.value = city
         weather()
     }
