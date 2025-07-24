@@ -13,6 +13,8 @@ let sugdivs = document.querySelector('.divs')
 let searchIcon = document.querySelector('.fa-magnifying-glass')
 let blur = document.querySelector('.blur')
 
+let span = document.querySelectorAll('span')[1]
+
 let history = JSON.parse(localStorage.getItem('history')) || []
 
 let getWeather = () => {
@@ -25,6 +27,7 @@ let getWeather = () => {
             .then((e) => {
                 let info = e.results
                 console.log(info)
+                span.textContent = ''
 
                 fetch(`https://api.open-meteo.com/v1/forecast?latitude=${info[0].latitude}&longitude=${info[0].longitude}&hourly=temperature_2m`)
 
@@ -195,7 +198,8 @@ let getWeather = () => {
                         }
                     })
             }).catch(() => {
-                console.log('error 404 :)')
+                span.textContent = 'Not found (404) :)'
+                span.style.color = 'red'
             })
     }
     if (city) {
