@@ -22,24 +22,43 @@
 
 
 // Task 001
-let promise01 = new Promise((f, r) => {
-    let randomNumber01 = Math.floor(Math.random() * 15) + 1
-    console.log(randomNumber01)
+// let promise01 = new Promise((f, r) => {
+//     let randomNumber01 = Math.floor(Math.random() * 15) + 1
+//     console.log(randomNumber01)
+
+//     try {
+//         fetch(`https://jsonplaceholder.typicode.com/posts/${randomNumber01}`)
+//             .then((v) => {
+//                 if (v.ok) {
+//                     return f(v.json())
+//                 } else {
+//                     return r(v.json())
+//                 }
+//             })
+//     }catch(error) {
+//         console.error(error)
+//     }
+// })
+
+async function promise01(){
+    let randomNumber01 = Math.floor(Math.random() * 50) + 1
+    // console.log(randomNumber01)
 
     try {
-        fetch(`https://jsonplaceholder.typicode.com/posts/${randomNumber01}`)
-            .then((v) => {
-                if (v.ok) {
-                    return f(v.json())
-                } else {
-                    return r(v.json())
-                }
-            })
-    }catch(error) {
-        console.error(error)
-    }
-})
+        let url = await fetch(`https://jsonplaceholder.typicode.com/users/${randomNumber01}`)
+        let data = await url.json()
+        if (!url.ok) {
+            throw new Error('Not found ... ')
+        }
+ 
+        return data 
 
+        
+    }
+    catch(error) {
+        console.log(error, '12345')
+    }
+}
 // promise01
 // .then((v)=> {
 //     console.log(v)
@@ -51,24 +70,24 @@ let promise01 = new Promise((f, r) => {
 
 // Task 002
 
-let promise02 = new Promise((f, r) => {
-    let randomNumber02 = Math.floor(Math.random() * 150) + 1
-    console.log(randomNumber02)
+// let promise02 = new Promise((f, r) => {
+//     let randomNumber02 = Math.floor(Math.random() * 150) + 1
+//     console.log(randomNumber02)
 
-    try {
-        fetch(`https://jsonplaceholder.typicode.com/posts/${randomNumber02}`)
-            .then((v) => {
-                if (v.ok) {
-                    return f(v.json())
-                } else {
-                    return r(v.json())
-                }
-            })
+//     try {
+//         fetch(`https://jsonplaceholder.typicode.com/posts/${randomNumber02}`)
+//             .then((v) => {
+//                 if (v.ok) {
+//                     return f(v.json())
+//                 } else {
+//                     return r(v.json())
+//                 }
+//             })
 
-    }catch(error){
-        console.log(error)
-    }
-})
+//     }catch(error){
+//         console.log(error)
+//     }
+// })
 
 // promise02
 // .then((v)=> {
@@ -79,7 +98,7 @@ let promise02 = new Promise((f, r) => {
 // })
 
 // Task 001-002
-Promise.all([promise01, promise02])
+Promise.all([promise01()])
     .then((value) => {
         console.log(value)
     })
