@@ -1,7 +1,8 @@
 function Element({ Task, Title, mood, taskIndex, allTasks, update }) {
     // delete Tasks
     let deleteTasks = () => {
-        let newArr = allTasks.filter((_, index) => index !== taskIndex)
+        let newArr = [...allTasks]
+        newArr.splice(taskIndex, 1)
         update(newArr)
     }
 
