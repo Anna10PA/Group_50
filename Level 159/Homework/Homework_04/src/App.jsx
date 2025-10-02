@@ -30,11 +30,11 @@ function App() {
         className='bg-gray-900 px-[30px] py-[50px] flex flex-col gap-[30px] items-center rounded'>
         <div className='flex gap-[50px]'>
           <div className='relative'>
-            <input type="text" id='Email' className='peer rounded outline-none border px-[10px] py-[5px] tracking-[2px] focus:text-white text-gray-800 focus:border-blue-500 border-white border-[2px]' name='Email' />
+            <input type="text" id='Email' className='peer rounded outline-none px-[10px] py-[5px] tracking-[2px] focus:text-white text-gray-800 focus:border-blue-500 border-white border-[2px]' name='Email' />
             <label htmlFor="Email" className='absolute duration-200 top-[5px] left-[10px] transition peer-focus:translate-x-[-10px] peer-focus:translate-y-[-28px] peer-focus:text-[12px] tracking-[2px] font-[500] peer-focus:text-blue-500'>Email</label>
           </div>
           <div className='relative'>
-            <input type="text" id='Password' className='peer rounded outline-none border px-[10px] py-[5px] tracking-[2px] focus:text-white text-gray-800 focus:border-blue-500 border-white border-[2px]' name='Password' />
+            <input type="text" id='Password' className='peer rounded outline-none  px-[10px] py-[5px] tracking-[2px] focus:text-white text-gray-800 focus:border-blue-500 border-white border-[2px]' name='Password' />
             <label htmlFor="Password" className='absolute duration-200 top-[5px] left-[10px] transition peer-focus:translate-x-[-10px] peer-focus:translate-y-[-28px] peer-focus:text-[12px] tracking-[2px] font-[500] peer-focus:text-blue-500'>Password</label>
           </div>
         </div>
