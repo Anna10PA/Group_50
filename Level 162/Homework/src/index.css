@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@keyframes myAnimation {
+  0%, 100% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+#Animation {
+  animation: 0.8s infinite myAnimation alternate
+}
