@@ -11,7 +11,7 @@ import UserCard from './UserCard.jsx'
 function App() {
   return (
     <div>
-      <UserCard name='Ana' surname='Puturidze' age={16} grender='F' friendList={[{ name: 'Friend-01', status: 'Online' }, { name: 'Friend-02', status: 'Ofline' }]} />
+      <UserCard name='Ana' surname='Puturidze' age={16} gender='F' friendList={[{ name: 'Friend-01', status: 'Online' }, { name: 'Friend-02', status: 'Ofline' }]} />
     </div>
   )
 }
