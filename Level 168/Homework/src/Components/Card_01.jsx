@@ -3,6 +3,7 @@ function Card_01({ img, name, rate, price, oldPrice, onClick }) {
     for (let i = 0; i < Math.floor(rate); i++) {
         array.push(i)
     }
+    
     return (
         <div className='w-[90%] flex flex-col items-start justify-between gap-[8px]' onClick={onClick} >
             <div className="h-[300px] w-full overflow-hidden flex items-center justify-center rounded-[20px] bg-[#f0eeed]">
