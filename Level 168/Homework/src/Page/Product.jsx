@@ -1,4 +1,4 @@
-import { useLocation, useParams, useNavigate } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 import { useState } from 'react'
 import Reviews from '../Components/Reviews'
 
@@ -6,7 +6,7 @@ function Product() {
     let [count, setCount] = useState(1)
     let location = useLocation()
     let { type, name } = useParams()
-    let navigate = useNavigate()
+    console.log('keys', useParams())
     let product = location.state
     console.log(product)
 
@@ -80,7 +80,7 @@ function Product() {
                             <h1 className='text-[#b2b2b2] font-[600] text-[32px] line-through '>
                                 {product.discount ? `$${product.discount}` : ''}
                             </h1>
-                            {product.discount ? <div className="bg-[#ffebeb] px-[15px] text-[rgba(255,51,51,1)] font-[500] py-[5px] rounded-[60px] w-[min-content] font-[500]">-{Math.floor(((product.discount - product.price) / product.discount) * 100)}%</div> : null}
+                            {product.discount ? <div className="bg-[#ffebeb] px-[15px] text-[rgba(255,51,51,1)] font-[500] py-[5px] rounded-[60px] w-[min-content]">-{Math.floor(((product.discount - product.price) / product.discount) * 100)}%</div> : null}
                         </div>
                         <p className='w-[90%] min-w-[300px] text-[rgba(0,0,0,0.6)] mt-[10px] pb-[20px]'>
                             {product.desc}
