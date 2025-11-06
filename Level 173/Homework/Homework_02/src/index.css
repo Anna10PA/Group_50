@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@font-face {
+    font-family: "Momo Signature";
+    src: url('../public/MomoSignature-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Momo Trust Display';
+    src: url('../public/MomoTrustDisplay-Regular.ttf');
+}

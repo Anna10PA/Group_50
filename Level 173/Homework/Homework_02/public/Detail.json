@@ -1,0 +1,30 @@
+[
+    {
+        "Id": 1,
+        "OldPrice": 20,
+        "Price": 15,
+        "Name": "Khinkali",
+        "Image": "https://www.firstnews.ge/media/k2/items/cache/aeb492336c5690bbeb3eb42716b6c50b_XL.jpg"
+    },
+    {
+        "Id": 2,
+        "OldPrice": 25,
+        "Price": 20,
+        "Name": "Imeruli Khawapuri",
+        "Image": "https://shark.iten.ge/wp-content/uploads/2024/06/566977e40eb05.jpg"
+    },
+    {
+        "Id": 3,
+        "OldPrice": 30,
+        "Price": 20,
+        "Name": "Mwadi",
+        "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTUGN8rH6oI_V-mkvgmwhqs7219x1vYYhpbA&s"
+    },
+    {
+        "Id": 4,
+        "OldPrice": 25,
+        "Price": 15,
+        "Name": "Lobiani",
+        "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJuRJUZtJACE1Rr4-2An1XFMBFf4oM-CwtuQ&s"
+    }
+]
