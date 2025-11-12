@@ -14,7 +14,7 @@ function Card_04() {
                 <p className='text-[16px]'>Color:<span className='text-[rgba(0,0,0,0.6)]'> Gray</span></p>
                 <h1 className='font-[700] text-[26px] mt-[10px]'>$200</h1>
             </div>
-            <i className="fa-solid fa-trash absolute top-[0px] right-[10px] text-[rgba(255,51,51,1)] text-[25px] cursor-pointer duration-200 hover:text-red-600"></i>
+            <i className="fa-solid fa-trash absolute top-[0px] right-[10px] text-[rgba(255,51,51,1)] text-[25px] cursor-pointer duration-200 hover:text-red-600 mt-[20px]"></i>
             <div className='bg-[#f0f0f0] px-[20px] py-[10px] rounded-[50px] flex items-center justify-center gap-[30px] min-w-[150px] max-sm:min-w-[140px] max-sm:gap-[15px] absolute bottom-[20px] right-[10px]'>
                 <i className="fa-solid fa-minus text-[20px] cursor-pointer max-sm:text-[15px]" onClick={() => {
                     setCount(count - 1 > 0 ? count - 1 : 1)
