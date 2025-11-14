@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'BBH Sans Hegarty';
+  src: url('../public/BBHSansHegarty-Regular.ttf')
+}
+
+@layer utilites {
+  .my-div::-webkit-scrollbar {
+    display: none
+  }
+
+  .my-div {
+    scrollbar-width: none;
+  }
+}
