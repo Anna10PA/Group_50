@@ -303,11 +303,11 @@
             "navy"
         ],
         "sizeList": [
-            "xs",
-            "s",
-            "m",
-            "l",
-            "xl"
+            "x-small",
+            "small",
+            "medium",
+            "large",
+            "x-large"
         ],
         "mostPopular": true,
         "reviews": [],
@@ -355,11 +355,11 @@
             "purple"
         ],
         "sizeList": [
-            "xs",
-            "s",
-            "m",
-            "l",
-            "xl"
+            "x-small",
+            "small",
+            "medium",
+            "large",
+            "x-large"
         ],
         "reviews": [
             {
@@ -435,11 +435,11 @@
             "white"
         ],
         "sizeList": [
-            "xs",
-            "s",
-            "m",
-            "l",
-            "xl"
+            "x-small",
+            "small",
+            "medium",
+            "large",
+            "x-large"
         ],
         "mostPopular": true,
         "reviews": [],
@@ -498,11 +498,11 @@
         "desc": "Designed for performance and style, this shorts is a must-have for your party activities.",
         "colorList": ["wheat", "darkkhaki", "navy"],
         "sizeList": [
-            "xs",
-            "s",
-            "m",
-            "l",
-            "xl"
+            "x-small",
+            "small",
+            "medium",
+            "large",
+            "x-large"
         ],
         "reviews": [
             {
@@ -627,11 +627,11 @@
             "brown"
         ],
         "sizeList": [
-            "xs",
-            "s",
-            "m",
-            "l",
-            "xl"
+            "x-small",
+            "small",
+            "medium",
+            "large",
+            "x-large"
         ],
         "reviews": [],
         "mostPopular": false,
@@ -656,11 +656,11 @@
             "yellow"
         ],
         "sizeList": [
-            "xs",
-            "s",
-            "m",
-            "l",
-            "xl"
+            "x-small",
+            "small",
+            "medium",
+            "large",
+            "x-large"
         ],
         "mostPopular": true,
         "reviews": [],

@@ -10,22 +10,38 @@ function PageAll() {
 
   const [priceUp, setPriceUp] = useState(false)
   const [colorUp, setColorUp] = useState(false)
+  const [sizeUp, setSizeUp] = useState(false)
 
   const [colorList, setColorList] = useState([])
 
+  const [sizeList, setSizeList] = useState([])
+  const [chosenSize, setChosenSize] = useState([])
+
+  // color
   useEffect(() => {
     let allColor = []
-    item.map((element, index) => {
+    item.map((element, _) => {
       allColor = [...allColor, ...element.colorList]
     })
     setColorList([...new Set(allColor)])
     console.log([...new Set(allColor)])
   }, [item])
 
+
+  // size
+  useEffect(() => {
+    let allSize = []
+    item.map((element, _) => {
+      allSize = [...allSize, ...element.sizeList]
+    })
+    setSizeList([...new Set(allSize)])
+    console.log(['hi', ...new Set(allSize)])
+  }, [item])
+
+
   return (
     <main className='flex px-[80px] gap-[30px]'>
-      <aside className='rounded-[20px] border-[1px] border-[rgba(0,0,0,0.1)] min-w-[300px]'>
-
+      <aside className='rounded-[20px] border-[1px] border-[rgba(0,0,0,0.1)] min-w-[280px] max-w-[320px]'>
         {/* div 01 */}
         <div className='flex items-center justify-between mx-[24px] py-[20px] border-b border-[rgba(0,0,0,0.1)]'>
           <h1 className='text-[20px] font-[700]'>Filter</h1>
@@ -83,9 +99,32 @@ function PageAll() {
           <div className='flex flex-wrap gap-[10px]'>
             {
               colorList.map((el, index) => {
-                return <div key={index} className='w-[35px] h-[35px] rounded-[50%] cursor-pointer border-[2px]' style={{ backgroundColor: el , borderColor: el === 'white' ? 'gray': el }} onClick={()=> {
+                return <div key={index} className='w-[35px] h-[35px] rounded-[50%] cursor-pointer border-[2px]' style={{ backgroundColor: el, borderColor: el === 'white' ? 'gray' : el }} onClick={() => {
                   console.log(index)
                 }}></div>
+              })
+            }
+          </div>
+        </div>
+
+        {/* div 05 */}
+        <div className='mx-[24px] py-[20px] border-[rgba(0,0,0,0.1)] border-t flex flex-col gap-[20px]'>
+          <div className='flex items-center justify-between'>
+            <h1 className='text-[20px] font-[700]'>
+              Size
+            </h1>
+            <i className={`fa-solid fa-angle-${sizeUp ? 'up text-black' : 'down text-[rgba(0,0,0,0.6)]'} cursor-pointer duration-200 active:rotate-[180deg]`} onClick={() => {
+              setSizeUp(!sizeUp)
+            }}></i>
+          </div>
+          <div className='flex flex-wrap gap-[10px]'>
+            {
+              sizeList.map((el, index) => {
+                return <div key={index} className={`w-[max-content] rounded-[62px] cursor-pointertext-[16px] px-[15px] py-[7px] ${chosenSize.includes(el) ? 'bg-black text-white' : 'text-[rgba(0,0,0,0.6)]'} bg-[rgba(240,240,240,1)] `} onClick={() => {
+                  chosenSize.includes(el)
+                    ? setChosenSize(chosenSize.filter(item => item !== el)) :
+                     setChosenSize([...chosenSize, el])
+                }}>{el}</div>
               })
             }
           </div>
