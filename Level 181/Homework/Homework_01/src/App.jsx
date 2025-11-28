@@ -25,7 +25,7 @@ function App() {
   }
 
   return (
-    <main className={`flex items-center justify-center flex-col gap-[20px] h-screen`} ref={bgColor}>
+    <main className={`flex items-center justify-center flex-col gap-5 h-screen`} ref={bgColor}>
       <h1 className={`text-[30px] bg-black text-white px-[30px] rounded font-[800] tracking-[2px]`} ref={color} >
         #FFFFFF
       </h1>

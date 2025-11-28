@@ -29,7 +29,7 @@ function App() {
       </div>
       <div className="flex flex-col items-center gap-[10px] ">
         <h1 className="text-white font-[700] text-[50px]" ref={h1Value}>Smile 🫡</h1>
-        <p ref={valueLength}></p>
+        <p ref={valueLength}>Length: 7</p>
       </div>
     </main>
   )
