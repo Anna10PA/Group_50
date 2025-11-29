@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: "Playwrite CZ";
+  src: url('../public/PlaywriteCZ-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: "Science Gothic";
+  src: url('../public/ScienceGothic-VariableFont_CTRS\,slnt\,wdth\,wght.ttf');
+}
