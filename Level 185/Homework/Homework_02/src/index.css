@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url('/Dancing_script/DancingScript-VariableFont_wght.ttf');
+};
+
+@font-face {
+  font-family: "Lilita One";
+  src: url('/Lilita_One/LilitaOne-Regular.ttf');
+}

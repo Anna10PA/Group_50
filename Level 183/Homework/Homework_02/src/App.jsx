@@ -9,6 +9,7 @@ function App() {
   let countMatch = useRef()
   let winner = useRef()
   let finishCurrentPart = useRef(false)
+  
   let gif = useRef([
     "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2k0NnVzY3IxdWZtenVvZXBreGZya2dpYjhjM2JxNWw3ZGppdHRsMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kYcmEV2ADLjF3lP0WQ/giphy.gif",
     "https://media1.tenor.com/m/IvuF3rrGm0gAAAAC/jack-jack-bluey.gif",
@@ -129,26 +130,27 @@ function App() {
   console.log(curent)
 
   let victorySound = new Audio('/victory.mp3')
+
   useEffect(() => {
     console.log('WINNER is X')
-    winner.current.textContent = curent.X.score ? 'X Won This Play!' : ' '
+    winner.current.textContent = curent.X.score ? 'X Won This Game!' : ' '
     victorySound.play()
     finishCurrentPart.current = true
   }, [curent.X.score])
 
   useEffect(() => {
     console.log('WINNER is O')
-    winner.current.textContent = curent.O.score ? 'O Won This Play!' : ' '
+    winner.current.textContent = curent.O.score ? 'O Won This Game!' : ' '
     victorySound.play()
     finishCurrentPart.current = true
   }, [curent.O.score])
 
-  // useEffect(() => {
-  //   if ((curent.X.combo.length + curent.O.combo.length) > 8) {
-  //     winner.current.textContent === 'Tie'
-  //   }
-  //   console.log('Tie')
-  // })
+  useEffect(() => {
+    if ((curent.X.combo.length + curent.O.combo.length) === 9 ) {
+      winner.current.textContent = 'Tie'
+      console.log(winner.current)
+    }
+  }, [curent.X.combo, curent.O.combo])
 
 
   // table
@@ -171,7 +173,7 @@ function App() {
         <h1 className='text-blue-400 text-[50px] font-bold font-[Science_Gothic] text-shadow-[0px_0px_5px]'>
           Tic Tac Toe
         </h1>
-        <h2 className='text-white font-[Science_Gothic] text-shadow-[0px_0px_5px_blue]'>Turn: {curent.X.curent ? 'X' : 'O'}</h2>
+        <h2 className='text-white font-[Science_Gothic] text-shadow-[0px_0px_5px_blue]'>Turn: {curent.X.curent ? 'O' : 'X'}</h2>
         <div className='p-[10px] grid grid-cols-3 justify-items-center bg-blue-400 gap-[5px] rounded'>
           {
             Table().map((e, index) =>
@@ -197,6 +199,7 @@ function App() {
       </section>
       <section className='w-[45%] flex flex-col gap-[20px]'>
         <h3 ref={winner} className='text-orange-400 h-[20px] font-[Science_Gothic] text-[30px] mb-[20px] text-shadow-[0px_0px_5px]'>
+          Hello !
         </h3>
         <div>
           <h2 className='text-blue-400 h-[25px] font-[Science_Gothic] '>X Score: {curent.X.score || 0}</h2>
