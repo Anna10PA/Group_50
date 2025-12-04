@@ -1,33 +1,50 @@
-import React from 'react'
-import { useEffect, useContext, useState } from 'react'
+import { useEffect, useContext, useState, useCallback } from 'react'
 import { ExportInfo } from './App'
+import { IsOpen } from './App'
 import Card from './Card'
+import Favorite from './Favorite'
 
 function MainPage() {
     const { setInfo } = useContext(ExportInfo)
+    const { open, setOpen } = useContext(IsOpen)
     const [render, setRender] = useState([])
+    const [serach, setSearch] = useState('')
+    const [favorite, setFavorite] = useState([])
+
+    let Fav = useCallback((id) => {
+        setFavorite((prev) =>
+            prev.includes(id) ? prev.filter((favId) => favId !== id)
+                : [...prev, id]
+        )
+    }, [])
+    // #IMDB_ID
 
     useEffect(() => {
         async function getInfo() {
             try {
-                let data = await fetch('https://imdb.iamidiotareyoutoo.com/search?q=garfild')
+                if (serach.trim() === '') return 'Not Fount'
+                let data = await fetch(`https://imdb.iamidiotareyoutoo.com/search?q=${serach}`)
                 let result = await data.json()
-                console.log(result)
+                console.log('Found item:', result)
                 setInfo(result)
                 setRender(result)
-                return result
             } catch (e) {
-                console.log(e)
+                console.error('Error Message:', e)
                 setInfo([])
             }
-
         }
         getInfo()
-    }, [setInfo])
+    }, [serach])
+
+    useEffect(() => {
+        console.log('favorite item List:', favorite)
+    }, [favorite])
+
+
 
     return (
         <div className='min-h-screen bg-linear-to-bl from-[rgb(10,35,50)] to-[black] px-[30px] py-[20px] '>
-            <header className='backdrop-blur-[10px] w-full py-[15px] border border-none rounded-[10px] bg-[rgba(0,0,5,0.4)] text-white px-[30px] flex items-center font-[Lilita_One] '>
+            <header className='backdrop-blur-[10px] w-ful flex items-center justify-between l py-[15px] border border-none rounded-[10px] bg-[rgba(0,0,5,0.4)] text-white px-[30px] font-[Lilita_One] '>
                 <div className='h-[max-content] relative w-[65px]  '>
                     <h1>Movie</h1>
                     <i className="fa-solid fa-star absolute top-0 text-yellow-300 right-0"></i>
@@ -37,54 +54,45 @@ function MainPage() {
                     </div>
 
                 </div>
-                <nav className='w-full flex items-center gap-[50px] justify-center'>
-                    {/* <ul className='flex items-center justify-start gap-[30px] text-[20px] w-[max-content] max-w-[500px] '>
-                        <li>Home</li>
-                        <li>Colection</li>
-                        <li>Contact</li>
-                    </ul> */}
+                <nav className='w-full flex items-center gap-[50px] justify-center relative bg-[rgba(0,0,0,0.2)] max-w-[400px] h-[40px]'>
+                    <input type="text" className=' text-white outline-0 w-full pl-[30px]' placeholder='. . . ' onChange={(e) => {
+                        setSearch(e.target.value)
+                    }} />
+                    <i className="fa-solid fa-magnifying-glass cursor-pointer absolute right-[30px]"></i>
                 </nav>
                 <div className='flex items-center gap-[15px] text-[20px]'>
-                    <i className="fa-solid fa-magnifying-glass cursor-pointer" onClick={() => {
-
-                    }}></i>
                     <i className="fa-solid fa-bell"></i>
-                    <i className="fa-solid fa-heart"></i>
+                    <i className="fa-solid fa-heart cursor-pointer duration-100 hover:text-red-500" onClick={() => {
+                       setOpen(!open)
+                    }}></i>
                 </div>
             </header>
-            {/* <div className='absolute z-5'>
-                <div className='backdrop-blur-[2px] bg-[rgba(10,10,20,0.8)] text-white'>
-                    <input type="text" className='w-full outline-none peer' />
-                    <label className='peer-focus:'>Search</label>
-                </div>
-            </div> */}
-            <main>
-                <section>
-                    <div>
-                    </div>
-                </section>
-                <section className='grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] justify-items-center gap-[20px] mt-[30px]'>
-                    {/* {
-                        [render.description].map((item, index)=> {
-                            console.log(item)
-                        })
-                    } */}
+
+            <main className='flex items-start gap-[30px]'>
+                <section className='grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] justify-items-center gap-[20px] mt-[30px] w-full'>
                     {
-                        render ? [render.description].map((item, index) => {
-                            return item ? item.map((e, i) => {
-                                // console.log(e)
-                                return <Card
+                        render.description?.length > 0 ? (
+                            render.description.map((e, i) => (
+                                <Card
                                     key={i}
                                     name={e['#TITLE']}
                                     img={e['#IMG_POSTER']}
                                     rank={e['#RANK']}
                                     year={e['#YEAR']}
                                     actors={e['#ACTORS']}
+                                    addFav={() => {
+                                        Fav(e['#IMDB_ID'])
+                                    }}
+                                    heart={favorite.includes(e['#IMDB_ID'])}
                                 />
-                            }) : null
-                        }) : null
+                            ))
+                        ) : (
+                            <h1 className='text-white text-[30px] font-bold'>Start</h1>
+                        )
+
                     }
                 </section>
+                <Favorite favorite={favorite} />
             </main>
         </div>
     )
