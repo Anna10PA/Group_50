@@ -17,7 +17,7 @@ function Filter() {
 
 
     return (
-        <aside className={`relative max-md:absolute max-md:top-2 max-md: ${open ? 'w-[50%] max-w-[500px] px-[30px] ml-[30px] min-w-[350px] translate-y-0' : 'w-0 m-0 min-w-0  max-md:-translate-y-130 ' } max-md:z-10 py-5 h-max max-sm:mx-[15px] bg-gray-950 overflow-hidden duration-300 right-0 rounded text-white flex items-start flex-col gap-6 max-md:max-w-full max-md:w-full max-md:ml-0 max-md:min-w-[90%] max-sm:left-0 max-sm:w-[94%]`}
+        <aside className={`relative max-md:absolute max-md:top-2 max-md: ${open ? 'w-[50%] max-w-[500px] px-[30px] ml-[30px] min-w-[350px] translate-y-0' : 'w-0 m-0 min-w-0  max-md:-translate-y-130 '} max-md:z-10 py-5 h-max max-sm:mx-[15px] bg-gray-950 overflow-hidden duration-300 right-0 rounded text-white flex items-start flex-col gap-6 max-md:max-w-full max-md:w-full max-md:ml-0 max-md:min-w-[90%] max-sm:left-0 max-sm:w-[94%]`}
         >
             <h1 className='text-2xl font-extrabold tracking-[2px]'>Filter</h1>
 
@@ -89,7 +89,15 @@ function Filter() {
                     </div>
                 </div>
                 <div className='flex items-center justify-between w-full'>
-                    <button className='bg-gray-900 px-5 rounded-[10px] py-3 font-bold cursor-pointer hover:bg-red-800 duration-100'>Clean</button>
+                    <button className='bg-gray-900 px-5 rounded-[10px] py-3 font-bold cursor-pointer hover:bg-red-800 duration-100' onClick={(e) => {
+                        e.preventDefault()
+                        setFilter({
+                            min_price: 0,
+                            max_price: 1000000000000,
+                            id: 0,
+                            name: ''
+                        })
+                    }}>Clean</button>
                     <div>
                         <h1>Founded item: ({filteredItems.length})</h1>
                     </div>
