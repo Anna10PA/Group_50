@@ -1,0 +1,1052 @@
+[
+    {
+        "id": 1,
+        "name": "Evergreen Ceramic Mug",
+        "description": "11oz ceramic mug with a matte finish and ergonomic handle.",
+        "price": 12.99,
+        "image_url": "https://picsum.photos/id/10/800/600"
+    },
+    {
+        "id": 2,
+        "name": "Aero Wireless Earbuds",
+        "description": "True wireless earbuds with noise reduction and 24h battery life (case included).",
+        "price": 59.50,
+        "image_url": "https://picsum.photos/id/11/800/600"
+    },
+    {
+        "id": 3,
+        "name": "Nordic Cotton Throw",
+        "description": "Soft cotton throw blanket, 130x180 cm — lightweight and breathable.",
+        "price": 29.00,
+        "image_url": "https://picsum.photos/id/12/800/600"
+    },
+    {
+        "id": 4,
+        "name": "Fusion Chef Knife 8\"",
+        "description": "High-carbon stainless steel chef knife with comfortable pakkawood handle.",
+        "price": 45.75,
+        "image_url": "https://picsum.photos/id/13/800/600"
+    },
+    {
+        "id": 5,
+        "name": "Orbit LED Desk Lamp",
+        "description": "Adjustable LED desk lamp with touch controls and three color temperatures.",
+        "price": 34.99,
+        "image_url": "https://picsum.photos/id/14/800/600"
+    },
+    {
+        "id": 6,
+        "name": "Lumen Bluetooth Speaker",
+        "description": "Portable Bluetooth speaker, IPX5 splash resistant, 10-hour playback.",
+        "price": 49.00,
+        "image_url": "https://picsum.photos/id/15/800/600"
+    },
+    {
+        "id": 7,
+        "name": "Marble Notebook A5",
+        "description": "Hardcover A5 notebook with 120 lined pages and elastic closure.",
+        "price": 9.49,
+        "image_url": "https://picsum.photos/id/16/800/600"
+    },
+    {
+        "id": 8,
+        "name": "Trail Runner Socks (3-pack)",
+        "description": "Breathable performance socks with arch support and reinforced toe.",
+        "price": 15.00,
+        "image_url": "https://picsum.photos/id/17/800/600"
+    },
+    {
+        "id": 9,
+        "name": "Cascade Water Bottle 750ml",
+        "description": "Stainless steel insulated bottle keeps drinks cold 24h / hot 12h.",
+        "price": 22.99,
+        "image_url": "https://picsum.photos/id/18/800/600"
+    },
+    {
+        "id": 10,
+        "name": "Studio Artist Watercolors 24",
+        "description": "Professional watercolor set with 24 pigmented pans and mixing tray.",
+        "price": 27.20,
+        "image_url": "https://picsum.photos/id/19/800/600"
+    },
+    {
+        "id": 11,
+        "name": "Urban Leather Wallet",
+        "description": "Slim bifold wallet made from genuine leather with 6 card slots.",
+        "price": 39.90,
+        "image_url": "https://picsum.photos/id/20/800/600"
+    },
+    {
+        "id": 12,
+        "name": "Pulse Fitness Band",
+        "description": "Activity tracker with heart-rate monitoring and sleep tracking.",
+        "price": 49.99,
+        "image_url": "https://picsum.photos/id/21/800/600"
+    },
+    {
+        "id": 13,
+        "name": "Solace Scented Candle 300g",
+        "description": "Soy wax candle with long burn time and a calming lavender-vanilla scent.",
+        "price": 14.50,
+        "image_url": "https://picsum.photos/id/22/800/600"
+    },
+    {
+        "id": 14,
+        "name": "Compact Travel Umbrella",
+        "description": "Windproof umbrella, compact folding design with automatic open.",
+        "price": 18.00,
+        "image_url": "https://picsum.photos/id/23/800/600"
+    },
+    {
+        "id": 15,
+        "name": "Bistro Nonstick Pan 10\"",
+        "description": "Durable nonstick frying pan with heat-resistant handle.",
+        "price": 32.99,
+        "image_url": "https://picsum.photos/id/24/800/600"
+    },
+    {
+        "id": 16,
+        "name": "Echo Smart Plug",
+        "description": "Wi-Fi smart plug compatible with voice assistants and scheduling.",
+        "price": 16.49,
+        "image_url": "https://picsum.photos/id/25/800/600"
+    },
+    {
+        "id": 17,
+        "name": "Glide Rollerball Pen (2-pack)",
+        "description": "Smooth-writing rollerball pens with ergonomic grip and quick-dry ink.",
+        "price": 7.99,
+        "image_url": "https://picsum.photos/id/26/800/600"
+    },
+    {
+        "id": 18,
+        "name": "Horizon Yoga Mat 6mm",
+        "description": "Non-slip yoga mat with comfortable cushioning and carry strap.",
+        "price": 24.95,
+        "image_url": "https://picsum.photos/id/27/800/600"
+    },
+    {
+        "id": 19,
+        "name": "Pixel Phone Stand",
+        "description": "Adjustable phone stand for desks — aluminum build and foldable.",
+        "price": 11.00,
+        "image_url": "https://picsum.photos/id/28/800/600"
+    },
+    {
+        "id": 20,
+        "name": "Nova Rechargeable Flashlight",
+        "description": "High-lumen rechargeable flashlight with multiple beam modes.",
+        "price": 29.99,
+        "image_url": "https://picsum.photos/id/29/800/600"
+    },
+    {
+        "id": 21,
+        "name": "Café Stainless Travel Mug",
+        "description": "Leakproof travel mug with double-wall insulation, 16oz capacity.",
+        "price": 19.50,
+        "image_url": "https://picsum.photos/id/30/800/600"
+    },
+    {
+        "id": 22,
+        "name": "Velvet Throw Pillow 45x45",
+        "description": "Decorative velvet pillow insert included, soft touch finish.",
+        "price": 17.25,
+        "image_url": "https://picsum.photos/id/31/800/600"
+    },
+    {
+        "id": 23,
+        "name": "Atlas Multi-tool",
+        "description": "Compact multi-tool with pliers, knife, screwdriver and bottle opener.",
+        "price": 34.00,
+        "image_url": "https://picsum.photos/id/32/800/600"
+    },
+    {
+        "id": 24,
+        "name": "Aurora Night Light",
+        "description": "LED night light with soft glow and touch dimmer.",
+        "price": 12.00,
+        "image_url": "https://picsum.photos/id/33/800/600"
+    },
+    {
+        "id": 25,
+        "name": "Bento Lunch Box",
+        "description": "Leakproof bento box with removable compartments and chopstick holder.",
+        "price": 21.49,
+        "image_url": "https://picsum.photos/id/34/800/600"
+    },
+    {
+        "id": 26,
+        "name": "Rover Dog Leash 1.5m",
+        "description": "Durable nylon leash with padded handle and metal clasp.",
+        "price": 13.99,
+        "image_url": "https://picsum.photos/id/35/800/600"
+    },
+    {
+        "id": 27,
+        "name": "Zen Gardening Kit",
+        "description": "Mini desktop zen garden with sand, rake, and decorative stones.",
+        "price": 18.75,
+        "image_url": "https://picsum.photos/id/36/800/600"
+    },
+    {
+        "id": 28,
+        "name": "Cobalt Ceramic Planter",
+        "description": "Indoor ceramic planter with drainage hole — 12cm diameter.",
+        "price": 14.00,
+        "image_url": "https://picsum.photos/id/37/800/600"
+    },
+    {
+        "id": 29,
+        "name": "Stride Running Shorts",
+        "description": "Lightweight running shorts with breathable mesh and inner liner.",
+        "price": 22.00,
+        "image_url": "https://picsum.photos/id/38/800/600"
+    },
+    {
+        "id": 30,
+        "name": "Orbit USB-C Charger 65W",
+        "description": "GaN fast charger with foldable plug and multiple protections.",
+        "price": 39.99,
+        "image_url": "https://picsum.photos/id/39/800/600"
+    },
+    {
+        "id": 31,
+        "name": "Vintage Wall Clock",
+        "description": "Silent sweep wall clock with minimalist metal frame, 30cm diameter.",
+        "price": 26.50,
+        "image_url": "https://picsum.photos/id/40/800/600"
+    },
+    {
+        "id": 32,
+        "name": "Harmony Tea Set (4)",
+        "description": "Porcelain tea cups and teapot set, elegant embossed pattern.",
+        "price": 49.00,
+        "image_url": "https://picsum.photos/id/41/800/600"
+    },
+    {
+        "id": 33,
+        "name": "Terra Gardening Gloves",
+        "description": "Reinforced gardening gloves with breathable fabric and wrist strap.",
+        "price": 9.99,
+        "image_url": "https://picsum.photos/id/42/800/600"
+    },
+    {
+        "id": 34,
+        "name": "Clip-On Book Light",
+        "description": "Flexible clip-on LED reading light with adjustable brightness.",
+        "price": 8.50,
+        "image_url": "https://picsum.photos/id/43/800/600"
+    },
+    {
+        "id": 35,
+        "name": "Nimbus Shower Speaker",
+        "description": "Waterproof Bluetooth speaker with suction mount for showers.",
+        "price": 23.99,
+        "image_url": "https://picsum.photos/id/44/800/600"
+    },
+    {
+        "id": 36,
+        "name": "Summit Insulated Cooler Bag",
+        "description": "Soft-sided cooler with 12-can capacity and shoulder strap.",
+        "price": 35.00,
+        "image_url": "https://picsum.photos/id/45/800/600"
+    },
+    {
+        "id": 37,
+        "name": "Prism LED Strip Light 5m",
+        "description": "Flexible LED strip with remote color control and adhesive backing.",
+        "price": 19.99,
+        "image_url": "https://picsum.photos/id/46/800/600"
+    },
+    {
+        "id": 38,
+        "name": "Harbor Canvas Tote",
+        "description": "Large canvas tote with reinforced handles and interior pocket.",
+        "price": 18.00,
+        "image_url": "https://picsum.photos/id/47/800/600"
+    },
+    {
+        "id": 39,
+        "name": "Echo Ear Cushions (pair)",
+        "description": "Replacement memory foam ear cushions for over-ear headphones.",
+        "price": 12.99,
+        "image_url": "https://picsum.photos/id/48/800/600"
+    },
+    {
+        "id": 40,
+        "name": "Glacier Ice Roller",
+        "description": "Facial ice roller to reduce puffiness and soothe skin.",
+        "price": 15.00,
+        "image_url": "https://picsum.photos/id/49/800/600"
+    },
+    {
+        "id": 41,
+        "name": "Craft Precision Screwdriver Set",
+        "description": "Magnetic screwdriver set with multiple bits in a compact case.",
+        "price": 14.50,
+        "image_url": "https://picsum.photos/id/50/800/600"
+    },
+    {
+        "id": 42,
+        "name": "Serene Bath Salts 500g",
+        "description": "Aromatic bath salts with eucalyptus and sea minerals.",
+        "price": 11.20,
+        "image_url": "https://picsum.photos/id/51/800/600"
+    },
+    {
+        "id": 43,
+        "name": "Voyager Phone Wallet Case",
+        "description": "Phone case with integrated card pocket and shockproof edges.",
+        "price": 17.99,
+        "image_url": "https://picsum.photos/id/52/800/600"
+    },
+    {
+        "id": 44,
+        "name": "Peak Resistance Bands (3)",
+        "description": "Set of three resistance bands for full-body workouts.",
+        "price": 16.00,
+        "image_url": "https://picsum.photos/id/53/800/600"
+    },
+    {
+        "id": 45,
+        "name": "Maple Cutting Board Large",
+        "description": "Premium maple cutting board with juice groove and handle.",
+        "price": 29.99,
+        "image_url": "https://picsum.photos/id/54/800/600"
+    },
+    {
+        "id": 46,
+        "name": "Nimbus Travel Pillow",
+        "description": "Memory foam neck pillow with washable cover and strap.",
+        "price": 21.00,
+        "image_url": "https://picsum.photos/id/55/800/600"
+    },
+    {
+        "id": 47,
+        "name": "Pixelated Mouse Pad XL",
+        "description": "Extended desk mouse pad with stitched edges and anti-slip base.",
+        "price": 12.49,
+        "image_url": "https://picsum.photos/id/56/800/600"
+    },
+    {
+        "id": 48,
+        "name": "Comfy Slippers Unisex",
+        "description": "Indoor slippers with fluffy lining and non-slip sole.",
+        "price": 18.99,
+        "image_url": "https://picsum.photos/id/57/800/600"
+    },
+    {
+        "id": 49,
+        "name": "Fusion Blender Bottle",
+        "description": "Blender bottle with wire whisk for smoothies and protein shakes.",
+        "price": 13.50,
+        "image_url": "https://picsum.photos/id/58/800/600"
+    },
+    {
+        "id": 50,
+        "name": "Lattice Photo Frame 4x6",
+        "description": "Decorative wooden photo frame for tabletop display.",
+        "price": 11.00,
+        "image_url": "https://picsum.photos/id/59/800/600"
+    },
+    {
+        "id": 51,
+        "name": "Pulse Foam Roller 30cm",
+        "description": "High-density foam roller for muscle recovery and stretching.",
+        "price": 22.00,
+        "image_url": "https://picsum.photos/id/60/800/600"
+    },
+    {
+        "id": 52,
+        "name": "Breeze Desk Fan USB",
+        "description": "Compact USB desk fan with three speed settings and quiet motor.",
+        "price": 15.99,
+        "image_url": "https://picsum.photos/id/61/800/600"
+    },
+    {
+        "id": 53,
+        "name": "Radiant Makeup Mirror",
+        "description": "Vanity mirror with LED lights and adjustable angle.",
+        "price": 26.75,
+        "image_url": "https://picsum.photos/id/62/800/600"
+    },
+    {
+        "id": 54,
+        "name": "Voyage Packing Cubes (set of 3)",
+        "description": "Lightweight packing cubes to organize clothing and gear.",
+        "price": 20.00,
+        "image_url": "https://picsum.photos/id/63/800/600"
+    },
+    {
+        "id": 55,
+        "name": "Aria Electric Kettle 1.7L",
+        "description": "Fast-boil electric kettle with auto-shutoff and boil-dry protection.",
+        "price": 34.99,
+        "image_url": "https://picsum.photos/id/64/800/600"
+    },
+    {
+        "id": 56,
+        "name": "Atlas Bike Light Set",
+        "description": "Front and rear LED bike lights with multiple flash modes.",
+        "price": 18.50,
+        "image_url": "https://picsum.photos/id/65/800/600"
+    },
+    {
+        "id": 57,
+        "name": "Saffron Spice Rack",
+        "description": "Compact spice rack with 12 glass jars and labels.",
+        "price": 27.00,
+        "image_url": "https://picsum.photos/id/66/800/600"
+    },
+    {
+        "id": 58,
+        "name": "Echo Folding Laptop Stand",
+        "description": "Aluminum foldable laptop stand for ergonomic viewing.",
+        "price": 29.00,
+        "image_url": "https://picsum.photos/id/67/800/600"
+    },
+    {
+        "id": 59,
+        "name": "Pacific Hammock Chair",
+        "description": "Hanging hammock chair for indoor/outdoor relaxation with cushion.",
+        "price": 69.99,
+        "image_url": "https://picsum.photos/id/68/800/600"
+    },
+    {
+        "id": 60,
+        "name": "Clarity Glass Water Pitcher",
+        "description": "1.5L glass pitcher with stainless steel lid and filter.",
+        "price": 24.50,
+        "image_url": "https://picsum.photos/id/69/800/600"
+    },
+    {
+        "id": 61,
+        "name": "Beacon Portable Charger 10k",
+        "description": "10000mAh power bank with dual USB outputs and quick charge.",
+        "price": 29.99,
+        "image_url": "https://picsum.photos/id/70/800/600"
+    },
+    {
+        "id": 62,
+        "name": "Herbal Tea Sampler (12)",
+        "description": "Assortment of 12 loose-leaf herbal tea pouches in gift box.",
+        "price": 18.99,
+        "image_url": "https://picsum.photos/id/71/800/600"
+    },
+    {
+        "id": 63,
+        "name": "Folio Laptop Sleeve 13\"",
+        "description": "Padded neoprene laptop sleeve with zipper and slim profile.",
+        "price": 15.00,
+        "image_url": "https://picsum.photos/id/72/800/600"
+    },
+    {
+        "id": 64,
+        "name": "Orbit Pet Bowl Stainless",
+        "description": "Non-slip stainless steel pet bowl with silicone base.",
+        "price": 9.75,
+        "image_url": "https://picsum.photos/id/73/800/600"
+    },
+    {
+        "id": 65,
+        "name": "Atlas Camping Mug",
+        "description": "Enamel camping mug, durable and lightweight for outdoors.",
+        "price": 11.20,
+        "image_url": "https://picsum.photos/id/74/800/600"
+    },
+    {
+        "id": 66,
+        "name": "Nimbus Plush Toy Bear",
+        "description": "Soft plush toy bear suitable for all ages, hypoallergenic filling.",
+        "price": 14.99,
+        "image_url": "https://picsum.photos/id/75/800/600"
+    },
+    {
+        "id": 67,
+        "name": "Clasp Jewelry Organizer",
+        "description": "Compact jewelry organizer with multiple compartments and zipper.",
+        "price": 19.00,
+        "image_url": "https://picsum.photos/id/76/800/600"
+    },
+    {
+        "id": 68,
+        "name": "Sierra Hiking Poles (pair)",
+        "description": "Adjustable lightweight hiking poles with ergonomic grips.",
+        "price": 39.99,
+        "image_url": "https://picsum.photos/id/77/800/600"
+    },
+    {
+        "id": 69,
+        "name": "Glide Hair Brush Paddle",
+        "description": "Wide paddle hair brush with anti-static bristles and soft cushion.",
+        "price": 8.99,
+        "image_url": "https://picsum.photos/id/78/800/600"
+    },
+    {
+        "id": 70,
+        "name": "Amber Reed Diffuser 200ml",
+        "description": "Home fragrance diffuser with natural reeds and woody aroma.",
+        "price": 22.50,
+        "image_url": "https://picsum.photos/id/79/800/600"
+    },
+    {
+        "id": 71,
+        "name": "Summit Picnic Blanket",
+        "description": "Water-resistant picnic blanket with fleece top and carry strap.",
+        "price": 25.00,
+        "image_url": "https://picsum.photos/id/80/800/600"
+    },
+    {
+        "id": 72,
+        "name": "Pulse Wireless Charger Pad",
+        "description": "Qi-certified wireless charger pad with fast-charge support.",
+        "price": 19.99,
+        "image_url": "https://picsum.photos/id/81/800/600"
+    },
+    {
+        "id": 73,
+        "name": "Canvas Art Print 30x40",
+        "description": "High-quality canvas art print, ready to hang with gallery wrap.",
+        "price": 45.00,
+        "image_url": "https://picsum.photos/id/82/800/600"
+    },
+    {
+        "id": 74,
+        "name": "Breeze Aromatherapy Roll-On",
+        "description": "Portable aromatherapy roll-on with calming essential oils.",
+        "price": 7.50,
+        "image_url": "https://picsum.photos/id/83/800/600"
+    },
+    {
+        "id": 75,
+        "name": "Nova Bicycle Helmet",
+        "description": "Lightweight bicycle helmet with adjustable fit and vents.",
+        "price": 49.95,
+        "image_url": "https://picsum.photos/id/84/800/600"
+    },
+    {
+        "id": 76,
+        "name": "Clarity Food Storage Set (6)",
+        "description": "Glass food storage containers with airtight lids and stackable design.",
+        "price": 39.99,
+        "image_url": "https://picsum.photos/id/85/800/600"
+    },
+    {
+        "id": 77,
+        "name": "Verve Stainless Straw Set",
+        "description": "Set of reusable stainless steel straws with cleaning brush and pouch.",
+        "price": 9.00,
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUmsFUnsBL3bs6ufjYPQ2FyPLauczA3j5LeA&s"
+    },
+    {
+        "id": 78,
+        "name": "Pebble Decorative Bowl",
+        "description": "Hand-finished decorative bowl for tabletop or fruit display.",
+        "price": 16.49,
+        "image_url": "https://picsum.photos/id/87/800/600"
+    },
+    {
+        "id": 79,
+        "name": "Radiant Hair Towel",
+        "description": "Microfiber hair towel with button closure for quick drying.",
+        "price": 11.99,
+        "image_url": "https://picsum.photos/id/88/800/600"
+    },
+    {
+        "id": 80,
+        "name": "Voyage Cord Organizer",
+        "description": "Neat cable organizer for chargers, earbuds and small electronics.",
+        "price": 8.25,
+        "image_url": "https://picsum.photos/id/89/800/600"
+    },
+    {
+        "id": 81,
+        "name": "Luxe Bath Robe Unisex",
+        "description": "Soft waffle-knit bathrobe with belt and two pockets.",
+        "price": 54.00,
+        "image_url": "https://picsum.photos/id/90/800/600"
+    },
+    {
+        "id": 82,
+        "name": "Beacon Solar Lantern",
+        "description": "Portable solar lantern with hanging hook and adjustable brightness.",
+        "price": 29.50,
+        "image_url": "https://picsum.photos/id/91/800/600"
+    },
+    {
+        "id": 83,
+        "name": "Cobalt Ceramic Vase",
+        "description": "Tall ceramic vase with glossy finish for fresh or dried flowers.",
+        "price": 23.00,
+        "image_url": "https://picsum.photos/id/92/800/600"
+    },
+    {
+        "id": 84,
+        "name": "Stride Kids Sneakers",
+        "description": "Lightweight kids sneakers with breathable mesh and rubber outsole.",
+        "price": 35.99,
+        "image_url": "https://picsum.photos/id/93/800/600"
+    },
+    {
+        "id": 85,
+        "name": "Echo Portable Projector",
+        "description": "Compact projector for movies and presentations with HDMI input.",
+        "price": 129.99,
+        "image_url": "https://picsum.photos/id/94/800/600"
+    },
+    {
+        "id": 86,
+        "name": "Mosaic Serving Tray",
+        "description": "Decorative serving tray with mosaic pattern and handles.",
+        "price": 28.00,
+        "image_url": "https://picsum.photos/id/95/800/600"
+    },
+    {
+        "id": 87,
+        "name": "Aurora Eye Mask & Earplugs",
+        "description": "Sleep aid kit with contoured mask and noise-reducing earplugs.",
+        "price": 9.99,
+        "image_url": "https://picsum.photos/id/96/800/600"
+    },
+    {
+        "id": 88,
+        "name": "Hearth Cast Iron Skillet 10\"",
+        "description": "Pre-seasoned cast iron skillet for even heat and durability.",
+        "price": 39.50,
+        "image_url": "https://i.ebayimg.com/images/g/TjIAAeSws5hodUI4/s-l1600.webp"
+    },
+    {
+        "id": 89,
+        "name": "Pico Smart Key Finder (2-pack)",
+        "description": "Bluetooth key finders with app location and separation alert.",
+        "price": 24.99,
+        "image_url": "https://picsum.photos/id/98/800/600"
+    },
+    {
+        "id": 90,
+        "name": "Cascade Baking Mat",
+        "description": "Reusable silicone baking mat, non-stick and oven-safe.",
+        "price": 12.50,
+        "image_url": "https://picsum.photos/id/99/800/600"
+    },
+    {
+        "id": 91,
+        "name": "Horizon Sunglasses Polarized",
+        "description": "Polarized sunglasses with UV400 protection and lightweight frame.",
+        "price": 29.99,
+        "image_url": "https://picsum.photos/id/100/800/600"
+    },
+    {
+        "id": 92,
+        "name": "Terra Herb Planter Kit",
+        "description": "Indoor herb planter kit with soil pellets and seed selection.",
+        "price": 19.75,
+        "image_url": "https://picsum.photos/id/101/800/600"
+    },
+    {
+        "id": 93,
+        "name": "Pulse Digital Kitchen Scale",
+        "description": "Precision kitchen scale with tare function and LCD display.",
+        "price": 13.49,
+        "image_url": "https://picsum.photos/id/102/800/600"
+    },
+    {
+        "id": 94,
+        "name": "Nova Pet Bed Medium",
+        "description": "Plush pet bed with removable washable cover and anti-slip base.",
+        "price": 29.00,
+        "image_url": "https://picsum.photos/id/103/800/600"
+    },
+    {
+        "id": 95,
+        "name": "Quartz Minimalist Bracelet",
+        "description": "Delicate quartz bead bracelet on elastic cord — unisex.",
+        "price": 14.00,
+        "image_url": "https://picsum.photos/id/104/800/600"
+    },
+    {
+        "id": 96,
+        "name": "Summit Insulated Gloves",
+        "description": "Thermal insulated gloves for cold-weather activities with grip palm.",
+        "price": 24.99,
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkqUhFs7nV-q4KvHlwtbuFD2qjnh9LIfzlmg&s"
+    },
+    {
+        "id": 97,
+        "name": "Clarity Windshield Sun Shade",
+        "description": "Foldable UV sunshade for windshield to protect interiors.",
+        "price": 11.49,
+        "image_url": "https://picsum.photos/id/106/800/600"
+    },
+    {
+        "id": 98,
+        "name": "Verve Cocktail Shaker",
+        "description": "Stainless steel cocktail shaker set with jigger and strainer.",
+        "price": 21.99,
+        "image_url": "https://picsum.photos/id/107/800/600"
+    },
+    {
+        "id": 99,
+        "name": "Pebble Ceramic Coasters (4)",
+        "description": "Set of 4 ceramic coasters with cork backing to protect surfaces.",
+        "price": 12.00,
+        "image_url": "https://picsum.photos/id/108/800/600"
+    },
+    {
+        "id": 100,
+        "name": "Radiant Clip-On Fan",
+        "description": "Small clip-on fan for strollers, desks or bedside with adjustable tilt.",
+        "price": 16.99,
+        "image_url": "https://picsum.photos/id/109/800/600"
+    },
+    {
+        "id": 101,
+        "name": "Wireless Ergonomic Mouse",
+        "description": "Comfortable wireless mouse with ergonomic shape and adjustable DPI.",
+        "image": "https://images.unsplash.com/photo-1587825140708-8a19f1bd1a30",
+        "price": 29.99
+    },
+    {
+        "id": 102,
+        "name": "4K Ultra HD Monitor",
+        "description": "27-inch 4K UHD display with vivid colors and ultra-thin bezels.",
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+        "price": 329.99
+    },
+    {
+        "id": 103,
+        "name": "Bluetooth Portable Speaker",
+        "description": "Compact Bluetooth speaker with deep bass and long-lasting battery.",
+        "image": "https://images.unsplash.com/photo-1583225272839-e8c79e1bc6c5",
+        "price": 49.99
+    },
+    {
+        "id": 104,
+        "name": "Smart Fitness Watch",
+        "description": "Tracks heart rate, steps, calories and supports message notifications.",
+        "image": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f",
+        "price": 89.99
+    },
+    {
+        "id": 105,
+        "name": "Mechanical Keyboard RGB",
+        "description": "RGB backlit mechanical keyboard with blue switches.",
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+        "price": 79.99
+    },
+    {
+        "id": 106,
+        "name": "Portable Power Bank 20000mAh",
+        "description": "High capacity power bank with fast charging support.",
+        "image": "https://images.unsplash.com/photo-1583225215407-4a34d55d58d8",
+        "price": 39.99
+    },
+    {
+        "id": 107,
+        "name": "Smart LED Light Bulb",
+        "description": "Wi-Fi controlled RGB smart bulb compatible with Alexa and Google Home.",
+        "image": "https://images.unsplash.com/photo-1582719478175-2cf4e4a3f9aa",
+        "price": 14.99
+    },
+    {
+        "id": 108,
+        "name": "Noise Cancelling Headphones",
+        "description": "Over-ear active noise cancelling headphones with premium sound.",
+        "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad",
+        "price": 119.99
+    },
+    {
+        "id": 109,
+        "name": "USB-C Fast Charger",
+        "description": "30W USB-C fast wall charger with universal compatibility.",
+        "image": "https://images.unsplash.com/photo-1583225151978-e0f5bb529d74",
+        "price": 19.99
+    },
+    {
+        "id": 110,
+        "name": "Laptop Stand Adjustable",
+        "description": "Aluminum adjustable stand suitable for all laptop sizes.",
+        "image": "https://images.unsplash.com/photo-1587825140708-8a19f1bd1a30",
+        "price": 24.99
+    },
+    {
+        "id": 111,
+        "name": "Gaming Chair",
+        "description": "Ergonomic gaming chair with adjustable height and tilt functions.",
+        "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9",
+        "price": 149.99
+    },
+    {
+        "id": 112,
+        "name": "Wireless Charging Pad",
+        "description": "15W Qi fast wireless charger for smartphones and earbuds.",
+        "image": "https://images.unsplash.com/photo-1583225151978-e0f5bb529d74",
+        "price": 22.99
+    },
+    {
+        "id": 113,
+        "name": "Portable SSD 1TB",
+        "description": "High-speed external SSD with USB-C connectivity.",
+        "image": "https://images.unsplash.com/photo-1583225161785-9754d8c2b4a3",
+        "price": 129.99
+    },
+    {
+        "id": 114,
+        "name": "Smart Home Camera",
+        "description": "Wi-Fi security camera with night vision and motion detection.",
+        "image": "https://images.unsplash.com/photo-1583225091591-5087bd93a6b4",
+        "price": 59.99
+    },
+    {
+        "id": 115,
+        "name": "Electric Toothbrush",
+        "description": "Rechargeable toothbrush with three cleaning modes.",
+        "image": "https://images.unsplash.com/photo-1606813903275-3b43f5201b4b",
+        "price": 34.99
+    },
+    {
+        "id": 116,
+        "name": "Stainless Steel Water Bottle",
+        "description": "Vacuum insulated bottle keeps drinks cold for 24 hours.",
+        "image": "https://images.unsplash.com/photo-1532635223-f751bd62c3f1",
+        "price": 17.99
+    },
+    {
+        "id": 117,
+        "name": "VR Headset",
+        "description": "Immersive virtual reality headset with high-resolution lenses.",
+        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
+        "price": 249.99
+    },
+    {
+        "id": 118,
+        "name": "Electric Kettle",
+        "description": "Modern electric kettle with auto shutoff and LED lighting.",
+        "image": "https://images.unsplash.com/photo-1565895405136-4e0f0e2cbf9f",
+        "price": 29.99
+    },
+    {
+        "id": 119,
+        "name": "Air Purifier",
+        "description": "HEPA air purifier suitable for small and medium-sized rooms.",
+        "image": "https://images.unsplash.com/photo-1582719478261-7a58a1f8b7e0",
+        "price": 89.99
+    },
+    {
+        "id": 120,
+        "name": "Wireless Earbuds",
+        "description": "True wireless earbuds with noise isolation and charging case.",
+        "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad",
+        "price": 59.99
+    },
+    {
+        "id": 121,
+        "name": "Action Camera",
+        "description": "4K waterproof action camera with wide-angle lens.",
+        "image": "https://images.unsplash.com/photo-1508898578281-774ac4893c0c",
+        "price": 109.99
+    },
+    {
+        "id": 122,
+        "name": "Smart Thermostat",
+        "description": "Wi-Fi thermostat with energy-saving automation.",
+        "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+        "price": 139.99
+    },
+    {
+        "id": 123,
+        "name": "Robot Vacuum Cleaner",
+        "description": "Automatic robotic vacuum with mapping technology.",
+        "image": "https://images.unsplash.com/photo-1581092795360-f96234b5642e",
+        "price": 199.99
+    },
+    {
+        "id": 124,
+        "name": "Portable Camping Lantern",
+        "description": "Rechargeable LED camping lantern with USB output.",
+        "image": "https://images.unsplash.com/photo-1582719478221-e9c871b4a2e7",
+        "price": 25.99
+    },
+    {
+        "id": 125,
+        "name": "Electric Grill",
+        "description": "Smokeless indoor grill with non-stick surface.",
+        "image": "https://images.unsplash.com/photo-1556911220-e15b29be8c7d",
+        "price": 69.99
+    },
+    {
+        "id": 126,
+        "name": "Smartphone Tripod Stand",
+        "description": "Flexible tripod stand compatible with all smartphones.",
+        "image": "https://images.unsplash.com/photo-1533234476258-76c41c54b360",
+        "price": 12.99
+    },
+    {
+        "id": 127,
+        "name": "LED Desk Lamp",
+        "description": "Adjustable LED lamp with eye-protection technology.",
+        "image": "https://images.unsplash.com/photo-1582719478175-2cf4e4a3f9aa",
+        "price": 22.99
+    },
+    {
+        "id": 128,
+        "name": "Mini Projector",
+        "description": "Portable mini projector with HDMI support.",
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+        "price": 89.99
+    },
+    {
+        "id": 129,
+        "name": "Smart Scale",
+        "description": "Bluetooth body scale with BMI and body fat tracking.",
+        "image": "https://images.unsplash.com/photo-1583225204703-a8b7eabd70c9",
+        "price": 29.99
+    },
+    {
+        "id": 130,
+        "name": "USB Desk Fan",
+        "description": "Silent USB-powered cooling fan for office desks.",
+        "image": "https://images.unsplash.com/photo-1556911220-e15b29be8c7d",
+        "price": 14.99
+    },
+    {
+        "id": 131,
+        "name": "Electric Coffee Grinder",
+        "description": "High-speed grinder for coffee beans and spices.",
+        "image": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac",
+        "price": 34.99
+    },
+    {
+        "id": 132,
+        "name": "Smart Door Lock",
+        "description": "Keyless entry smart door lock with app control.",
+        "image": "https://images.unsplash.com/photo-1581091012184-5c927f6d0cfe",
+        "price": 159.99
+    },
+    {
+        "id": 133,
+        "name": "LED Strip Lights",
+        "description": "USB powered RGB LED strip lights for rooms and desks.",
+        "image": "https://images.unsplash.com/photo-1582719478231-2e83b3f389bf",
+        "price": 18.99
+    },
+    {
+        "id": 134,
+        "name": "Kitchen Blender",
+        "description": "Smoothie and milkshake blender with 600W motor.",
+        "image": "https://images.unsplash.com/photo-1592374734809-5db2c86bb2ba",
+        "price": 49.99
+    },
+    {
+        "id": 135,
+        "name": "Digital Photo Frame",
+        "description": "Wi-Fi photo frame with 10-inch HD display.",
+        "image": "https://images.unsplash.com/photo-1508898578281-774ac4893c0c",
+        "price": 119.99
+    },
+    {
+        "id": 136,
+        "name": "Wireless Numeric Keypad",
+        "description": "Bluetooth number pad ideal for laptops.",
+        "image": "https://images.unsplash.com/photo-1587825140708-8a19f1bd1a30",
+        "price": 19.99
+    },
+    {
+        "id": 137,
+        "name": "Smart Garden Kit",
+        "description": "Automatic indoor plant grow system with LED light.",
+        "image": "https://images.unsplash.com/photo-1583241800396-a2c5dfacf7d2",
+        "price": 74.99
+    },
+    {
+        "id": 138,
+        "name": "Electric Standing Desk",
+        "description": "Height-adjustable standing desk with motorized lift.",
+        "image": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+        "price": 329.99
+    },
+    {
+        "id": 139,
+        "name": "Bluetooth Car Adapter",
+        "description": "Hands-free Bluetooth car receiver with noise reduction.",
+        "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad",
+        "price": 21.99
+    },
+    {
+        "id": 140,
+        "name": "Modern Desk Organizer",
+        "description": "Minimalist organizer with compartments for accessories.",
+        "image": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87",
+        "price": 15.99
+    },
+    {
+        "id": 141,
+        "name": "USB Microphone",
+        "description": "Studio-quality USB microphone designed for streaming.",
+        "image": "https://images.unsplash.com/photo-1590602847861-8c235a64d63e",
+        "price": 89.99
+    },
+    {
+        "id": 142,
+        "name": "Smart Air Humidifier",
+        "description": "Ultrasonic smart humidifier with app control.",
+        "image": "https://images.unsplash.com/photo-1581092795360-f96234b5642e",
+        "price": 54.99
+    },
+    {
+        "id": 143,
+        "name": "Electric Scooter",
+        "description": "Lightweight foldable electric scooter for commuting.",
+        "image": "https://images.unsplash.com/photo-1598133894003-e589dcc50a20",
+        "price": 399.99
+    },
+    {
+        "id": 144,
+        "name": "Smart Light Strip Controller",
+        "description": "Wi-Fi controller for RGB LED strips.",
+        "image": "https://images.unsplash.com/photo-1582719478175-2cf4e4a3f9aa",
+        "price": 16.99
+    },
+    {
+        "id": 145,
+        "name": "Thermal Travel Mug",
+        "description": "Insulated stainless steel travel mug keeps drinks warm.",
+        "image": "https://images.unsplash.com/photo-1532634949-025f2f0132be",
+        "price": 19.99
+    },
+    {
+        "id": 146,
+        "name": "Bluetooth Keyboard",
+        "description": "Slim wireless keyboard compatible with all devices.",
+        "image": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
+        "price": 34.99
+    },
+    {
+        "id": 147,
+        "name": "Electric Hand Mixer",
+        "description": "5-speed electric mixer with stainless steel attachments.",
+        "image": "https://images.unsplash.com/photo-1592374734809-5db2c86bb2ba",
+        "price": 24.99
+    },
+    {
+        "id": 148,
+        "name": "LED Night Lamp",
+        "description": "Touch-control LED night lamp with warm and cool modes.",
+        "image": "https://images.unsplash.com/photo-1582719478231-2e83b3f389bf",
+        "price": 12.99
+    },
+    {
+        "id": 149,
+        "name": "Outdoor Backpack",
+        "description": "Durable 30L waterproof hiking backpack.",
+        "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+        "price": 39.99
+    },
+    {
+        "id": 150,
+        "name": "Portable Heater",
+        "description": "Mini ceramic heater with adjustable thermostat.",
+        "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+        "price": 27.99
+    }
+]
