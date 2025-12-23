@@ -42,7 +42,6 @@ for key in range(len(keys)-1):
 
 # task 005
 result = []
-
 for i in keys:
     if type(my_dic[i]) == list:
         result.append(tuple(my_dic[i]))
@@ -51,3 +50,5 @@ for i in keys:
 
 result = tuple(result)
 print(result)
+
+
