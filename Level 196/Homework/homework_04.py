@@ -5,7 +5,10 @@ try:
     result = []
     for i in range(5):
         number = int(input("enter number: "))
-        result.append(number)
+        if number <= 0:
+            raise ValueError('არ შეიძლება უარყოფითი რიცხვი')
+        else:
+            result.append(number)
 
 except ValueError as error:
     print(error)

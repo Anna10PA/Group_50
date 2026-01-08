@@ -5,6 +5,7 @@ nums = [10, 20, 30]
 
 try:
     index = int(input("Enter index: "))
+    print(nums[index])
 
 except IndexError as error:
     print(error)
@@ -12,5 +13,5 @@ except IndexError as error:
 except ValueError as error:
     print(error)
 
-else: 
-    print(nums[index])
+finally:
+    print('შემოწმება დასრულდა')
