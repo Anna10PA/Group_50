@@ -4,5 +4,3 @@ words = ["hi", "hello", "world"]
 
 words_length = lambda word: [len(w) for w in word]
 print(words_length(words))
-
-
