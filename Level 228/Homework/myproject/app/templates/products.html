@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-950 flex flex-col items-center gap-5 text-white font-bold tracking-1 h-screen">
+    <header class="min-h-[40px] flex items-center  justify-between px-10 py-10 min-[1200px]:w-4/5 w-full">
+        <h1 class="text-[25px]">ShopHope.com</h1>
+        <nav>
+            <ul class="flex items-center justify-between w-full gap-10 text-[17px] font-[300]">
+                <a href="/" class="duration-100 hover:text-gray-300">
+                    <li>Home</li>
+                </a>
+                <a href="/products" class="duration-100 hover:text-gray-300 font-bold">
+                    <li>Products</li>
+                </a>
+                <a href="/contact_us" class="duration-100 hover:text-gray-300">
+                    <li>Contact us</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main class=" gap-10 py-5 px-10 w-full">
+        <h1 class="text-[25px]">Products</h1>
+        <section class="grid grid-cols-[repeat(auto-fit,minmax(330px,1fr))] gap-6 py-10">
+            {% for item in products %}
+            <div class="bg-gray-700 px-7 py-5 rounded min-w-[300px] flex flex-col items-start gap-3">
+                <div class="max-w-[500px] h-[150px] overflow-hidden w-full">
+                    <img src="{{item.image_url}}" alt="{{item.name}} image"
+                        class="object-cover w-full h-full duration-300 hover:scale-105 cursor-pointer">
+                </div>
+                <div class="flex items-center gap-3 justify-between w-full">
+                    <h3 class="text-gray-200">
+                        {{item.name}}
+                    </h3>
+                    <p class="text-gray-500">
+                        #{{item.id}}
+                    </p>
+                </div>
+                <h1 class="text-[25px] text-green-500">
+                    {{item.price}} {{item.currency}}
+                </h1>
+                <p class="text-gray-400 font-[300]">{{item.description}}</p>
+                <p class="text-gray-400 font-[300] text-[10px]">{{item.category}}</p>
+            </div>
+            {% endfor %}
+        </section>
+    </main>
+</body>
+
+</html>

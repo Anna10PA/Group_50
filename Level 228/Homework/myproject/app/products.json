@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "MacBook Pro 16",
+        "category": "Laptops",
+        "price": 6500,
+        "currency": "GEL",
+        "image_url": "https://images.unsplash.com/photo-1517336714460-45732a971f91?q=80&w=1000&auto=format&fit=crop",
+        "description": "Apple M3 Max chip, 32GB RAM, 1TB SSD. The best laptop for creative professionals."
+    },
+    {
+        "id": 2,
+        "name": "iPhone 15 Pro Max",
+        "category": "Smartphones",
+        "price": 4200,
+        "currency": "GEL",
+        "image_url": "https://images.unsplash.com/photo-1696446701796-da61225697cc?q=80&w=1000&auto=format&fit=crop",
+        "description": "Titanium Build, A17 Pro Chip, 5X Optical Zoom. Redefining mobile photography."
+    },
+    {
+        "id": 3,
+        "name": "Sony WH-1000XM5",
+        "category": "Audio",
+        "price": 980,
+        "currency": "GEL",
+        "image_url": "https://images.unsplash.com/photo-1675243048035-31b39290a4bc?q=80&w=1000&auto=format&fit=crop",
+        "description": "Industry-leading noise cancellation and premium sound quality for music lovers."
+    },
+    {
+        "id": 4,
+        "name": "Mechanical Keyboard GMMK",
+        "category": "Accessories",
+        "price": 450,
+        "currency": "GEL",
+        "image_url": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?q=80&w=1000&auto=format&fit=crop",
+        "description": "RGB Backlit Mechanical Gaming Keyboard with hot-swappable switches."
+    },
+    {
+        "id": 5,
+        "name": "Sony PlayStation 5",
+        "category": "Gaming",
+        "price": 1750,
+        "currency": "GEL",
+        "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?q=80&w=1000&auto=format&fit=crop",
+        "description": "Next-gen gaming console with 4K resolution support and lightning-fast SSD."
+    },
+    {
+        "id": 6,
+        "name": "Dell UltraSharp 27",
+        "category": "Monitors",
+        "price": 2100,
+        "currency": "GEL",
+        "image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=1000&auto=format&fit=crop",
+        "description": "4K UHD Monitor with exceptional color accuracy for designers and developers."
+    },
+    {
+        "id": 7,
+        "name": "Logitech MX Master 3S",
+        "category": "Accessories",
+        "price": 320,
+        "currency": "GEL",
+        "image_url": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=1000&auto=format&fit=crop",
+        "description": "Ergonomic wireless mouse with silent clicks and 8K DPI tracking on any surface."
+    },
+    {
+        "id": 8,
+        "name": "Canon EOS R5",
+        "category": "Cameras",
+        "price": 9500,
+        "currency": "GEL",
+        "image_url": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000&auto=format&fit=crop",
+        "description": "Professional mirrorless camera with 45MP sensor and 8K video recording."
+    },
+    {
+        "id": 9,
+        "name": "Nintendo Switch OLED",
+        "category": "Gaming",
+        "price": 1100,
+        "currency": "GEL",
+        "image_url": "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=1000&auto=format&fit=crop",
+        "description": "Handheld gaming console with a vibrant 7-inch OLED screen and enhanced audio."
+    },
+    {
+        "id": 10,
+        "name": "Samsung Galaxy Watch 6",
+        "category": "Wearables",
+        "price": 850,
+        "currency": "GEL",
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000&auto=format&fit=crop",
+        "description": "Advanced health tracking, sleep monitoring, and a sleek circular design."
+    }
+]
