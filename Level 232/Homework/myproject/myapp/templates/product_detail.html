@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+
+<body class="bg-gray-950 min-h-screen flex items-center justify-center flex-col gap-3 flex-wrap">
+    <img src="{{ product.product_image.url }}" class="w-[300px]">
+    <div class="h-full text-white font-bold">
+        <h1 class="text-[30px]">{{product.product_name}}</h1>
+        <p>Price: {{ product.product_price }} GEL</p>
+    </div>
+</body>
+
+</html>

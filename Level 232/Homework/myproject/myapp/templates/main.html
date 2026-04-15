@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+
+<body class="flex items-center justify-around px-10 gap-5 min-h-screen bg-gray-950 flex-wrap">
+    {% for item in products %}
+    <div class="bg-gray-800 p-5 rounded flex flex-col items-center gap-5 text-[25px] duration-100 hover:bg-gray-700">
+        
+        {% if item.product_image %}
+        <a href="{% url 'product_detail' item.id %}">
+            <img src="{{ item.product_image.url }}" alt="{{ item.product_name }}" class="h-[250px] w-[250px] object-cover">
+        </a>
+        {% else %}
+        <p>not found</p>
+        {% endif %}
+        <h3 class="text-white font-bold">{{ item.product_name }}</h3>
+    </div>
+    {% endfor %}
+</body>
+
+</html>
