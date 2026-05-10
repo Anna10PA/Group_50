@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+<body class="bg-gray-950 min-h-screen text-white flex items-center justify-center gap-[20px] flex-col">
+    <h1 class="text-[55px] font-bold">F<span class="text-gray-400">or</span>m</h1>
+    <form action="" method="POST" class="flex flex-col items-center flex-col gap-3 max-w-[500px] w-[50%] max-md:w-[90%] bg-gray-900 border border-gray-700 rounded-3xl py-[40px] px-10">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" class="text-gray-950 bg-gray-300 cursor-pointer duration-200 hover:bg-gray-400 px-10 py-2 font-bold rounded mt-[20px]">
+        <a href="/login">Login</a>
+    </form>
+</body>
+</html>

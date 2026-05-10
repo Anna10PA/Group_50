@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+
+<body class="min-h-screen bg-gray-950 flex flex-col items-center justify-center gap-[40px] text-white">
+    <h1 class="text-[55px] font-bold">F<span class="text-gray-400">or</span>m</h1>
+    <form action="" class="flex flex-col items-center flex-col gap-3 max-w-[500px] w-[50%] max-md:w-[90%] bg-gray-900 border border-gray-700 rounded-3xl py-[40px] px-10 text-white"
+        method="POST">
+        {% csrf_token %}
+        <div>
+            <label for="email_or_username">Email (username)</label>
+            <input type="text" id="email_or_username"
+                class='rounded bg-gray-950 px-[15px] py-2 flex flex-col items-start gap-[10px] w-full border-gray-800'
+                placeholder="Email (username)" required name="email_or_username">
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" id="password"
+                class='rounded bg-gray-950 px-[15px] py-2 flex flex-col items-start gap-[10px] w-full border-gray-800'
+                placeholder="Password" required name="password">
+        </div>
+        <input type="submit"
+            class="text-gray-950 bg-gray-300 cursor-pointer duration-200 hover:bg-gray-400 px-10 py-2 font-bold rounded mt-[20px]">
+        <a href="/">Registration</a>
+    </form>
+</body>
+
+</html>
