@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        {% for fild in form %}
+
+        <div>
+            {{ fild.label_tag }}
+            {{ fild }}
+        </div>
+        {% for k, v in error.items %}
+        {% if k == fild.name %}
+        <p>{{ v }}</p>
+        {% endif %}
+        {% endfor %}
+        <!-- {{ error }} -->
+
+        {% endfor %}
+
+        <p>--------------------------------</p>
+
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>

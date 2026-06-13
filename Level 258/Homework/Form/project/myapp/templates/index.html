@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class=" flex flex-col items-center justify-center min-h-screen gap-10 px-4">
+<canvas id="bgCanvas" class="absolute top-0 left-0 w-full h-full -z-20 bg-black"></canvas>
+
+    <section class="flex flex-col items-center justify-center min-h-max bg-black/50 backdrop-blur-[5px] px-10 py-7 rounded-2xl border border-gray-800 gap-[30px] w-full max-w-md ">
+        <div>
+            <div class="flex flex-col items-center gap-[5px]">
+                <h1 class="text-green-500 font-bold text-3xl">
+                    შემოგვიერთდი
+                </h1>
+                <p class="text-gray-400 text-sm">რეგისტრაციისთვის შეავსეთ ფორმა</p>
+            </div>
+        </div>
+
+        <form action="" class="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full text-red-500" method="POST">
+            {% csrf_token %}
+
+            {% for input in form %}
+            <div class="flex flex-col gap-1 w-full {% if input.name != 'name' and input.name != 'surname' %}sm:col-span-2{% endif %}">
+
+                {{ input }}
+
+                {% if input.name == 'password' %}
+                <input type="password" class="border border-gray-500 focus:outline-green-500 text-white px-5 py-2 rounded mt-2 w-full bg-transparent"
+                    placeholder="გაიმეორე პაროლი" name="rep_password">
+                {% endif %}
+
+                {% if input.errors %}
+                <p class="text-red-500 text-xs mt-1 pl-2">{{ input.errors.as_text }}</p>
+                {% endif %}
+
+            </div>
+            {% endfor %}
+
+            <button type="submit"
+                class="text-white px-5 py-2 rounded bg-green-600 duration-100 hover:bg-green-500 cursor-pointer sm:col-span-2 w-full font-semibold">
+                რეგისტრაცია
+            </button>
+        </form>
+    </section>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+
+</html>
