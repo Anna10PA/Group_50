@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen gap-10 px-4">
+    <canvas id="bgCanvas" class="absolute top-0 left-0 w-full h-full -z-20 bg-black"></canvas>
+    <a href="/logout">
+        <button
+            class="bg-green-500 absolute top-10 right-5 px-10 py-2 rounded cursor-pointer duration-100 hover:bg-green-600">Back</button>
+    </a>
+    <section
+        class="flex flex-col items-center justify-center min-h-max bg-black/50 backdrop-blur-[5px] px-10 py-7 rounded-2xl border border-gray-800 gap-[30px] w-full max-w-md ">
+        <h1 class="text-white">Hello {{ name }}!</h1>
+    </section>
+
+</body>
+<script src="{% static 'script.js' %}"></script>
+
+</html>

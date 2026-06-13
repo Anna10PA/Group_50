@@ -1,12 +1,12 @@
 from django import forms
-from .models import regForm
+from .models import Users
 from datetime import date
 
 style = 'border text-white px-5 py-2 rounded border-gray-500 focus:outline-green-500 w-full bg-transparent'
 
 class registration(forms.ModelForm):
     class Meta:
-        model = regForm
+        model = Users
         fields = '__all__'
         labels = {
             'name': '',
@@ -79,7 +79,7 @@ class registration(forms.ModelForm):
             "zoho.com"
         ]
         email = self.cleaned_data.get('email')
-        emails = regForm.objects.filter(email=email).exists()
+        emails = Users.objects.filter(email=email).exists()
 
         if emails:
             raise forms.ValidationError('This email is already registered')
@@ -122,7 +122,8 @@ class registration(forms.ModelForm):
             raise forms.ValidationError('Must contain at least 3 numbers') 
         
         return password
-    
+
+    # b-day
     def clean_b_date(self):
         b_date = self.cleaned_data.get('b_date')
         if 10 < (int(str(date.today()).split('-')[0]) - int(str(b_date).split('-')[0])) < 17:
@@ -135,3 +136,42 @@ class registration(forms.ModelForm):
             raise forms.ValidationError('Invalid date')
 
         return b_date
+
+
+class login(forms.Form):
+    email = forms.EmailField(
+        label="",
+        widget=forms.EmailInput(attrs={
+            'class': style,
+            'placeholder': 'Email'
+        })
+    )
+    
+    password = forms.CharField(
+        label="",
+        widget=forms.PasswordInput(attrs={
+            'class': style,
+            'placeholder': 'Password'
+        })
+    )
+
+    def clean(self):
+        email = self.cleaned_data.get('email')
+        password = self.cleaned_data.get('password')
+
+        if email and password:
+            find_user = list(filter(lambda u: u['email'] == email and u['password'] == password, list(Users.objects.all().values())))
+            
+            if not find_user:
+                raise forms.ValidationError('Email or password is not correct')
+
+        user = find_user[0]
+
+        if 'b_date' in user and user.get('b_date'):
+            user['b_date'] = str(user['b_date']) 
+
+        if 'reg_date' in user and user.get('reg_date'):
+            user['reg_date'] = str(user['reg_date'])
+
+        self.cleaned_data['user'] = user
+        return self.cleaned_data
