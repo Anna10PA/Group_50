@@ -2,7 +2,7 @@ from django import forms
 from .models import Users
 from datetime import date
 
-style = 'border text-white px-5 py-2 rounded border-gray-500 focus:outline-green-500 w-full bg-transparent'
+style = 'border text-black px-5 py-2 rounded border-gray-500 focus:outline-[#0101BD] w-full bg-transparent'
 
 class registration(forms.ModelForm):
     class Meta:

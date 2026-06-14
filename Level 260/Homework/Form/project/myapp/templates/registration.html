@@ -10,9 +10,10 @@
 </head>
 
 <body class=" flex flex-col items-center justify-center min-h-screen gap-10 px-4">
-    <canvas id="bgCanvas" class="absolute top-0 left-0 w-full h-full -z-20 bg-black"></canvas>
+    <!-- <canvas id="bgCanvas" class="absolute top-0 left-0 w-full h-full -z-20 bg-black"></canvas> -->
     <a href="/">
-        <button class="bg-green-500 absolute top-10 right-5 px-10 py-2 rounded cursor-pointer duration-100 hover:bg-green-600">Back</button>
+        <button
+            class="bg-green-500 absolute top-10 right-5 px-10 py-2 rounded cursor-pointer duration-100 hover:bg-green-600">Back</button>
     </a>
     <section
         class="flex flex-col items-center justify-center min-h-max bg-black/50 backdrop-blur-[5px] px-10 py-7 rounded-2xl border border-gray-800 gap-[30px] w-full max-w-md ">
@@ -53,7 +54,7 @@
             </button>
         </form>
     </section>
-       <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'script.js' %}"></script>
 </body>
 
 </html>

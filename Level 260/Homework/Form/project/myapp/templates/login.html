@@ -1,25 +1,30 @@
+{% extends 'index.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
+{% block title %}
+    <title>Login</title>
+{% endblock %}
 
-<body class=" flex flex-col items-center justify-center min-h-screen gap-10 px-4">
-    <canvas id="bgCanvas" class="absolute top-0 left-0 w-full h-full -z-20 bg-black"></canvas>
-    <a href="/">
-        <button
-            class="bg-green-500 absolute top-10 right-5 px-10 py-2 rounded cursor-pointer duration-100 hover:bg-green-600">Back</button>
+{% block nav %}
+<nav class="flex items-center gap-10 justify-between max-md:hidden">
+    <a href="/" class="text-[#0101BD]">
+        <i class="fa-solid fa-backward text-2xl"></i>
     </a>
+
+    <a href="/registration">
+        <button class="px-5 py-2 rounded bg-[#0101BD] text-white cursor-pointer duration-100 hover:bg-[#0101AA]">Sign Up</button>
+    </a>
+</nav>
+{% endblock %}
+
+{% block mainContent %}
+<main class="flex w-full items-center justify-between max-md:flex-col max-sm:justify-center">
     <section
-        class="flex flex-col items-center justify-center min-h-max bg-black/50 backdrop-blur-[5px] px-10 py-7 rounded-2xl border border-gray-800 gap-[30px] w-full max-w-md ">
+        class="w-1/2 flex flex-col items-center justify-center gap-10 p-10 max-md:w-full max-sm:gap-5 max-sm:p-5 h-[88vh] max-md:h-[50vh]">
         <div>
-            <div class="flex flex-col items-center gap-[5px]">
-                <h1 class="text-green-500 font-bold text-3xl">
-                    PostMart.co
+            <div class="flex flex-col items-center gap-[7px]">
+                <h1 class="text-[#0101BD] font-bold text-4xl">
+                    Sign In
                 </h1>
                 <p class="text-gray-400 text-sm">Fill out the form to login</p>
             </div>
@@ -28,15 +33,16 @@
             {% csrf_token %}
 
             {% if form.errors %}
-            <div class="text-red-500 text-sm text-center bg-red-500/10 py-2 px-3 rounded border border-red-500/20 w-full sm:col-span-2">
+            <div
+                class="text-red-500 text-sm text-center bg-red-500/10 py-2 px-3 rounded border border-red-500/20 w-full sm:col-span-2">
                 {% for field in form %}
-                    {% for error in field.errors %}
-                        <p>{{ error }}</p>
-                    {% endfor %}
+                {% for error in field.errors %}
+                <p>{{ error }}</p>
+                {% endfor %}
                 {% endfor %}
 
                 {% for error in form.non_field_errors %}
-                    <p>{{ error }}</p>
+                <p>{{ error }}</p>
                 {% endfor %}
             </div>
             {% endif %}
@@ -48,11 +54,14 @@
             {% endfor %}
 
             <button type="submit"
-                class="text-white px-5 py-2 rounded bg-green-600 duration-100 hover:bg-green-500 cursor-pointer sm:col-span-2 w-full font-semibold">
+                class="text-white px-5 py-2 rounded bg-[#0101BD] duration-100 hover:bg-[#0101AA] cursor-pointer sm:col-span-2 w-full font-semibold">
                 Submit
             </button>
         </form>
     </section>
-</body>
-<script src="{% static 'script.js' %}" ></script>
+    <div id="canvas-container" class="w-1/2 h-[88vh] relative max-md:w-full max-md:h-[70vh]"></div>
+    <script src="{% static 'script.js' %}"></script>
+</main>
+{% endblock %}
+
 </html>
