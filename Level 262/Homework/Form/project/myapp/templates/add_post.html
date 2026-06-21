@@ -1,0 +1,53 @@
+{% extends 'index.html' %}
+{% block nav %}
+<nav class="flex items-center gap-7 justify-between max-md:hidden w-[74%] text-[#0101BD]  text-2xl">
+    <div class="w-[70%] flex items-center justify-around">
+        <a href="">
+            <i class="fa-solid fa-house duration-100 hover:text-[#0101BD] text-gray-700 "></i>
+        </a>
+        <a href="">
+            <i class="fa-solid fa-user-group text-gray-700 duration-100 hover:text-[#0101BD]"></i>
+        </a>
+        <a href="">
+            <i class="fa-solid fa-bell text-2xl text-gray-700 duration-100 hover:text-[#0101BD]"></i>
+        </a>
+        <a href="" class="hidden">
+            <i class="fa-solid fa-comment text-gray-700 duration-100 hover:text-[#0101BD] "></i>
+        </a>
+        <a href="/home/add_post">
+            <i class="fa-solid fa-plus text-[27px] "></i>
+        </a>
+    </div>
+    <div class="flex items-center gap-4">
+        <a href="/logout">
+            <i class="fa-solid fa-arrow-right-from-bracket text-2xl duration-100 hover:text-[#0101BD]"></i>
+        </a>
+        <a href="/home/{{ user.email }}">
+            <img src="https://i.pinimg.com/736x/27/5f/99/275f99923b080b18e7b474ed6155a17f.jpg" alt="profile"
+                class="w-11 h-11 rounded-[50%] object-cover cursor-pointer">
+        </a>
+    </div>
+</nav>
+{% endblock %}
+
+{% block mainContent %}
+<main class="flex w-full items-center justify-between max-md:flex-col max-sm:justify-center">
+    <section
+        class="w-full flex flex-col items-center justify-center gap-10 p-10 max-md:w-full max-sm:gap-5 max-sm:p-5 h-[88vh] overflow-auto max-md:h-[50vh]">
+        <form action="" method="POST" class="flex flex-col items-center gap-5">
+            <h1 class="text-[#0101BD] text-3xl font-bold">Add New Post</h1>
+            {% csrf_token %}
+            <div class="flex flex-col items-center gap-[20px]">
+                <div class="relative w-70 h-50 flex items-center justify-center border rounded border-gray-600 overflow-hidden cursor-pointer">
+                    <img src="https://i.pinimg.com/1200x/27/54/f8/2754f88ffa85415fbd523e6e33ee58a8.jpg" alt="">
+                    <div class="absolute top-10 w-full h-30 cursor-pointer z-10 opacity-0">
+                        {{ form.post }}
+                    </div>
+                </div>
+                {{ form.desc }}
+            </div>
+            <button type="submit" class="px-5 py-3 rounded bg-[#0101BD] text-white w-full duration-100">Submit</button>
+        </form>
+    </section>
+</main>
+{% endblock %}

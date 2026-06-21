@@ -1,0 +1,12 @@
+from django.urls import path
+from .views import main, reg, log, user_page, logout, user_profile, add_post
+
+urlpatterns = [
+    path('', main, name='main'),
+    path('registration/', reg, name='registratin'),
+    path('login/', log, name='login'),
+    path('home/', user_page, name='user_page'),
+    path('logout/', logout, name='logout'),
+    path('home/<str:email>/', user_profile, name='profile'),
+    path('home/add_post', add_post, name='add_post')
+]

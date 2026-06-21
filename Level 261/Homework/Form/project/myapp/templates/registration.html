@@ -1,0 +1,63 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}
+<title>Sign Up</title>
+{% endblock %}
+
+{% block nav %}
+<nav class="flex items-center gap-10 justify-between max-md:hidden">
+    <a href="/" class="text-[#0101BD]">
+        <i class="fa-solid fa-backward text-2xl"></i>
+    </a>
+
+    <a href="/login">
+        <button class="px-5 py-2 rounded bg-[#0101BD] text-white cursor-pointer duration-100 hover:bg-[#0101AA]">Sign In</button>
+    </a>
+</nav>
+{% endblock %}
+
+{% block mainContent %}
+<main class="flex w-full items-center justify-between max-md:flex-col max-sm:justify-center">
+    <section class="w-1/2 flex flex-col items-center justify-center gap-10 p-10 max-md:w-full max-sm:gap-5 max-sm:p-5 h-[88vh] max-md:h-[76vh]">
+        <div>
+            <div class="flex flex-col items-center gap-[7px]">
+                <h1 class="text-[#0101BD] font-bold text-4xl">
+                    Sign Up
+                </h1>
+                <p class="text-gray-400 text-sm">Fill out the form to register</p>
+            </div>
+        </div>
+
+        <form action="" class="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full text-red-500" method="POST">
+            {% csrf_token %}
+
+            {% for input in form %}
+            <div
+                class="flex flex-col gap-1 w-full {% if input.name != 'name' and input.name != 'surname' %}sm:col-span-2{% endif %}">
+
+                {{ input }}
+
+                {% if input.name == 'password' %}
+                <input type="password"
+                    class='border text-black px-5 py-2 rounded border-gray-500 focus:outline-[#0101BD] w-full bg-transparent mt-4'
+                    placeholder="Repeat password" name="rep_password">
+                {% endif %}
+
+                {% if input.errors %}
+                <p class="text-red-500 text-xs mt-1 pl-2">{{ input.errors.as_text }}</p>
+                {% endif %}
+
+            </div>
+            {% endfor %}
+
+            <button type="submit"
+                class="text-white px-5 py-2 rounded bg-[#0101BD] duration-100 hover:bg-[#0101AA] cursor-pointer sm:col-span-2 w-full font-semibold">
+                Submit
+            </button>
+        </form>
+    </section>
+    <div id="canvas-container" class="w-1/2 h-[88vh] relative max-md:w-full max-md:h-[70vh]"></div>
+    <script src="{% static 'script.js' %}"></script>
+</main>
+{% endblock %}
