@@ -7,7 +7,7 @@ class Users(models.Model):
     password = models.CharField(max_length=100)
     b_date = models.DateField()
     reg_date = models.DateTimeField(auto_now_add=True)  
-    # friend_list = models.CharField() 
+    # profile = models.ImageField(upload_to='Profiles')
 
     def __str__ (self):
         return f"{self.email}"
@@ -15,10 +15,8 @@ class Users(models.Model):
 class Products(models.Model):
     user = models.ForeignKey(Users, on_delete=models.CASCADE)
     desc = models.CharField(max_length=1000)
-    post = models.ImageField(upload_to='posts')
+    # post = models.ImageField(upload_to='posts')
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.user}"
-
-    
+        return f"{self.user}"    

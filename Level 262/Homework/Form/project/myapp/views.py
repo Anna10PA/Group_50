@@ -35,15 +35,18 @@ def log(req):
 def user_page(req):
     user = req.session.get('user')
     if user:
+        print(user)
         posts = Products.objects.all().values()
-        lst = []
-        for post in list(posts):
-            if post.get('user_id'):
-                lst.append({
-                    "post": post,
-                    "user": Users.objects.get(id=int(post.get('user_id')))
-                })
-        return render(req, 'user_page.html', {'user': user, 'posts': lst})
+        
+
+        # for post in list(posts):
+        #     if post.get('user_id'):
+        #         lst.append({
+        #             "post": post,
+        #             "user": Users.objects.get(id=int(post.get('user_id')))
+        #         })
+        print(posts)
+        return render(req, 'user_page.html', {'user': user, 'posts': 'posts'})
     return redirect('main')
 
 def logout(req):
@@ -54,23 +57,23 @@ def user_profile(req, email):
     user = req.session.get('user')
     if not user:
         return redirect('main')
-    pst = Products.objects.all().filter(user_id = user.get('id'))
     return render(req, 'profile.html', {
-        'user': user,
-        'pst': pst
+        'user': user
         })
 
 def add_post(req):
     user = req.session.get('user')
     if not user:
         return redirect('main')
+    
     if req.method == 'POST':
         form = Posts(req.POST)
 
         if form.is_valid():
-            item = form.save(commit=False)
-            item.user_id = user.get('id')
-            item.save()
+            # item = form.save(commit=False)
+            print(form)
+            # item.user = user
+            # item.save()
             return redirect('user_page')
         
     return render(req, 'add_post.html', {

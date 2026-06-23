@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block mainContent %}
+<main class="flex w-full items-center justify-between max-md:flex-col max-sm:justify-center">
+    <section
+        class="w-full flex flex-col items-center gap-10 p-10 max-md:w-full max-sm:gap-5 max-sm:p-5 h-[88vh] overflow-auto max-md:h-[50vh]">
+        <form action="">
+            {% csrf_token %}
+            <input type="text" class="border px-5 border-gray-500 w-full outline-blue-600 py-3 rounded"
+                placeholder="Enter your code" name="code">
+            <p></p>
+            <button type="submit "
+                class="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-200 cursor-pointer w-full">Submit</button>
+        </form>
+    </section>
+</main>
+{% endblock %}

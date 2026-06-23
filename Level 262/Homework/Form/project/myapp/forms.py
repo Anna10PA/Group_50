@@ -178,17 +178,17 @@ class login(forms.Form):
 class Posts(forms.ModelForm):
     class Meta:
         model = Products
-        fields = ['desc', "post"]
+        fields = ['desc']
         labels = {
-            "desc": '',
-            "post": ''
+            "desc": ''
+            # "post": ''
         }
         widgets = {
             'desc': forms.TextInput(attrs={
                 'class': f'{style}',
                 'placeholder': 'Desc'
             }),
-            "post": forms.FileInput(attrs={
-                'class': f'{style} w-full h-full'
-            }),
+            # "post": forms.FileInput(attrs={
+            #     'class': f'{style} w-full h-full'
+            # }),
         }
