@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+{% block mainContent %}
+<main class="flex w-full items-center justify-between max-md:flex-col max-sm:justify-center">
+    <section class="w-full flex flex-col items-center justify-center gap-10 p-10 max-md:w-full max-sm:gap-5 max-sm:p-5 h-[88vh] overflow-auto max-md:h-[50vh]">
+        <h1 class="text-[#0101BD] font-bold text-5xl">Profile</h1>
+        <form class="flex flex-col items-center gap-4 w-full max-w-[350px]" method="POST">
+            {% csrf_token %}
+            <input type="text" class="border px-5 border-gray-500 w-full outline-blue-600 py-3 rounded" placeholder="Enter your name" name="name" value="{{ user.name }}">
+            <input type="text" class="border px-5 border-gray-500 w-full outline-blue-600 py-3 rounded" placeholder="Enter your surname" name="surname" value="{{ user.surname }}">
+            <button type="submit" class="mt-4 px-6 py-2 bg-[#0101BD] text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-200 cursor-pointer w-full">Submit</button>
+        </form>
+    </section>
+</main>
+
+{% endblock %}
