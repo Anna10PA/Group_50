@@ -1,0 +1,19 @@
+# სურათის დამატება
+
+1. pip install pillow - ვაყენებთ ბიბლიოთეკას
+
+2. setting update
+    MEDIA_URL = '/media/' - პრეფიქსია (სადაც მოძებნის სურათს / მოთხოვნას გააგზავნის)
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media') - ფოლდერის შექმნა და ჩაწერა
+
+3. models update
+    post = models.ImageField(upload_to='posts') // media-ში ქმნის ახალ ფოლდერს ან თუ არის უკვე ამატებს ატვირთულ სურათს მოცემულ 'posts' ფოლდერში.
+
+4. urls update
+    from django.conf import settings - ვწვდებით settings.py-ს
+    from django.conf.urls.static import static - static-ს ვაიმპორტებთ და ვიყენებთ ლოკალურად დასაკავშირებლად
+
+    if settings.DEBUG: // თუ დეველოპმენტის რეჟიმშია
+        urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
+
+        static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) - აკავშირებს ბრაუზერიდან მოთხოვნილ url-ს (სურათის მისამართს) ფიზიკურ საქაღალდესთან

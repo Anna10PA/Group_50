@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <link rel="icon" href="{% static 'icon.png' %}">
+    {% block title %} 
+        <title> FiftyGroup.co </title> 
+    {% endblock %}
+</head>
+
+<body class="bg-white overflow-x-hidden min-h-screen">
+    <header class="flex items-center justify-between px-10 py-5 w-full max-sm:p-5 static top-0 right-0">
+        <h1 class="text-[#0101BD] font-bold text-3xl max-sm:text-2xl">FiftyGroup.co</h1>
+        {% block nav %}
+        <nav class="flex items-center gap-3 justify-between max-md:hidden">
+            <a href="/login">
+                <button
+                    class="px-5 py-2 rounded bg-[#0101BD] text-white cursor-pointer duration-100 hover:bg-[#0101AA]">Sign
+                    In</button>
+            </a>
+            <a href="/registration">
+                <button
+                    class="px-5 py-2 rounded bg-[#0101BD] text-white cursor-pointer duration-100 hover:bg-[#0101AA]">Sign
+                    Up</button>
+            </a>
+        </nav>
+        {% endblock %}
+        <div class="md:hidden">
+            <i class="fa-solid fa-bars text-[#0101BD] text-2xl hover:text-[#0101AA] cursor-pointer"></i>
+        </div>
+    </header>
+
+    {% block mainContent %}
+    <main class="flex w-full items-center justify-between max-md:flex-col max-sm:justify-center">
+        <section
+            class="w-1/2 flex flex-col items-center justify-center gap-10 p-10 max-md:w-full max-sm:gap-5 max-sm:p-5 h-[50vh]">
+            <h2 class="text-[45px] font-bold text-gray-800 text-center max-md:text-3xl leading-12 max-sm:leading-9">
+                Welcome to <span class="text-[#0101BD] ">FiftyGroup.co</span>
+            </h2>
+            <p class="text-gray-500 text-center max-md:text-sm">We bridge the gap between social sharing and online
+                marketplace.
+                PostMart makes buying and selling as simple as scrolling through your feed. Just create a post, showcase
+                your items, and start selling directly to your audience. No complicated setups—just post and profit!
+            </p>
+            <a href="/login" class="w-[30%] max-lg:w-full max-md:w-[50%] max-sm:w-full">
+                <button
+                    class="px-10 w-full py-3.5 hover:-translate-y-[3px] rounded bg-[#0101BD] hover:bg-[#0101AA] text-white cursor-pointer duration-200">
+                    Start Now !</button>
+            </a>
+        </section>
+
+        <div id="canvas-container" class="w-1/2 h-[88vh] relative max-md:w-full max-md:h-[70vh]"></div>
+        <script src="{% static 'script.js' %}"></script>
+    </main>
+
+    {% endblock %}
+    <footer class="bg-gray-900 px-10 py-12 flex flex-col items-start gap-3 max-sm:px-5 max-sm:py-8">
+        <h3 class="text-gray-100 text-2xl font-bold">FiftyGroup.co</h3>
+        <div class="w-full text-sm text-gray-300">
+            <ul class="flex flex-col items-start gap-1">
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Viber</li>
+                <li>X</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

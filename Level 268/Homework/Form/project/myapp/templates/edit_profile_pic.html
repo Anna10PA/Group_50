@@ -1,0 +1,48 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block nav %}
+<nav>
+    <a href="/home" class="text-[#0101BD]">
+        <i class="fa-solid fa-backward text-2xl"></i>
+    </a>
+</nav>
+{% endblock %}
+
+{% block mainContent %}
+<main class="flex w-full items-center justify-between max-md:flex-col max-sm:justify-center">
+    <section
+        class="w-full flex flex-col items-center justify-center gap-10 p-10 max-md:w-full max-sm:gap-5 max-sm:p-5 h-[88vh] overflow-auto max-md:h-[50vh]">
+
+        <form class="flex flex-col items-center gap-4 w-full max-w-[350px]" id="form" method="POST"
+            enctype="multipart/form-data" action="{% url 'edit_profile_pic' %}">
+            {% csrf_token %}
+
+            <div class="relative mb-4">
+                <img src="{{ user.profile }}" alt="profile" class="w-45 h-45 rounded-[50%] object-cover">
+                <div class="absolute w-10 h-10 bottom-0 right-0">
+                    <input type="file" class="opacity-0 z-10 w-full h-full absolute top-0 cursor-pointer" name="file"
+                        id="file">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-[blue] text-white border border-[3px] border-white cursor-pointer">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="submit"
+                class="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-200 cursor-pointer w-full">
+                Update Profile
+            </button>
+        </form>
+        <form class="w-full flex flex-col gap-1 max-w-[350px]" method="POST" action="{% url 'update_email' %}">
+            {% csrf_token %}
+            <input type="email" class="border px-5 border-gray-500 w-full outline-blue-600 py-3 rounded"
+                placeholder="Enter your email" name="email" >
+            <p></p>
+            <button type="submit " class="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-200 cursor-pointer w-full">Submit</button>
+        </form>
+
+    </section>
+    <script src="{% static 'index.js' %}"></script>
+</main>
+{% endblock %}

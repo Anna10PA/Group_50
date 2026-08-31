@@ -1,0 +1,66 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Sign In</title>
+{% endblock %}
+
+{% block nav %}
+<nav class="flex items-center gap-10 justify-between max-md:hidden">
+    <a href="/" class="text-[#0101BD]">
+        <i class="fa-solid fa-backward text-2xl"></i>
+    </a>
+
+    <a href="/registration">
+        <button class="px-5 py-2 rounded bg-[#0101BD] text-white cursor-pointer duration-100 hover:bg-[#0101AA]">Sign Up</button>
+    </a>
+</nav>
+{% endblock %}
+
+{% block mainContent %}
+<main class="flex w-full items-center justify-between max-md:flex-col max-sm:justify-center">
+    <section class="w-1/2 flex flex-col items-center justify-center gap-10 p-10 max-md:w-full max-sm:gap-5 max-sm:p-5 h-[88vh] max-md:h-[50vh]">
+        <div>
+            <div class="flex flex-col items-center gap-[7px]">
+                <h1 class="text-[#0101BD] font-bold text-4xl">
+                    Sign In
+                </h1>
+                <p class="text-gray-400 text-sm">Fill out the form to login</p>
+            </div>
+        </div>
+        <form action="" class="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full text-white" method="POST">
+            {% csrf_token %}
+
+            {% if form.errors %}
+            <div
+                class="text-red-500 text-sm text-center bg-red-500/10 py-2 px-3 rounded border border-red-500/20 w-full sm:col-span-2">
+                {% for field in form %}
+                {% for error in field.errors %}
+                <p>{{ error }}</p>
+                {% endfor %}
+                {% endfor %}
+
+                {% for error in form.non_field_errors %}
+                <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% for input in form %}
+            <div class="w-full">
+                {{ input }}
+            </div>
+            {% endfor %}
+
+            <button type="submit"
+                class="text-white px-5 py-2 rounded bg-[#0101BD] duration-100 hover:bg-[#0101AA] cursor-pointer sm:col-span-2 w-full font-semibold">
+                Submit
+            </button>
+        </form>
+    </section>
+    <div id="canvas-container" class="w-1/2 h-[88vh] relative max-md:w-full max-md:h-[70vh]"></div>
+    <script src="{% static 'script.js' %}"></script>
+</main>
+{% endblock %}
+
+</html>
