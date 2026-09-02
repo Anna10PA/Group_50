@@ -23,3 +23,16 @@ def del_text(req, id):
         delte = PostModels.objects.get(id=id)
         delte.delete()
         return Response()
+
+
+@api_view(['PUT'])
+def edit_item(req, id):
+    edit_value = postViews.objects.get(id=id)
+    serializer = SerializerPost(edit_value, data=req.data)
+
+    if serializer.is_valid():
+        serializer.save()
+        all_item = postViews.objects.all()
+        return Response(SerializerPost(all_item, many=True))
+
+    return Response(serializer.errors)
