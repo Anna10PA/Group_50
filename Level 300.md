@@ -3,7 +3,7 @@
 
 ## 📌 Course
 * **Course:** Web Development
-* **Duration:** July 9, 2024 - September 9, 2026
+* **Duration:** June 24, 2024 - September 9, 2026
 * **Status:** Completed
 
 ### Frontend
